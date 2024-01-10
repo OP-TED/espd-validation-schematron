@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                        xmlns:espd="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:espd-req="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+                        xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                        xmlns:espd-resp="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        title="ESPD Response Criterion Business Rules"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                                       prefix="cac"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                       prefix="cbc"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                                       prefix="ext"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+                                       prefix="espd"/>
+   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2005/xpath-functions" prefix="fn"/>
+   <svrl:active-pattern document="file:/C:/Users/ptchiene/OneDrive%20-%20NTT%20DATA%20EMEAL/Documents/GitLab/SEMBU/ESPD.git/schematron/Schematron-v3.2.0/ESPDResponse/../common/xml/ESPD-Response-BASE.xml"
+                        id="BR-RESP-CRI"
+                        name="BR-RESP-CRI"/>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][7]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'e72c1d07-28a9-4572-b018-8432abcfce3a' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 6d248b49-7fa6-4098-a662-6f366f38a3c3' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][8]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'ec270fef-72b9-4daa-8177-061f85101bc3' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 9d9cf165-5a28-439a-bcaf-56cb91f86c0b' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][25]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'a459ecb9-2612-47d6-849e-b34ef556e562' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 99ce78eb-a7c8-4efb-a507-e63d1c82c18a' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][25]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'bf215fa2-1d1b-4a34-91df-328098c569e8' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 3439b0a7-4a08-48b5-9cd6-75e91736a9db' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][26]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '6aad0303-331c-4626-8ff0-66a9168d4bfb' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 8b89b268-7d7b-4558-a1f4-a5a26d104802' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][26]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '846d4952-c540-4c02-a6f4-d71372d06c26' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 4152bb4c-3448-493b-af91-170f36229d23' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][27]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'eeab5ba5-61ac-4cf2-9ed4-7df33bf91281' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = b87ec1a5-57d5-4041-8af8-2b16541ca7ed' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][27]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '2c1c913f-1c51-44fa-b59c-d84c3cfb389c' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 6a836d31-f132-4874-bfa9-b36e1a0218b5' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][28]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'a552da87-ca6b-4868-bf7c-3c43df9b4f01' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 032b6dca-98cc-4d03-a747-0dbdf0ab58dd' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][28]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '329163c2-8fee-47e4-b618-f5fad0a18113' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = ca2b697e-f061-435f-a7b2-33e9992ca8f2' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][29]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '1b796d69-1bab-4ae6-8410-7fe29b7f9e8f' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 6045df22-1b54-4a57-83df-f3011b4a3445' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][30]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'fd10f790-38bc-4b39-9d22-420b4241b62c' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 1a858224-cbe7-4ee0-8dfc-5c8baa92611f' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][31]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'dd80860d-095b-406b-a160-64666a83d1da' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = f9bac912-6a85-431d-9e63-e5371c672361' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][32]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'd2a18a22-e359-4d0c-b403-357bbe9a0b27' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = f6fa34e4-e399-4ebb-84c6-7e073bf70466' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][33]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '153d111d-a2a1-4ec4-aefe-ad753f7b525f' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 26963d29-41ac-4cf3-baee-75e8ed780e72' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][34]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'e65907ec-69f2-4fba-8fb7-c170cde43bb9' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = b63ad908-4ad4-43d3-99d0-7e71cbaa6e59' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][39]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'e419187a-d522-489e-b7ba-ec7acc1f50c6' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 5f51aeda-919b-478b-98a3-e04fd8647b9d' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][40]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'ea9eb511-4ecb-4b0e-a300-76525c6365e8' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 3f232573-443b-4824-90e8-e186c7076591' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][41]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '6d2a675f-9e2e-4efb-876f-044c66291a50' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 246d9e5a-fe3c-46b5-9872-93c9b60b0450' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][42]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '9f44d788-5526-4a0d-a4d2-964363d5bcaa' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = c3aaa8df-2c1a-4a43-a57f-84fcea06fd44' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][43]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '8516a06c-2536-4b4b-bfa0-639306a3f4c9' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = abd97a3d-d51d-4e29-ace3-f19069c15ee9' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][44]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '326aaf40-59db-4d9b-9e83-df8e827598ad' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 2b8c25fa-fd60-4068-ae98-55eea32bc0d4' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][45]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response 'f789dd9b-3634-4aea-a1b5-03d8ba9a0722' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = e5306742-58ab-4d56-bba8-3d8bcf32672b' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][46]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '396dfc84-aa06-46f2-af0c-6e024c3abf9e' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 8730ae70-bd0b-47ee-8a0f-5ba8d2e1f123' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][47]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '0a6d4765-4eb5-4b14-abfa-acaca28af6de' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 61e2a463-7884-41e3-84dc-e10148681b9e' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][48]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '3157c02a-c270-497b-9aa7-79cd342022fb' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = f12749b4-c938-415e-b5d3-47d07e082c10' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][49]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '0c28f89b-6e96-4425-8fb4-4c18f57ed64b' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = f7782914-b879-492b-96d8-2c8c7ee9bcea' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][50]/*[local-name()='TenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '6b567720-3778-4439-95ec-44c66ee4f203' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 6d8acb20-4c86-41a0-815a-287c571f0720' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][51]/*[local-name()='TenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '59aa5a21-2c94-4295-8cac-8b9408789115' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 000f75ab-369a-4e95-85e9-602bce7e2bdb' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][52]/*[local-name()='TenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '7795e29a-1c96-4d05-b38d-6d7ee0828f99' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 80ee83f0-892e-47a5-871d-df4bf2f57beb' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][53]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '5982d4d2-a75b-4f3e-9424-20220369bbc3' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = ad6fe11d-575b-40f8-95b1-052bc58c0e57' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][53]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '75dc0f61-cd7a-4f29-ba40-534932053a0b' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 082a81a3-eca6-4ba3-b4aa-c277439bc950' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][54]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '84bb7825-4d2f-4436-b9d8-3eb13a857169' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 036ea779-3aa3-4991-8c7c-24f177b07573' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][54]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '236285c5-04f5-44d0-9200-6625516ce20c' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = a0eb270e-6e59-42df-a4b4-8f016e889f23' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][55]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '7ece1a9a-0c52-4523-a395-88e57af8c631' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = b4dd3b84-9c98-461a-9f66-bcd3ddea28de' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][55]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '1897c9aa-1ecc-4216-a9af-0bd91319896d' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 56100964-7577-4e3b-a6b8-d7cec6f5cc1d' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 0)"
+                       id="BR-TCR-07-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][57]/*[local-name()='TenderingCriterionPropertyGroup'][1]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]/*[local-name()='TenderingCriterionProperty']">
+      <svrl:text>As the response '072e1d15-575f-4ed9-82ec-65eeb12d607e' is TRUE but the property group is codified as ONFALSE, 'cbc:ID = 041dc9ea-6998-4fce-a24a-13d66f1509ec' must not be answered.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="( ($currentDataType = 'CODE') and (cac:ResponseValue/cbc:ResponseCode) ) or not($currentDataType = 'CODE')"
+                       id="BR-TCR-08-02"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterionResponse'][515]">
+      <svrl:text>The type of answer expected by the contracting authority is 'CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is 515123ee-ea57-4907-8e73-8ded2f9ed256).</svrl:text>
+   </svrl:failed-assert>
+</svrl:schematron-output>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                        xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:espd-req="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+                        xmlns:espd-resp="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        title="ESPD Response Economic Operator Business Rules"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                                       prefix="cac"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                       prefix="cbc"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                                       prefix="ext"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                                       prefix="udt"/>
+   <svrl:active-pattern document="file:/C:/Users/hricolor/Documents/GitHub/SEMBU-ESPD/schematron/Schematron-v3.1.0/ESPDResponse/../common/xml/ESPD-Response-BASE.xml"
+                        id="BR-RESP-EO"
+                        name="BR-RESP-EO"/>
+   <svrl:failed-assert test="(cac:EconomicOperatorRole)" id="BR-RESP-10-02" flag="error"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='EconomicOperatorParty']">
+      <svrl:text>The function of the economic operator ('/cac:EconomicOperatorParty/cac:EconomicOperatorRole') is mandatory.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(cac:EconomicOperatorRole/cbc:RoleCode)" id="BR-RESP-10-03" flag="error"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='EconomicOperatorParty']">
+      <svrl:text>The role of the economic operator ('/cac:EconomicOperatorParty/cac:EconomicOperatorRole/cbc:RoleCode') is mandatory.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(cac:PartyIdentification/cbc:ID)" id="BR-RESP-10-04" flag="error"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='EconomicOperatorParty']/*[local-name()='Party']">
+      <svrl:text>An identifier that identifies the economic operator ('/cac:EconomicOperatorParty/cac:Party/cac:PartyIdentification/cbc:ID') is mandatory.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(cac:PartyName/cbc:Name)" id="BR-RESP-10-05" flag="error"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='EconomicOperatorParty']/*[local-name()='Party']">
+      <svrl:text>The name of the economic operator ('/cac:EconomicOperatorParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(cbc:IndustryClassificationCode)" id="BR-RESP-10-06" flag="error"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='EconomicOperatorParty']/*[local-name()='Party']">
+      <svrl:text>The size of the company ('/cac:EconomicOperatorParty/cac:Party/cbc:IndustryClassificationCode') is mandatory.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(cac:PostalAddress/cac:Country/cbc:IdentificationCode)"
+                       id="BR-RESP-10-07"
+                       flag="error"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='EconomicOperatorParty']/*[local-name()='Party']">
+      <svrl:text>The country of the company ('/cac:EconomicOperatorParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') is mandatory.</svrl:text>
+   </svrl:failed-assert>
+</svrl:schematron-output>

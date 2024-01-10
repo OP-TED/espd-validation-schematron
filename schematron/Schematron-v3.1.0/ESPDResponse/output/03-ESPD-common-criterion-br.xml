@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:espd="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                        xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:espd-req="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+                        xmlns:espd-resp="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        title="Common Criterion Business Rules"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                                       prefix="cac"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                       prefix="cbc"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                                       prefix="ext"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                                       prefix="udt"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+                                       prefix="espd"/>
+   <svrl:active-pattern document="file:/C:/Users/hricolor/Documents/GitHub/SEMBU-ESPD/schematron/Schematron-v3.1.0/ESPDResponse/../common/xml/ESPD-Response-BASE.xml"
+                        id="BR-COM-CR"
+                        name="BR-COM-CR"/>
+   <svrl:failed-assert test="not($currentIDExist) or (($currentIDExist) and not($ElementUUID_TExists)) or (count($ParentUUID_T/cac:TenderingCriterionProperty) &lt;= count(cac:TenderingCriterionProperty) and ($currentIDExist) and ($ElementUUID_TExists))"
+                       id="BR-TC-16-01"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][25]/*[local-name()='TenderingCriterionPropertyGroup']">
+      <svrl:text>The tendering criterion property group ('cac:TenderingCriterion[cbc:ID = '6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f']/cac:TenderingCriterionPropertyGroup[cbc:ID = 'b01d8f8f-ceac-4b47-b7aa-88cdeb630465']') has '1' missing 'cac:TenderingCriterionProperty' element(s).</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][29]/*[local-name()='TenderingCriterionPropertyGroup']">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:TenderingCriterionPropertyGroup ('cac:TenderingCriterion[cbc:ID = '499efc97-2ac1-4af2-9e84-323c2ca67747']/cac:TenderingCriterionPropertyGroup[cbc:ID = '5f22470b-df27-4ffd-ba4e-0973a41f97ca']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][29]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][1]">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:TenderingCriterionPropertyGroup[cbc:ID = '5f22470b-df27-4ffd-ba4e-0973a41f97ca']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '0e50931d-4d39-4f1d-9fdc-b2cf16c0807a']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][29]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][2]">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:TenderingCriterionPropertyGroup[cbc:ID = '5f22470b-df27-4ffd-ba4e-0973a41f97ca']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = 'c0cd9c1c-e90a-4ff9-bce3-ac0fe31abf16']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][29]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:TenderingCriterionPropertyGroup[cbc:ID = '5f22470b-df27-4ffd-ba4e-0973a41f97ca']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '7458d42a-e581-4640-9283-34ceb3ad4345']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][29]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][4]">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:TenderingCriterionPropertyGroup[cbc:ID = '5f22470b-df27-4ffd-ba4e-0973a41f97ca']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = 'e9aa7763-c167-4352-8060-1a3d7d3e2662']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][29]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][5]">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:TenderingCriterionPropertyGroup[cbc:ID = '5f22470b-df27-4ffd-ba4e-0973a41f97ca']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '7458d42a-e581-4640-9283-34ceb3ad4345']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="not($currentIDExist) or (($currentIDExist) and not($ElementUUID_TExists)) or (count($ParentUUID_T/cac:SubsidiaryTenderingCriterionPropertyGroup) &lt;= count(cac:SubsidiaryTenderingCriterionPropertyGroup) and ($currentIDExist) and ($ElementUUID_TExists))"
+                       id="BR-TC-17-01"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][35]/*[local-name()='TenderingCriterionPropertyGroup']">
+      <svrl:text>The tendering criterion property group ('cac:TenderingCriterion[cbc:ID = 'ab0e7f2e-6418-40e2-8870-6713123e41ad']/cac:TenderingCriterionPropertyGroup[cbc:ID = '4ddccd16-91e4-4b72-ae0f-78f2f1ab9490']') has '1' missing 'cac:SubsidiaryTenderingCriterionPropertyGroup' element(s).</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][35]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '26ece6a2-b360-46c1-890d-8338913b8719']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '7458d42a-e581-4640-9283-34ceb3ad4345']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][39]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '45a67f48-d146-4faf-8239-dd6977dffe29']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '70e28455-d0e1-47e7-9caa-ead3b7df7644']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][39]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '70e28455-d0e1-47e7-9caa-ead3b7df7644']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '9026e403-3eb6-4705-a9e9-e21a1efc867d']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][40]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '45a67f48-d146-4faf-8239-dd6977dffe29']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '70e28455-d0e1-47e7-9caa-ead3b7df7644']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="$IsSubTenderingCriterionChild or (($ElementUUIDExists) and ((cbc:ID) and not(normalize-space(cbc:ID) = ''))) or not((cbc:ID) and not(normalize-space(cbc:ID) = ''))"
+                       id="BR-TC-13"
+                       flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='TenderingCriterion'][40]/*[local-name()='TenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup'][3]/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']/*[local-name()='SubsidiaryTenderingCriterionPropertyGroup']">
+      <svrl:text>Compulsory use of the UUIDs supplied by e-Certis. The cac:SubsidiaryTenderingCriterionPropertyGroup ('cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '70e28455-d0e1-47e7-9caa-ead3b7df7644']/cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:ID = '9026e403-3eb6-4705-a9e9-e21a1efc867d']') does not exist in e-Certis.</svrl:text>
+   </svrl:failed-assert>
+</svrl:schematron-output>

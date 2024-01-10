@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ESPDRequest xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccv-cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-1" xmlns:ccv="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1" xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1">
+  <cbc:ID />
+  <cbc:IssueDate>2017-05-12</cbc:IssueDate>
+  <cbc:ContractFolderID />
+  <cac:ContractingParty>
+    <cac:Party />
+  </cac:ContractingParty>
+  <cac:ProcurementProjectLot>
+    <cbc:ID />
+  </cac:ProcurementProjectLot>
+  <ccv:Criterion>
+    <cbc:ID>005eb9ed-1347-4ca3-bb29-9bc0db64e1ab</cbc:ID>
+    <cbc:Name>Participation in a criminal organisation</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for participation in a criminal organisation, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Council Framework Decision 2008/841/JHA of 24 October 2008 on the fight against organised crime (OJ L 300, 11.11.2008, p. 42).&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>c27b7c4e-c837-4529-b867-ed55ce639db5</cbc:ID>
+    <cbc:Name>Corruption</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for corruption, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 3 of the Convention on the fight against corruption involving officials of the European Communities or officials of Member States of the European Union, OJ C 195, 25.6.1997, p. 1, and in Article 2(1) of Council Framework Decision 2003/568/JHA of 22 July 2003 on combating corruption in the private sector (OJ L 192, 31.7.2003, p. 54). This exclusion ground also includes corruption as defined in the national law of the contracting authority (contracting entity) or the economic operator. "&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>297d2323-3ede-424e-94bc-a91561e6f320</cbc:ID>
+    <cbc:Name>Fraud</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for fraud, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? Within the meaning of Article 1 of the Convention on the protection of the European Communities' financial interests (OJ C 316, 27.11.1995, p. 48).&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>d486fb70-86b3-4e75-97f2-0d71b5697c7d</cbc:ID>
+    <cbc:Name>Terrorist offences or offences linked to terrorist activities</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for terrorist offences or offences linked to terrorist activities, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Articles 1 and 3 of Council Framework Decision of 13 June 2002 on combating terrorism (OJ L 164, 22.6.2002, p. 3). This exclusion ground also includes inciting or aiding or abetting or attempting to commit an offence, as referred to in Article 4 of that Framework Decision.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>47112079-6fec-47a3-988f-e561668c3aef</cbc:ID>
+    <cbc:Name>Money laundering or terrorist financing</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for money laundering or terrorist financing, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 1 of Directive 2005/60/EC of the European Parliament and of the Council of 26 October 2005 on the prevention of the use of the financial system for the purpose of money laundering and terrorist financing (OJ L 309, 25.11.2005, p. 15).&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>d789d01a-fe03-4ccd-9898-73f9cfa080d1</cbc:ID>
+    <cbc:Name>Child labour and other forms of trafficking in human beings</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator itself or any person who is a member of its administrative, management or supervisory body or has powers of representation, decision or control therein been the subject of a conviction by final judgment for child labour and other forms of trafficking in human beings, by a conviction rendered at the most five years ago or in which an exclusion period set out directly in the conviction continues to be applicable? As defined in Article 2 of Directive 2011/36/EU of the European Parliament and of the Council of 5 April 2011 on preventing and combating trafficking in human beings and protecting its victims, and replacing Council Framework Decision 2002/629/JHA (OJ L 101, 15.4.2011, p. 1).&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
+    <cbc:Name>Payment of taxes</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator breached its obligations relating to the payment of taxes, both in the country in which it is established and in Member State of the contracting authority or contracting entity if other than the country of establishment?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>7d85e333-bbab-49c0-be8d-c36d71a72f5e</cbc:ID>
+    <cbc:Name>Payment of social security</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator breached its obligations relating to the payment social security contributions, both in the country in which it is established and in Member State of the contracting authority or contracting entity if other than the country of establishment?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>a80ddb62-d25b-4e4e-ae22-3968460dc0a9</cbc:ID>
+    <cbc:Name>Breaching of obligations in the field of environmental law</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator, to its knowledge, breached its obligations in the field of environmental law? As referred to for the purposes of this procurement in national law, in the relevant notice or the procurement documents or in Article 18(2) of Directive 2014/24/EU.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>a261a395-ed17-4939-9c75-b9ff1109ca6e</cbc:ID>
+    <cbc:Name>Breaching of obligations in the field of social law</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator, to its knowledge, breached its obligations in the field of social law? As referred to for the purposes of this procurement in national law, in the relevant notice or the procurement documents or in Article 18(2) of Directive 2014/24/EU.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>a34b70d6-c43d-4726-9a88-8e2b438424bf</cbc:ID>
+    <cbc:Name>Breaching of obligations in the fields of labour law</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator, to its knowledge, breached its obligations in the field of labour law? As referred to for the purposes of this procurement in national law, in the relevant notice or the procurement documents or in Article 18(2) of Directive 2014/24/EU.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>d3732c09-7d62-4edc-a172-241da6636e7c</cbc:ID>
+    <cbc:Name>Bankruptcy</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is the economic operator bankrupt? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>396f288a-e267-4c20-851a-ed4f7498f137</cbc:ID>
+    <cbc:Name>Insolvency</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is the economic operator the subject of insolvency or winding-up? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>68918c7a-f5bc-4a1a-a62f-ad8983600d48</cbc:ID>
+    <cbc:Name>Arrangement with creditors</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is the economic operator in arrangement with creditors? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>daffa2a9-9f8f-4568-8be8-7b8bf306d096</cbc:ID>
+    <cbc:Name>Analogous situation like bankruptcy under national law</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is the economic operator in in any analogous situation like bankruptcy arising from a similar procedure under national laws and regulations? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>8fda202a-0c37-41bb-9d7d-de3f49edbfcb</cbc:ID>
+    <cbc:Name>Assets being administered by liquidator</cbc:Name>
+    <cbc:Description>&lt;p&gt;Are the assets of the economic operator being administered by a liquidator or by the court? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>166536e2-77f7-455c-b018-70582474e4f6</cbc:ID>
+    <cbc:Name>Business activities are suspended</cbc:Name>
+    <cbc:Description>&lt;p&gt;Are the business activities of the economic operator suspended? This information needs not be given if exclusion of economic operators in this case has been made mandatory under the applicable national law without any possibility of derogation where the economic operator is nevertheless able to perform the contract.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>514d3fde-1e3e-4dcd-b02a-9f984d5bbda3</cbc:ID>
+    <cbc:Name>Guilty of grave professional misconduct</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is the economic operator guilty of grave professional misconduct? Where applicable, see definitions in national law, the relevant notice or the procurement documents.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>56d13e3d-76e8-4f23-8af6-13e60a2ee356</cbc:ID>
+    <cbc:Name>Agreements with other economic operators aimed at distorting competition</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator entered into agreements with other economic operators aimed at distorting competition?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>b1b5ac18-f393-4280-9659-1367943c1a2e</cbc:ID>
+    <cbc:Name>Conflict of interest due to its participation in the procurement procedure</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is the economic operator aware of any conflict of interest, as indicated in national law, the relevant notice or the procurement documents due to its participation in the procurement procedure?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>61874050-5130-4f1c-a174-720939c7b483</cbc:ID>
+    <cbc:Name>Direct or indirect involvement in the preparation of this procurement procedure</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator or an undertaking related to it advised the contracting authority or contracting entity or otherwise been involved in the preparation of the procurement procedure?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>3293e92b-7f3e-42f1-bee6-a7641bb04251</cbc:ID>
+    <cbc:Name>Early termination, damages or other comparable sanctions</cbc:Name>
+    <cbc:Description>&lt;p&gt;Has the economic operator experienced that a prior public contract, a prior contract with a contracting entity or a prior concession contract was terminated early, or that damages or other comparable sanctions were imposed in connection with that prior contract?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>696a75b2-6107-428f-8b74-82affb67e184</cbc:ID>
+    <cbc:Name>Guilty of misinterpretation, withheld information, unable to provide required documents and obtained confidential information of this procedure</cbc:Name>
+    <cbc:Description>&lt;p&gt;Can the economic operator confirm that:&lt;/p&gt;
+&lt;p&gt;a) It has been guilty of serious misrepresentation in supplying the information required for the verification of the absence of grounds for exclusion or the fulfilment of the selection criteria,&lt;/p&gt;
+&lt;p&gt;b) It has withheld such information,&lt;/p&gt;
+&lt;p&gt;c) It has not been able, without delay, to submit the supporting documents required by a contracting authority or contracting entity, and&lt;/p&gt;
+&lt;p&gt;d) It has undertaken to unduly influence the decision making process of the contracting authority or contracting entity, to obtain confidential information that may confer upon it undue advantages in the procurement procedure or to negligently provide misleading information that may have a material influence on decisions concerning exclusion, selection or award?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>63adb07d-db1b-4ef0-a14e-a99785cf8cf6</cbc:ID>
+    <cbc:Name>Purely national exclusion grounds</cbc:Name>
+    <cbc:Description>&lt;p&gt;Other exclusion grounds that may be foreseen in the national legislation of the contracting authority's or contracting entity's Member State. Has the economic operator breached its obligations relating to the purely national grounds of exclusion, which are specified in the relevant notice or in the procurement documents?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>7e7db838-eeac-46d9-ab39-42927486f22d</cbc:ID>
+    <cbc:Name>It satisfies all the required selection criteria</cbc:Name>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</cbc:ID>
+    <cbc:Name>Enrolment in a relevant professional register</cbc:Name>
+    <cbc:Description>&lt;p&gt;It is enrolled in relevant professional registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>87b3fa26-3549-4f92-b8e0-3fd8f04bf5c7</cbc:ID>
+    <cbc:Name>Enrolment in a trade register</cbc:Name>
+    <cbc:Description>&lt;p&gt;It is enrolled in trade registers kept in the Member State of its establishment as described in Annex XI of Directive 2014/24/EU; economic operators from certain Member States may have to comply with other requirements set out in that Annex.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>9eeb6d5c-0eb8-48e8-a4c5-5087a7c095a4</cbc:ID>
+    <cbc:Name>For service contracts: authorisation of particular organisation needed</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is a particular authorisation of a particular organisation needed in order to be able to perform the service in question in the country of establishment of the economic operator?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>73f10e36-ed7a-412e-995c-aa76463e3776</cbc:ID>
+    <cbc:Name>For service contracts: membership of particular organisation needed</cbc:Name>
+    <cbc:Description>&lt;p&gt;Is a particular membership of a particular organisation needed in order to be able to perform the service in question in the country of establishment of the economic operator?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+        <cbc:Description>&lt;p&gt;&lt;span&gt;Your answer?&lt;/span&gt;&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>c8809aa1-29b6-4f27-ae2f-27e612e394db</cbc:ID>
+    <cbc:Name>Allowance of checks</cbc:Name>
+    <cbc:Description>&lt;p&gt;For complex products or services to be supplied or, exceptionally, for products or services which are required for a special purpose: The economic operator will allow checks to be conducted on the production capacities or the technical capacity of the economic operator and, where necessary, on the means of study and research which are available to it and on the quality control measures? The check is to be performed by the contracting authority or, in case the latter consents to this, on its behalf by a competent official body of the country in which the supplier or service provider is established.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>23a27c0e-c4f7-42cd-b0fd-a7cedfbf77a7</cbc:ID>
+        <cbc:Description>&lt;p&gt;&lt;span&gt;Do you allow checks?&lt;/span&gt;&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>bdf0601d-2480-4250-b870-658d0ee95be6</cbc:ID>
+    <cbc:Name>For supply contracts: samples, descriptions or photographs without certification of authenticity</cbc:Name>
+    <cbc:Description>&lt;p&gt;For public supply contracts: The economic operator will supply the required samples, descriptions or photographs of the products to be supplied, which do not need to be accompanied by certifications of authenticity.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>cb73544d-e8bb-4cc6-819b-b8e04f1e240e</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>7662b7a9-bcb8-4763-a0a7-7505d8e8470d</cbc:ID>
+    <cbc:Name>For supply contracts: samples, descriptions or photographs with certification of authenticity</cbc:Name>
+    <cbc:Description>&lt;p&gt;For public supply contracts: The economic operator will supply the required samples, descriptions or photographs of the products to be supplied and will provide certifications of authenticity where applicable.&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>cb73544d-e8bb-4cc6-819b-b8e04f1e240e</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>a7669d7d-9297-43e1-9d10-691a1660187c</cbc:ID>
+    <cbc:Name>For supply contracts: certificates by quality control institutes</cbc:Name>
+    <cbc:Description>&lt;p&gt;Can the economic operator provide the required certificates drawn up by official quality control institutes or agencies of recognised competence attesting the conformity of products clearly identified by references to the technical specifications or standards, which are set out in the relevant notice or the procurement documents?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>51391308-0bf6-423c-95e2-d5a54aa31fb8</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>d726bac9-e153-4e75-bfca-c5385587766d</cbc:ID>
+    <cbc:Name>Certificates by independent bodies about quality assurance standards</cbc:Name>
+    <cbc:Description>&lt;p&gt;Will the economic operator be able to produce certificates drawn up by independent bodies attesting that the economic operator complies with the required quality assurance standards, including accessibility for disabled persons?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>8ed65e48-fd0d-444f-97bd-4f58da632999</cbc:ID>
+    <cbc:Name>Certificates by independent bodies about environmental management systems or standards</cbc:Name>
+    <cbc:Description>&lt;p&gt;Will the economic operator be able to produce certificates drawn up by independent bodies attesting that the economic operator complies with the required environmental management systems or standards?&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>15335c12-ad77-4728-b5ad-3c06a60d65a4</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+  <ccv:Criterion>
+    <cbc:ID>9c70375e-1264-407e-8b50-b9736bc08901</cbc:ID>
+    <cbc:Name>It meets the objective and non discriminatory criteria or rules to be applied in order to limit the number of candidates in the following way:
+In case certain certificates or other forms of documentary evidence are required, please indicate for each whether the economic operator has the required documents:</cbc:Name>
+    <cbc:Description>&lt;p&gt;If some of these certificates or forms of documentary evidence are available electronically, please indicate for each:&lt;/p&gt;</cbc:Description>
+    <ccv:RequirementGroup>
+      <cbc:ID />
+      <ccv:Requirement>
+        <cbc:ID>7f18c64e-ae09-4646-9400-f3666d50af51</cbc:ID>
+        <cbc:Description>&lt;p&gt;Your answer?&lt;/p&gt;</cbc:Description>
+      </ccv:Requirement>
+    </ccv:RequirementGroup>
+  </ccv:Criterion>
+</ESPDRequest>

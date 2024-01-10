@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:cac="urn:X-test:UBL:Pre-award:CommonAggregate"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:cbc="urn:X-test:UBL:Pre-award:CommonBasic"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:espd-req="urn:X-test:UBL:Pre-award:QualificationApplicationRequest"
+                        xmlns:espd-resp="urn:X-test:UBL:Pre-award:QualificationApplicationResponse"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        title="Common Criterion Business Rules"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:ns-prefix-in-attribute-values uri="urn:X-test:UBL:Pre-award:CommonAggregate" prefix="cac"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:X-test:UBL:Pre-award:CommonBasic" prefix="cbc"/>
+   <svrl:active-pattern document="file:/C:/git/ESPD/schematron/Schematron-v2.0.2/ESPDRequest-2.0.2-Schematron/val/../../common/xml/REGULATED-ESPDRequest-02.00.01.xml"
+                        id="BR-COM-CL-ATT"
+                        name="BR-COM-CL-ATT"/>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][1]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][2]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][3]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][4]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][5]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][6]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][7]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][8]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][9]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][10]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][11]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][12]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][13]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][14]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][15]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][16]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][17]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][18]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][19]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][20]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][21]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][22]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][23]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][24]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][25]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][26]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][27]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][28]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][29]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][30]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][31]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][32]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][33]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][34]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][35]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][36]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][37]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][38]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][39]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][40]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][41]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][42]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][43]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][44]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][45]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][46]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][47]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][48]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][49]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][50]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][51]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][52]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][53]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][54]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][55]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listID != 'CriteriaTypeCode'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationRequest']/*[local-name()='TenderingCriterion'][56]/*[local-name()='CriterionTypeCode']">
+      <svrl:text>Invalid codelist attribute value 'CriterionElementType'. The element 'cac:TenderingCriterion/cbc:CriterionTypeCode' must have the following attribute and value: 'listID = CriteriaTypeCode'.</svrl:text>
+   </svrl:failed-assert>
+</svrl:schematron-output>

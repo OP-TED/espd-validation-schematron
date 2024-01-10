@@ -1,0 +1,1763 @@
+<?xml version="1.0"?>
+<ESPDRequest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1">
+  <UBLVersionID schemeAgencyID="OASIS-UBL-TC" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2.1</UBLVersionID>
+  <CustomizationID schemeName="CustomizationID" schemeAgencyID="BII" schemeVersionID="3.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">urn:www.cenbii.eu:transaction:biitrns070:ver3.0</CustomizationID>
+  <ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">49b1b530-1b18-4a20-ac23-0498bf06ca08</ID>
+  <CopyIndicator xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">false</CopyIndicator>
+  <VersionID schemeAgencyID="EU-COM-GROW" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2016.07</VersionID>
+  <IssueDate xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2017-05-15</IssueDate>
+  <IssueTime xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">11:18:31.5409107+02:00</IssueTime>
+  <ContractFolderID schemeAgencyID="TeD" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" />
+  <ContractingParty xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+    <Party>
+      <WebsiteURI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://www.mercell.com/</WebsiteURI>
+      <PartyIdentification>
+        <ID schemeAgencyID="EU-COM-GROW" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">123456789</ID>
+      </PartyIdentification>
+      <PartyName>
+        <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Test contracting authority name</Name>
+      </PartyName>
+      <PostalAddress>
+        <Postbox xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5000</Postbox>
+        <StreetName xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Address field</StreetName>
+        <CityName xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Odense C</CityName>
+        <Country>
+          <IdentificationCode listID="CountryCodeIdentifier" listAgencyID="EU-COM-GROW" listName="CountryCodeIdentifier" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">DK</IdentificationCode>
+        </Country>
+      </PostalAddress>
+      <Contact>
+        <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Testcontact Name</Name>
+        <Telephone xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">+45 23 23 23 23</Telephone>
+        <ElectronicMail xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">math@mercell.com</ElectronicMail>
+      </Contact>
+    </Party>
+  </ContractingParty>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">6ee55a59-6adb-4c3a-b89f-e62a7ad7be7f</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.SUITABILITY.PROFESSIONAL_REGISTER_ENROLMENT</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Optagelse i et relevant fagligt register</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Den økonomiske aktør er optaget i det relevante faglige register i den medlemsstat, hvor denne er etableret, jf. bilag XI til direktiv 2014/24/EU; økonomiske aktører fra visse medlemsstater kan være nødt til at opfylde andre krav i nævnte bilag.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(2)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1768de86-a6c8-48e4-bd8e-de2f2f7424d0</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">15335c12-ad77-4728-b5ad-3c06a60d65a4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">87b3fa26-3549-4f92-b8e0-3fd8f04bf5c7</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Optagelse i et handelsregister</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Den økonomiske aktør er optaget i handelsregistre i den medlemsstat, hvor denne er etableret, jf. bilag XI til direktiv 2014/24/EU; økonomiske aktører fra visse medlemsstater kan være nødt til at opfylde andre krav i nævnte bilag.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(2)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1768de86-a6c8-48e4-bd8e-de2f2f7424d0</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">15335c12-ad77-4728-b5ad-3c06a60d65a4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">499efc97-2ac1-4af2-9e84-323c2ca67747</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Samlet årsomsætning</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Den økonomiske aktørs samlede årsomsætning for det antal regnskabsår, der anmodes om i den relevante meddelelse, i udbudsdokumenterne eller i ESPD, er som følger:</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">On public procurement and repealing Directive 2004/18/EC</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(3)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e1886054-ada4-473c-9afc-2fde82c24cf4</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">15335c12-ad77-4728-b5ad-3c06a60d65a4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">abdfa003-d7f5-4375-b1d3-b3765a7c4beb</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">3a6fefd4-f458-4d43-97fb-0725fce5dce2</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Angiv de ønskede data nedenfor</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1689194b-6ecf-4ab4-ab38-7656610c25bb</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5aacceb3-280e-42f1-b2da-3d8ac7877fe9</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c628dd27-8016-4d80-8660-7461f2e3ee0f</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">49a57870-7fb8-451f-a7af-fa0e7f8b97e7</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">4acd0a02-c267-4d05-b456-c0565c2ffd46</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dd09f9f-3326-4865-9d5a-f0836076fb19</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9d0cf1cb-27bc-4747-8579-47dce4d8d490</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">28fb4b41-5178-4b79-ba24-d9a62fa4a658</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">962011c9-9e2e-4e7b-818e-30e8506e874f</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">17a7353d-a7a4-43ee-9cc8-b9db83eeafb3</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9f278e42-aa1d-4b2e-97cd-832248aa5393</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">343795e2-98e9-4cc9-8ef2-8817cec8f49a</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">34825634-5151-4e31-af1b-7eafadcf15be</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">cc1a0b1e-dbfd-4313-a4fb-2e543b05549b</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b16cb9fc-6cb7-4585-9302-9533b415cf48</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.AVERAGE_YEARLY</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Gennemsnitlig årsomsætning</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Den økonomiske aktørs gennemsnitlige årsomsætning for det antal regnskabsår, der anmodes om i den relevante meddelelse, i udbudsdokumenterne eller i ESPD, er som følger:</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">On public procurement and repealing Directive 2004/18/EC</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(3)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e1886054-ada4-473c-9afc-2fde82c24cf4</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">15335c12-ad77-4728-b5ad-3c06a60d65a4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">abdfa003-d7f5-4375-b1d3-b3765a7c4beb</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">3a6fefd4-f458-4d43-97fb-0725fce5dce2</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Angiv de ønskede data nedenfor</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1689194b-6ecf-4ab4-ab38-7656610c25bb</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5aacceb3-280e-42f1-b2da-3d8ac7877fe9</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c628dd27-8016-4d80-8660-7461f2e3ee0f</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">49a57870-7fb8-451f-a7af-fa0e7f8b97e7</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">4acd0a02-c267-4d05-b456-c0565c2ffd46</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dd09f9f-3326-4865-9d5a-f0836076fb19</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9d0cf1cb-27bc-4747-8579-47dce4d8d490</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">28fb4b41-5178-4b79-ba24-d9a62fa4a658</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">962011c9-9e2e-4e7b-818e-30e8506e874f</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">17a7353d-a7a4-43ee-9cc8-b9db83eeafb3</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9f278e42-aa1d-4b2e-97cd-832248aa5393</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">343795e2-98e9-4cc9-8ef2-8817cec8f49a</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">34825634-5151-4e31-af1b-7eafadcf15be</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">cc1a0b1e-dbfd-4313-a4fb-2e543b05549b</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+          </Requirement>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">cdd3bb3e-34a5-43d5-b668-2aab86a73822</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.REFERENCES.WORKS_PERFORMANCE</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">For så vidt angår bygge- og anlægskontrakter: udførelse af arbejde af den anførte type</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kun for så vidt angår offentlige bygge- og anlægskontrakter: I referenceperioden har den økonomiske aktør udført følgende arbejder af den anførte type. Ordregivende myndigheder kan kræve op til fem års erfaring og tillade, at der tages hensyn til erfaring, som ikke er indhøstet inden for de seneste fem år.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">On public procurement and repealing Directive 2004/18/EC</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">96f00020-0a25-402e-b850-2378e83b5695</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ab05ff3b-f3e1-4441-9b43-ee9912e29e92</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskrivelse</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">42ec8116-31a7-4118-8612-5b04f5c8bde7</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Dato</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">a92536ab-6783-40bb-a037-5d31f421fd85</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Modtagere</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c48572f9-47bf-423a-9885-2c78ae9ca718</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">927def36-1fa3-4018-8b45-7ee2c5b1e0af</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskrivelse</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">4acd0a02-c267-4d05-b456-c0565c2ffd46</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">8d0e5e16-85ed-4730-a784-d4db8f439c0c</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Dato</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c8babafa-b6fa-4e14-8749-d913d8f1d33b</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Modtagere</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2c7a3581-2954-4142-8c1b-5c52d7c7e9b7</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e6ca4034-cfee-499a-9a47-c4f2862ef4d0</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskrivelse</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">28fb4b41-5178-4b79-ba24-d9a62fa4a658</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c953e635-580b-4d7c-a30c-2edbde3b8fdf</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Dato</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5157e1ff-d272-4382-98a9-6953f5a15300</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Modtagere</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d67a6126-dd6d-4ed2-bda7-214a19e13a63</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b1640c24-b405-443e-bf5e-d7771f66aab6</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskrivelse</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9f278e42-aa1d-4b2e-97cd-832248aa5393</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9b263b45-fc63-4b01-a3dc-cb9c95dda449</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Dato</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">a84ea948-cf03-47b5-b4cf-a35f49910d10</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Modtagere</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">159fc086-cf34-48a4-a41b-afed62661383</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">587129bc-a5e1-43be-94ac-6e5366d30c67</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskrivelse</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">cc1a0b1e-dbfd-4313-a4fb-2e543b05549b</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beløb</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">056cba1d-986b-4164-92b6-26a1cbdf0690</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Dato</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">38a4802f-0b93-4e78-ad4e-2a057e1aa578</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Modtagere</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">3aaca389-4a7b-406b-a4b9-080845d127e7</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.TECHNICIANS_FOR_QUALITY_CONTROL</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Teknikere eller tekniske organer til kvalitetskontrol</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Den økonomiske aktør kan disponere over følgende teknikere eller tekniske organer, navnlig dem, der er ansvarlige for kvalitetskontrol. For teknikere eller tekniske organer, som ikke direkte hører til den økonomiske aktørs virksomhed, men hvis kapacitet den økonomiske aktør baserer sig på, jf. del II, afsnit C, skal der udfyldes særskilte ESPD-formularer.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">On public procurement and repealing Directive 2004/18/EC</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">488ca189-bcdb-4bf4-80c7-3ad507fd89fb</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">51391308-0bf6-423c-95e2-d5a54aa31fb8</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c8809aa1-29b6-4f27-ae2f-27e612e394db</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.TECHNICAL.CHECKS.ALLOWANCE_OF_CHECKS</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Tilladelse til kontrol</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">For komplekse produkter eller tjenesteydelser, der skal leveres, eller undtagelsesvis for produkter eller tjenesteydelser, som kræves til et særligt formål: Vil den økonomiske aktør tillade, at der foretages kontrol af dennes produktionskapacitet eller tekniske formåen og, om nødvendigt, af de undersøgelses- og forskningsfaciliteter, som denne råder over, og af kvalitetskontrolforanstaltningerne? Kontrollen skal foretages af den ordregivende myndighed eller, hvis denne indvilliger heri, på dennes vegne af et kompetent officielt organ i det land, hvor leverandøren eller tjenesteyderen er etableret.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">On public procurement and repealing Directive 2004/18/EC</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d7721546-9106-43a7-8d31-2fe08a862b00</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">23a27c0e-c4f7-42cd-b0fd-a7cedfbf77a7</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Tillader De kontrol?</Description>
+      </Requirement>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f49b3f0-d50f-43f6-8b30-4bafab108b9b</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.AVERAGE_ANNUAL_MANPOWER</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Årlige gennemsnitlige antal beskæftigede</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Den økonomiske aktørs årlige gennemsnitlige antal beskæftigede og antallet af ledende medarbejdere gennem de sidste tre år var som følger:</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">On public procurement and repealing Directive 2004/18/EC</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">58(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">96defecc-7d32-4957-82e9-aad5f3c5b736</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5aacceb3-280e-42f1-b2da-3d8ac7877fe9</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">42037f41-53af-44df-b6b8-2395cee98087</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Nummer</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">dac727d8-2cd2-43e0-8561-6f17e25870a4</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">49a57870-7fb8-451f-a7af-fa0e7f8b97e7</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0bb2d3bf-160f-4904-a4e8-ee672bd5cb30</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Nummer</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b799d324-358c-48b0-bd5e-6d205969b4a5</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9d0cf1cb-27bc-4747-8579-47dce4d8d490</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">År</Description>
+      </Requirement>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">668dbc0d-2a3a-49b9-b8e1-8ebbeccd712a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Nummer</Description>
+      </Requirement>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">005eb9ed-1347-4ca3-bb29-9bc0db64e1ab</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deltagelse i en kriminel organisation*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør selv eller en person, der tilhører den økonomiske aktørs administrations-, ledelses- eller tilsynsorgan eller har beføjelse til at repræsentere eller kontrollere eller til at træffe beslutninger heri, ved en endelig dom blevet dømt for deltagelse i en kriminel organisation ved en dom afsagt for højst fem år siden, eller hvori en udelukkelsesperiode fastsat direkte i dommen fortsat finder anvendelse? *Som defineret i artikel 2 i Rådets rammeafgørelse 2008/841/RIA af 24. oktober 2008 om bekæmpelse af organiseret kriminalitet (EUT L 300 af 11.11.2008, s. 42).</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(1)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c637c0c-7703-4389-ba52-02997a055bd7</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f5276600-a2b6-4ff6-a90e-b31fe19dae41</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7d35fb7c-da5b-4830-b598-4f347a04dceb</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Begrundelse</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c5012430-14da-454c-9d01-34cedc6a7ded</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvem er blevet dømt?</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c27b7c4e-c837-4529-b867-ed55ce639db5</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONVICTIONS.CORRUPTION</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Bestikkelse*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør selv eller en person, der tilhører den økonomiske aktørs administrations-, ledelses- eller tilsynsorgan eller har beføjelse til at repræsentere eller kontrollere eller til at træffe beslutninger heri, ved en endelig dom blevet dømt for bestikkelse ved en dom afsagt for højst fem år siden, eller hvori en udelukkelsesperiode fastsat direkte i dommen fortsat finder anvendelse? *Som defineret i artikel 3 i konventionen om bekæmpelse af bestikkelse, som involverer tjenestemænd ved De Europæiske Fællesskaber eller i Den Europæiske Unions medlemsstater (EFT C 195 af 25.6.1997, s. 1), og i artikel 2, stk. 1, i Rådets rammeafgørelse 2003/568/RIA af 22. juli 2003 om bekæmpelse af bestikkelse i den private sektor (EUT L 192 af 31.7.2003, s. 54). Denne udelukkelsesgrund omfatter også bestikkelse som defineret i den nationale ret gældende for den ordregivende myndighed (den ordregivende enhed) eller den økonomiske aktør.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(1)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c637c0c-7703-4389-ba52-02997a055bd7</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f5276600-a2b6-4ff6-a90e-b31fe19dae41</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7d35fb7c-da5b-4830-b598-4f347a04dceb</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Begrundelse</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c5012430-14da-454c-9d01-34cedc6a7ded</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvem er blevet dømt?</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">297d2323-3ede-424e-94bc-a91561e6f320</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONVICTIONS.FRAUD</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Svig*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør selv eller en person, der tilhører den økonomiske aktørs administrations-, ledelses- eller tilsynsorgan eller har beføjelse til at repræsentere eller kontrollere eller til at træffe beslutninger heri, ved en endelig dom blevet dømt for svig ved en dom afsagt for højst fem år siden, eller hvori en udelukkelsesperiode fastsat direkte i dommen fortsat finder anvendelse? *Som omhandlet i artikel 1 i konventionen om beskyttelse af De Europæiske Fællesskabers finansielle interesser (EFT C 316 af 27.11.1995, s. 48).</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(1)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c637c0c-7703-4389-ba52-02997a055bd7</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f5276600-a2b6-4ff6-a90e-b31fe19dae41</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7d35fb7c-da5b-4830-b598-4f347a04dceb</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Begrundelse</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c5012430-14da-454c-9d01-34cedc6a7ded</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvem er blevet dømt?</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d486fb70-86b3-4e75-97f2-0d71b5697c7d</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONVICTIONS.TERRORIST_OFFENCES</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Terrorhandlinger eller strafbare handlinger med forbindelse til terroraktivitet*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør selv eller en person, der tilhører den økonomiske aktørs administrations-, ledelses- eller tilsynsorgan eller har beføjelse til at repræsentere eller kontrollere eller til at træffe beslutninger heri, ved en endelig dom blevet dømt for terrorhandlinger eller strafbare handlinger med forbindelse til terroraktivitet ved en dom afsagt for højst fem år siden, eller hvori en udelukkelsesperiode fastsat direkte i dommen fortsat finder anvendelse? *Som defineret i henholdsvis artikel 1 og 3 i Rådets rammeafgørelse 2002/475/RIA af 13. juni 2002 om bekæmpelse af terrorisme (EFT L 164 af 22.6.2002, s. 3). Denne udelukkelsesgrund omfatter også anstiftelse, medvirken og forsøg på at begå sådanne handlinger som omhandlet i nævnte rammeafgørelses artikel 4.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(1)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c637c0c-7703-4389-ba52-02997a055bd7</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f5276600-a2b6-4ff6-a90e-b31fe19dae41</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7d35fb7c-da5b-4830-b598-4f347a04dceb</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Begrundelse</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c5012430-14da-454c-9d01-34cedc6a7ded</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvem er blevet dømt?</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">47112079-6fec-47a3-988f-e561668c3aef</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONVICTIONS.MONEY_LAUNDERING</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvidvaskning af penge eller finansiering af terrorisme*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør selv eller en person, der tilhører den økonomiske aktørs administrations-, ledelses- eller tilsynsorgan eller har beføjelse til at repræsentere eller kontrollere eller til at træffe beslutninger heri, ved en endelig dom blevet dømt for hvidvaskning af penge eller finansiering af terrorisme ved en dom afsagt for højst fem år siden, eller hvori en udelukkelsesperiode fastsat direkte i dommen fortsat finder anvendelse? *Som defineret i artikel 1 i Europa-Parlamentets og Rådets direktiv 2005/60/EF af 26. oktober 2005 om forebyggende foranstaltninger mod anvendelse af det finansielle system til hvidvaskning af penge og finansiering af terrorisme (EUT L 309 af 25.11.2005, s. 15).</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(1)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c637c0c-7703-4389-ba52-02997a055bd7</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f5276600-a2b6-4ff6-a90e-b31fe19dae41</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7d35fb7c-da5b-4830-b598-4f347a04dceb</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Begrundelse</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c5012430-14da-454c-9d01-34cedc6a7ded</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvem er blevet dømt?</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d789d01a-fe03-4ccd-9898-73f9cfa080d1</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONVICTIONS.CHILD_LABOUR - HUMAN_TRAFFICKING</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Børnearbejde og andre former for menneskehandel*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør selv eller en person, der tilhører den økonomiske aktørs administrations-, ledelses- eller tilsynsorgan eller har beføjelse til at repræsentere eller kontrollere eller til at træffe beslutninger heri, ved en endelig dom blevet dømt for børnearbejde og andre former for menneskehandel ved en dom afsagt for højst fem år siden, eller hvori en udelukkelsesperiode fastsat direkte i dommen fortsat finder anvendelse? *Som defineret i artikel 2 i Europa-Parlamentets og Rådets direktiv 2011/36/EU af 5. april 2011 om forebyggelse og bekæmpelse af menneskehandel og beskyttelse af ofrene herfor, og om erstatning af Rådets rammeafgørelse 2002/629/RIA (EUT L 101 af 15.4.2011, s. 1).</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(1)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c637c0c-7703-4389-ba52-02997a055bd7</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f5276600-a2b6-4ff6-a90e-b31fe19dae41</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7d35fb7c-da5b-4830-b598-4f347a04dceb</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Begrundelse</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c5012430-14da-454c-9d01-34cedc6a7ded</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvem er blevet dømt?</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Betaling af skatter og afgifter</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør tilsidesat sine forpligtelser vedrørende betaling af skatter og afgifter både i det land, hvor den økonomiske aktør er etableret, og i den ordregivende myndigheds eller den ordregivende enheds medlemsstat, hvis denne er en anden end etableringslandet?</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(2)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">098fd3cc-466e-4233-af1a-affe09471bce</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f8499787-f9f8-4355-95e2-9784426f4d7b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">6c87d3d4-e8eb-4253-b385-6373020ab886</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Det pågældende land eller den pågældende medlemsstat</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9052cc59-cfe5-41c6-a314-02a7f378ffe8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Det pågældende beløb</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c2aec9f-4876-4c33-89e6-2ab6d6cf5d02</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9b4497e6-a166-46f9-8581-7fc39ff975c4</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er denne manglende opfyldelse af forpligtelser blevet konstateret på andre måder end ved en retlig eller administrativ afgørelse?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">3cb7abf1-662a-4756-b61c-7bc716c1fafc</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">201f11c3-1fa2-4464-acc0-f021266fd881</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv, på hvilke måder</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c882afa4-6971-4b00-8970-0c283eb122cc</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">08b0c984-c5e6-4143-8493-868c39745637</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvis denne manglende opfyldelse af forpligtelser blev konstateret ved en retlig eller administrativ afgørelse, var denne afgørelse så endelig og bindende?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">815422d6-f8a1-418a-8bf0-3524f7c8f721</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+            </Requirement>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">fc57e473-d63e-4a04-b589-dcf81cab8052</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">70f8697b-8953-411a-a489-4ff62e5250d2</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør opfyldt sine forpligtelser ved at betale eller indgå i en bindende ordning med henblik på at betale skyldige skatter og afgifter eller bidrag til sociale sikringsordninger, herunder i givet fald eventuelle påløbne renter eller bøder?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">6c3609e1-9add-4fa9-9409-62ce72ae4548</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">55905dd0-38f0-4f93-8c74-5ae05a21afc5</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7d85e333-bbab-49c0-be8d-c36d71a72f5e</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_SOCIAL_SECURITY</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Betaling af bidrag til sociale sikringsordninger</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør tilsidesat sine forpligtelser vedrørende betaling af bidrag til sociale sikringsordninger både i det land, hvor den økonomiske aktør er etableret, og i den ordregivende myndigheds eller den ordregivende enheds medlemsstat, hvis denne er en anden end etableringslandet?</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(2)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">098fd3cc-466e-4233-af1a-affe09471bce</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f8499787-f9f8-4355-95e2-9784426f4d7b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">6c87d3d4-e8eb-4253-b385-6373020ab886</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Det pågældende land eller den pågældende medlemsstat</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9052cc59-cfe5-41c6-a314-02a7f378ffe8</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Det pågældende beløb</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c2aec9f-4876-4c33-89e6-2ab6d6cf5d02</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9b4497e6-a166-46f9-8581-7fc39ff975c4</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er denne manglende opfyldelse af forpligtelser blevet konstateret på andre måder end ved en retlig eller administrativ afgørelse?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">3cb7abf1-662a-4756-b61c-7bc716c1fafc</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">201f11c3-1fa2-4464-acc0-f021266fd881</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv, på hvilke måder</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c882afa4-6971-4b00-8970-0c283eb122cc</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">08b0c984-c5e6-4143-8493-868c39745637</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvis denne manglende opfyldelse af forpligtelser blev konstateret ved en retlig eller administrativ afgørelse, var denne afgørelse så endelig og bindende?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">815422d6-f8a1-418a-8bf0-3524f7c8f721</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecf40999-7b64-4e10-b960-7f8ff8674cf6</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Datoen for dommen</Description>
+            </Requirement>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Udelukkelsesperiodens varighed</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">fc57e473-d63e-4a04-b589-dcf81cab8052</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">70f8697b-8953-411a-a489-4ff62e5250d2</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør opfyldt sine forpligtelser ved at betale eller indgå i en bindende ordning med henblik på at betale skyldige skatter og afgifter eller bidrag til sociale sikringsordninger, herunder i givet fald eventuelle påløbne renter eller bøder?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">6c3609e1-9add-4fa9-9409-62ce72ae4548</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">55905dd0-38f0-4f93-8c74-5ae05a21afc5</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">a80ddb62-d25b-4e4e-ae22-3968460dc0a9</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.SOCIAL.ENVIRONMENTAL_LAW</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Tilsidesættelse af forpligtelser på miljølovgivningsområdet*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør bekendt med at have tilsidesat sine forpligtelser på miljølovgivningsområdet? *Således som de i forbindelse med dette udbud fremgår af national ret, den relevante meddelelse eller udbudsdokumenterne eller artikel 18, stk. 2, i direktiv 2014/24/EU.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">976b5acb-c00f-46ca-8f83-5ce6abfdfe43</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">64a2102c-4af1-4ecb-97b3-0c41907ec0f6</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">a261a395-ed17-4939-9c75-b9ff1109ca6e</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.SOCIAL.SOCIAL_LAW</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Tilsidesættelse af forpligtelser på sociallovgivningsområdet*</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør bekendt med at have tilsidesat sine forpligtelser på sociallovgivningsområdet? *Således som de i forbindelse med dette udbud fremgår af national ret, den relevante meddelelse eller udbudsdokumenterne eller artikel 18, stk. 2, i direktiv 2014/24/EU.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">976b5acb-c00f-46ca-8f83-5ce6abfdfe43</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">64a2102c-4af1-4ecb-97b3-0c41907ec0f6</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">396f288a-e267-4c20-851a-ed4f7498f137</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.BUSINESS.INSOLVENCY</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Insolvens</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør under insolvens- eller likvidationsbehandling? Det er ikke nødvendigt at afgive disse oplysninger, hvis udelukkelse af økonomiske aktører i dette tilfælde er gjort ufravigelig i henhold til gældende national ret uden mulighed for fravigelse, når den økonomiske aktør alligevel er i stand til at gennemføre kontrakten.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d91c11a1-f19e-4b83-8ade-c4be2bf00555</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">aeef523b-c8fc-4dba-9c34-03e34812567b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">4e3f468a-86c4-4c99-bd15-c8b221229348</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Anfør, hvorfor den økonomiske aktør alligevel er i stand til at gennemføre kontrakten</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">68918c7a-f5bc-4a1a-a62f-ad8983600d48</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.BUSINESS.CREDITORS_ARRANGEMENT</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Tvangsakkord uden for konkurs</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør under tvangsakkord uden for konkurs? Det er ikke nødvendigt at afgive disse oplysninger, hvis udelukkelse af økonomiske aktører i dette tilfælde er gjort ufravigelig i henhold til gældende national ret uden mulighed for fravigelse, når den økonomiske aktør alligevel er i stand til at gennemføre kontrakten.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d91c11a1-f19e-4b83-8ade-c4be2bf00555</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">aeef523b-c8fc-4dba-9c34-03e34812567b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">4e3f468a-86c4-4c99-bd15-c8b221229348</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Anfør, hvorfor den økonomiske aktør alligevel er i stand til at gennemføre kontrakten</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">166536e2-77f7-455c-b018-70582474e4f6</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.BUSINESS.ACTIVITIES_SUSPENDED</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Erhvervsvirksomheden er indstillet</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktørs erhvervsvirksomhed blevet indstillet? Det er ikke nødvendigt at afgive disse oplysninger, hvis udelukkelse af økonomiske aktører i dette tilfælde er gjort ufravigelig i henhold til gældende national ret uden mulighed for fravigelse, når den økonomiske aktør alligevel er i stand til at gennemføre kontrakten.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d91c11a1-f19e-4b83-8ade-c4be2bf00555</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">aeef523b-c8fc-4dba-9c34-03e34812567b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">4e3f468a-86c4-4c99-bd15-c8b221229348</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Anfør, hvorfor den økonomiske aktør alligevel er i stand til at gennemføre kontrakten</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7458d42a-e581-4640-9283-34ceb3ad4345</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c1347b74-1872-4060-a6db-f4044edcd7c4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">41dd2e9b-1bfd-44c7-93ee-56bd74a4334b</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f4313bb6-21b6-499e-bdff-debe10e11d2c</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1f1cd18e-3e01-4ca2-af4c-e2981924ba8d</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">514d3fde-1e3e-4dcd-b02a-9f984d5bbda3</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.MISCONDUCT.MC_PROFESSIONAL</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Skyldig i alvorlige forsømmelser i forbindelse med udøvelsen af erhvervet</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør i forbindelse med udøvelsen af erhvervet gjort sig skyldig i alvorlige forsømmelser? Hvis det er relevant, se definitioner i national ret, den relevante meddelelse eller udbudsdokumenterne.</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">67362ec7-cec3-4cb8-a38e-5d7a2a31e6d8</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2cbcf978-765c-40aa-996b-b1d082485cef</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">56d13e3d-76e8-4f23-8af6-13e60a2ee356</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.MISCONDUCT.MARKET_DISTORTION</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Aftaler med andre økonomiske aktører med henblik på konkurrencefordrejning</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør indgået aftaler med andre økonomiske aktører med henblik på konkurrencefordrejning?</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">67362ec7-cec3-4cb8-a38e-5d7a2a31e6d8</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2cbcf978-765c-40aa-996b-b1d082485cef</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b1b5ac18-f393-4280-9659-1367943c1a2e</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PARTICIPATION</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Interessekonflikt som følge af deltagelse i udbudsproceduren</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør opmærksom på en interessekonflikt, jf. national ret, den relevante meddelelse eller udbudsdokumenterne, som følge af sin deltagelse i udbudsproceduren?</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">30450436-f559-4dfa-98ba-f0842ed9d2a0</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">61874050-5130-4f1c-a174-720939c7b483</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PREPARATION</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Direkte eller indirekte involvering i forberedelsen af denne udbudsprocedure</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør eller en virksomhed, der er knyttet til den økonomiske aktør, rådgivet den ordregivende myndighed eller den ordregivende enhed eller på anden måde været involveret i forberedelsen af udbudsproceduren?</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">77ae3f29-7c5f-4afa-af97-24afec48c5bf</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">73f0fe4c-4ed9-4343-8096-d898cf200146</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">3293e92b-7f3e-42f1-bee6-a7641bb04251</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.EARLY_TERMINATION</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Ophævelse eller en lignende sanktion</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør væsentligt misligholdt en tidligere offentlig kontrakt, en tidligere kontrakt med en ordregivende enhed eller en tidligere koncessionskontrakt, hvor misligholdelsen har medført den pågældende kontrakts ophævelse eller en lignende sanktion?</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">67362ec7-cec3-4cb8-a38e-5d7a2a31e6d8</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2cbcf978-765c-40aa-996b-b1d082485cef</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e098da8e-4717-4500-965f-f882d5b4e1ad</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">5f9f09f7-f701-432c-9fdc-c22c124a74c9</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20c5361b-7599-4ee6-b030-7f8323174d1e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har De truffet foranstaltninger til selvrehabilitering ("self-cleaning")?</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">74e6c7b4-757b-4b40-ada6-fad6a997c310</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7b07904f-e080-401a-a3a1-9a3efeeda54b</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Beskriv dem</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">696a75b2-6107-428f-8b74-82affb67e184</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Skyldig i afgivelse af urigtige oplysninger, tilbageholdelse af oplysninger, ude af stand til at fremlægge de dokumenter, der anmodes om, og indhentede fortrolige oplysninger i forbindelse med denne procedure</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør befundet sig i en af følgende situationer: a) Denne har afgivet groft urigtige oplysninger ved meddelelsen af de oplysninger, der kræves til verifikation af, at der ikke er grundlag for udelukkelse, eller af at udvælgelseskriterierne er opfyldt,  b) Denne har tilbageholdt sådanne oplysninger,  c) Denne har været ude af stand til straks at fremsende den supplerende dokumentation, som en ordregivende myndighed eller en ordregivende enhed anmoder om, og  d) Denne har uretmæssigt påvirket den ordregivende myndigheds eller den ordregivende enheds beslutningsproces, indhentet fortrolige oplysninger, der kan give denne uretmæssige fordele i forbindelse med udbudsproceduren, eller uagtsomt givet vildledende oplysninger, der kan have væsentlig indflydelse på beslutninger vedrørende udelukkelse, udvælgelse eller tildeling? </Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Directive 2014/24/EU</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">57(4)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">30450436-f559-4dfa-98ba-f0842ed9d2a0</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">8ed65e48-fd0d-444f-97bd-4f58da632999</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.CERTIFICATES.ENVIRONMENTAL_MANAGEMENT.ENV_INDEPENDENT_CERTIFICATE</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Certifikater udstedt af uafhængige organer vedrørende miljøledelsessystemer eller -standarder</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør i stand til at fremlægge certifikater udstedt af uafhængige organer til bekræftelse af, at den økonomiske aktør opfylder de krævede miljøledelsessystemer eller -standarder?</Description>
+    <LegislationReference>
+      <Title xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</Title>
+      <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">On public procurement and repealing Directive 2004/18/EC</Description>
+      <JurisdictionLevelCode listID="CriterionJurisdictionLevel" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">EU_DIRECTIVE</JurisdictionLevelCode>
+      <Article xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonBasicComponents-1">62(2)</Article>
+      <URI xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32014L0024</URI>
+    </LegislationReference>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">82a59ce2-9c59-4075-af08-843ad89a45ec</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">15335c12-ad77-4728-b5ad-3c06a60d65a4</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d664788a-df88-49a0-9dfa-2dd217355724</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b0aace10-fd73-46d1-ae78-289ee5cd42ca</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvis ikke, forklar hvorfor, og angiv, hvilke andre former for bevis vedrørende miljøledelsessystemer eller -standarder der kan fremlægges:</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9026e403-3eb6-4705-a9e9-e21a1efc867d</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9dae5670-cb75-4c97-901b-96ddac5a633a</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er disse oplysninger tilgængelige i elektronisk form?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0a166f0a-0c5f-42b0-81e9-0fc9fa598a48</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">03bb1954-13ae-47d8-8ef8-b7fe0f22d700</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">URL</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e2d863a0-60cb-4e58-8c14-4c1595af48b7</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Kode</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">9b19e869-6c89-4cc4-bd6c-ac9ca8602165</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.OTHER.EO_DATA.REGISTERED_IN_OFFICIAL_LIST</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør optaget på en officiel liste over godkendte økonomiske aktører, eller har denne et tilsvarende certifikat (f.eks. i henhold til et nationalt (præ)kvalifikationssystem)?</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Er den økonomiske aktør optaget på en officiel liste over godkendte økonomiske aktører, eller har denne et tilsvarende certifikat (f.eks. i henhold til et nationalt (præ)kvalifikationssystem)?</Description>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">64162276-7014-408f-a9af-080426bfe1fd</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">67fd1dde-2a0a-486e-9469-79c78796fc22</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Ikke relevant</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ecb5127b-9018-4fb8-8327-a6a7a2c73195</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7f18c64e-ae09-4646-9400-f3666d50af51</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+        </Requirement>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">dc4acf0c-c761-40d0-b031-4ee1f224be5c</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">30064ad3-fc11-4579-8528-fdd0b9a5ba75</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">a) Angiv det pågældende optagelses- eller certificeringsnummer:</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b3403349-cbc0-4d84-879e-fc0f2d90ecbd</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b) Hvis certifikatet for optagelse eller certificeringen findes i elektronisk form, angives følgende:</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">792ff522-6f3f-4a62-ab6e-a8b272bc290e</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c) Angiv, hvilke referencer der har dannet grundlag for optagelsen på listen eller udstedelsen af certifikatet, og i givet fald hvilken klassifikation der følger af den officielle liste:</Description>
+          </Requirement>
+          <RequirementGroup>
+            <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">92e44d3b-af8e-4a29-91a8-24d27aa27fee</ID>
+            <Requirement>
+              <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d9996ef5-49f9-4cf8-a2f5-31c9f4efd894</ID>
+              <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d) Omfatter optagelsen på listen eller certificeringen alle de krævede udvælgelseskriterier?</Description>
+            </Requirement>
+          </RequirementGroup>
+        </RequirementGroup>
+        <RequirementGroup>
+          <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">59e6f3ef-15cd-4e21-82ac-ea497ccd44e2</ID>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0e71abd3-198e-49c5-8128-5708617bb191</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e) Er den økonomiske aktør i stand til at fremlægge et certifikat vedrørende betaling af bidrag til sociale sikringsordninger og skatter og afgifter eller at fremlægge oplysninger, der sætter den ordregivende myndighed eller den ordregivende enhed i stand til at få direkte adgang hertil gennem en national database i en medlemsstat, hvis denne stilles gratis til rådighed?</Description>
+          </Requirement>
+          <Requirement>
+            <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">caa72cea-5443-49fb-84ba-ab6c64427f77</ID>
+            <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvis den relevante dokumentation er tilgængelig i elektronisk form, angives følgende:</Description>
+          </Requirement>
+        </RequirementGroup>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ee51100f-8e3e-40c9-8f8b-57d5a15be1f2</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.OTHER.EO_DATA.TOGETHER_WITH_OTHERS</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deltager den økonomiske aktør i udbudsproceduren sammen med andre?</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deltager den økonomiske aktør i udbudsproceduren sammen med andre?</Description>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d939f2c6-ba25-4dc4-889c-11d1853add19</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7f18c64e-ae09-4646-9400-f3666d50af51</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">f5663c5a-d311-4ae4-be14-1575754be5f2</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">907fd62b-02f1-452c-81a8-785bedb0c536</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">a) Angiv den økonomiske aktørs rolle i gruppen (leder, ansvarlig for specifikke opgaver osv.):</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7c267f95-a3a7-49ef-abd9-e121dcd641a9</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b) Angiv de øvrige økonomiske aktører, der sammen deltager i udbudsproceduren:</Description>
+        </Requirement>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">96f38793-4469-4153-aba6-c613282cdbdc</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">c) I givet fald navnet på den deltagende gruppe:</Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">0d62c6ed-f074-4fcf-8e9f-f691351d52ad</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.OTHER.EO_DATA.RELIES_ON_OTHER_CAPACITIES</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Baserer den økonomiske aktør sig på andre enheders kapacitet for at opfylde udvælgelseskriterierne i del IV og de kriterier og regler, der eventuelt er fastsat, jf. del V nedenfor? </Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Baserer den økonomiske aktør sig på andre enheders kapacitet for at opfylde udvælgelseskriterierne i del IV og de kriterier og regler, der eventuelt er fastsat, jf. del V nedenfor? </Description>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">e688f7d6-dcef-4726-bc61-052e63ead60f</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7f18c64e-ae09-4646-9400-f3666d50af51</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+    </RequirementGroup>
+  </Criterion>
+  <Criterion xmlns="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">72c0c4b1-ca50-4667-9487-461f3eed4ed7</ID>
+    <TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">CRITERION.OTHER.EO_DATA.SUBCONTRACTS_WITH_THIRD_PARTIES</TypeCode>
+    <Name xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør til hensigt at give en del af kontrakten i underleverance til tredjeparter?</Name>
+    <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Har den økonomiske aktør til hensigt at give en del af kontrakten i underleverance til tredjeparter?</Description>
+    <RequirementGroup>
+      <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">d5fe5a71-7fd3-4910-b6f4-5cd2a4d23524</ID>
+      <Requirement>
+        <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">7f18c64e-ae09-4646-9400-f3666d50af51</ID>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Deres svar?</Description>
+      </Requirement>
+      <RequirementGroup>
+        <ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">b638edf6-4f00-4e24-92c4-cf96846f2c17</ID>
+        <Requirement>
+          <ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">999c7fe2-61cd-4e86-b76f-e280304dc8c9</ID>
+          <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Hvis ja og såfremt de kendes, angives de foreslåede underleverandører: </Description>
+        </Requirement>
+      </RequirementGroup>
+    </RequirementGroup>
+  </Criterion>
+  <AdditionalDocumentReference xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+    <ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="EU-COM-GROW" schemeAgencyName="DG GROW (European Commission)" schemeVersionID="1.1" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" />
+    <DocumentTypeCode listID="ReferencesTypeCodes" listAgencyID="EU-COM-GROW" listVersionID="1.0" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">TED_CN</DocumentTypeCode>
+    <Attachment>
+      <ExternalReference>
+        <FileName xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Math above EU XML test</FileName>
+        <Description xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Lorem ipsum dolor sit amet, lacinia urna a, non mauris tristique sed sed donec quis. Diam convallis, lobortis rhoncus sit, metus amet mus urna wisi, vitae semper sem enim lacinia odio nullam. Vestibulum dolor, purus dictum quaerat est vitae, dolor molestie placerat, ut dignissim cras vel urna, est vestibulum accumsan neque fames. Neque ut iaculis fusce tempus amet ut. Elit magnis tellus duis sit vehicula, in ultricies pellentesque commodo nisl sapien. Augue dolor rhoncus a feugiat mauris justo, ac felis duis cursus est tortor, amet eget non, tellus phasellus adipiscing odio placerat tempus vel, a porttitor rhoncus nunc quam. Sed augue dui, lobortis dui sed sit commodo massa, id et. Ut wisi nec luctus in, ut odio leo nullam ornare, suscipit cras eleifend diam lectus dapibus, dolor nullam consequat a. Suscipit vestibulum, mi turpis neque. Lobortis cras leo elit non vel.</Description>
+      </ExternalReference>
+    </Attachment>
+  </AdditionalDocumentReference>
+</ESPDRequest>

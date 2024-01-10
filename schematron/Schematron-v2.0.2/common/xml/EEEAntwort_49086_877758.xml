@@ -1,0 +1,2757 @@
+<QualificationApplicationResponse xmlns:cac="urn:X-test:UBL:Pre-award:CommonAggregate" xmlns:cbc="urn:X-test:UBL:Pre-award:CommonBasic">
+  <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.2</cbc:UBLVersionID>
+  <cbc:CustomizationID schemeAgencyID="CEN-BII" schemeVersionID="3.0">urn:www.cenbii.eu:transaction:biitrdm070:ver3.0</cbc:CustomizationID>
+  <cbc:ProfileID schemeAgencyID="CEN-BII">41</cbc:ProfileID>
+  <cbc:ID schemeAgencyID="DGPE">ESPDREQ-DGPE-3b5755dfb8</cbc:ID>
+  <cbc:CopyIndicator>false</cbc:CopyIndicator>
+  <cbc:UUID schemeAgencyID="EU-COM-GROW" schemeVersionID="4.0" schemeID="ISO/IEC 9834-8:2008">e6ebad1d-9a5c-483b-8c81-79ba24d8a8bd</cbc:UUID>
+  <cbc:ContractFolderID schemeAgencyID="DGPE">PP.20170419.1024-9</cbc:ContractFolderID>
+  <cbc:IssueDate>2018-04-04T09:53:35.05466+02:00</cbc:IssueDate>
+  <cbc:IssueTime>09:53</cbc:IssueTime>
+  <cbc:VersionID schemeAgencyID="EU-COM-GROW" schemeVersionID="02.00.00">1.0</cbc:VersionID>
+  <cbc:ProcedureCode listID="ProcedureType" listAgencyName="EU-COM-GROW" listVersionID="02.00.00">V</cbc:ProcedureCode>
+  <cbc:QualificationApplicationTypeCode listID="QualificationApplicationType" listAgencyName="EU-COM-GROW" listVersionID="02.00.00">SELFCONTAINED</cbc:QualificationApplicationTypeCode>
+  <cac:ContractingParty>
+    <cbc:BuyerProfileURI />
+    <cac:Party>
+      <cbc:WebsiteURI />
+      <cbc:EndpointID />
+      <cac:PartyIdentification>
+        <cac:ID />
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cac:Name />
+      </cac:PartyName>
+      <cac:PostalAddress>
+        <cac:StreetName />
+        <cac:CityName />
+        <cac:Country>
+          <cac:IdentificationCode />
+        </cac:Country>
+        <cac:PostalZone />
+      </cac:PostalAddress>
+      <cac:Contact>
+        <cac:Name>ANKÖ</cac:Name>
+        <cac:Telephone />
+        <cac:ElectronicalEmail>p.osika@ankoe.at</cac:ElectronicalEmail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:ContractingParty>
+  <cbc:EconomicOperatorParty>
+    <cbc:QualifyingParty>
+      <cbc:Party>
+        <cbc:IndustryClassificationCode />
+      </cbc:Party>
+    </cbc:QualifyingParty>
+    <cbc:Party>
+      <cbc:WebsiteURI />
+      <cbc:EndpointID />
+      <cbc:PartyIdentification>
+        <cbc:ID />
+      </cbc:PartyIdentification>
+      <cbc:PartyName>
+        <cbc:Name>ANKÖ</cbc:Name>
+      </cbc:PartyName>
+      <cbc:PostalAddress>
+        <cbc:StreetName>Anschützgasse 1</cbc:StreetName>
+        <cbc:CityName>Wien</cbc:CityName>
+        <cbc:Country>
+          <cbc:IdentificationCode>AT</cbc:IdentificationCode>
+        </cbc:Country>
+        <cbc:PostalZone>1150</cbc:PostalZone>
+      </cbc:PostalAddress>
+      <cbc:Contact>
+        <cbc:Name>ANKÖ</cbc:Name>
+        <cbc:Telephone>01010101</cbc:Telephone>
+        <cbc:ElectronicalEmail>p.osika@ankoe.at</cbc:ElectronicalEmail>
+      </cbc:Contact>
+    </cbc:Party>
+  </cbc:EconomicOperatorParty>
+  <cac:ProcurementProject>
+    <cac:Name>test espd 21.02</cac:Name>
+    <cac:Description>test</cac:Description>
+  </cac:ProcurementProject>
+  <cac:TenderingCriterion>
+    <cbc:Id>f5d8ebdc-4767-4de1-9443-a4fc790eb56f</cbc:Id>
+    <cbc:CriterionTypeCode>1</cbc:CriterionTypeCode>
+    <cbc:Name>Beteiligung an einer kriminellen Vereinigung</cbc:Name>
+    <cbc:Description>Ist der Wirtschaftsteilnehmer selbst oder eine Person, die seinem Verwaltungs-, Leitungs- oder Aufsichtsgremium angehört oder darin Vertretungs-, Entscheidungs- oder Kontrollbefugnisse hat, wegen der Beteiligung an einer kriminellen Vereinigung rechtskräftig verurteilt worden, wobei die Verurteilung höchstens fünf Jahre zurückliegt oder ein unmittelbar im Urteil festgelegter Ausschlusszeitraum noch nicht verstrichen ist? Im Sinne des Artikels 2 des Rahmenbeschlusses 2008/841/JI des Rates vom 24. Oktober 2008 zur Bekämpfung der organisierten Kriminalität (ABl. L 300 vom 11.11.2008, S. 42).</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>166f3e6d-cad8-4541-9fb9-a31a795aa14c</cbc:Id>
+    <cbc:CriterionTypeCode>2</cbc:CriterionTypeCode>
+    <cbc:Name>Korruption</cbc:Name>
+    <cbc:Description>Ist der Wirtschaftsteilnehmer selbst oder eine Person, die seinem Verwaltungs-, Leitungs- oder Aufsichtsgremium angehört oder darin Vertretungs-, Entscheidungs- oder Kontrollbefugnisse hat, wegen Bestechung rechtskräftig verurteilt worden, wobei die Verurteilung höchstens fünf Jahre zurückliegt oder ein unmittelbar im Urteil festgelegter Ausschlusszeitraum noch nicht verstrichen ist? Im Sinne des Artikels 3 des Übereinkommens über die Bekämpfung der Bestechung, an der Beamte der Europäischen Gemeinschaften oder der Mitgliedstaaten der Europäischen Union beteiligt sind (ABl. C 195 vom 25.6.1997, S. 1) und des Artikels 2 Absatz 1 des Rahmenbeschlusses 2003/568/JI des Rates vom 22. Juli 2003 zur Bekämpfung der Bestechung im privaten Sektor (ABl. L 192 vom 31.7.2003, S. 54). Dieser Ausschlussgrund umfasst auch Bestechung im Sinne der für den öffentlichen Auftraggeber (Sektorenauftraggeber) oder den Wirtschaftsteilnehmer geltenden nationalen Rechtsvorschriften.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>9e69ed45-5529-4b82-b9ea-493b21ce74a0</cbc:Id>
+    <cbc:CriterionTypeCode>3</cbc:CriterionTypeCode>
+    <cbc:Name>Betrug</cbc:Name>
+    <cbc:Description>Ist der Wirtschaftsteilnehmer selbst oder eine Person, die seinem Verwaltungs-, Leitungs- oder Aufsichtsgremium angehört oder darin Vertretungs-, Entscheidungs- oder Kontrollbefugnisse hat, wegen Betrugs rechtskräftig verurteilt worden, wobei die Verurteilung höchstens fünf Jahre zurückliegt oder ein unmittelbar im Urteil festgelegter Ausschlusszeitraum noch nicht verstrichen ist? Im Sinne des Artikels 1 des Übereinkommens über den Schutz der finanziellen Interessen der Europäischen Gemeinschaften (ABl. C 316 vom 27.11.1995, S. 48).</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>87861605-81da-4342-bf6a-42f88826e769</cbc:Id>
+    <cbc:CriterionTypeCode>4</cbc:CriterionTypeCode>
+    <cbc:Name>Terroristische Straftaten oder Straftaten im Zusammenhang mit terroristischen Aktivitäten</cbc:Name>
+    <cbc:Description>Ist der Wirtschaftsteilnehmer selbst oder eine Person, die seinem Verwaltungs-, Leitungs- oder Aufsichtsgremium angehört oder darin Vertretungs-, Entscheidungs- oder Kontrollbefugnisse hat, wegen terroristischer Straftaten oder wegen Straftaten im Zusammenhang mit terroristischen Aktivitäten rechtskräftig verurteilt worden, wobei die Verurteilung höchstens fünf Jahre zurückliegt oder ein unmittelbar im Urteil festgelegter Ausschlusszeitraum noch nicht verstrichen ist? Im Sinne des Artikels 1 bzw. des Artikels 3 des Rahmenbeschlusses des Rates vom 13. Juni 2002 zur Terrorismusbekämpfung (ABl. L 164 vom 22.6.2002, S. 3). Dieser Ausschlussgrund umfasst gemäß Artikel 4 des Rahmenbeschlusses auch die Anstiftung zur Begehung einer Straftat, die Mittäterschaft und den Versuch der Begehung einer Straftat.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>a9711c07-ea5b-4b41-a8e6-e59a2fed01e6</cbc:Id>
+    <cbc:CriterionTypeCode>5</cbc:CriterionTypeCode>
+    <cbc:Name>Entrichtung von Steuern</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer gegen seine Verpflichtungen im Zusammenhang mit der Entrichtung von Steuern sowohl in seinem Niederlassungsstaat als auch in dem Mitgliedstaat des öffentlichen Auftraggebers oder Sektorenauftraggebers – sofern es sich um einen anderen Staat als den Niederlassungsstaat handelt – verstoßen?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>c49e6959-0344-4849-a719-e1efce97a2fd</cbc:Id>
+    <cbc:CriterionTypeCode>6</cbc:CriterionTypeCode>
+    <cbc:Name>Entrichtung von Sozialversicherungsbeiträgen</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer gegen seine Verpflichtungen im Zusammenhang mit der Entrichtung von Sozialversicherungsbeiträgen sowohl in seinem Niederlassungsstaat als auch in dem Mitgliedstaat des öffentlichen Auftraggebers oder Sektorenauftraggebers – sofern es sich um einen anderen Staat als den Niederlassungsstaat handelt – verstoßen?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>6560ffbc-5e6c-4b88-b888-20907e300c2f</cbc:Id>
+    <cbc:CriterionTypeCode>7</cbc:CriterionTypeCode>
+    <cbc:Name>Verstoß gegen umweltrechtliche Verpflichtungen</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer seines Wissens gegen seine umweltrechtlichen Verpflichtungen verstoßen? Gemäß den für diese Auftragsvergabe geltenden Vorgaben des nationalen Rechts, der einschlägigen Bekanntmachung, der Auftragsunterlagen oder des Artikels 18 Absatz 2 der Richtlinie 2014/24/EU.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>686b54cb-7247-4e3b-bd68-bd0b19efdc47</cbc:Id>
+    <cbc:CriterionTypeCode>8</cbc:CriterionTypeCode>
+    <cbc:Name>Verstoß gegen sozialrechtliche Verpflichtungen</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer seines Wissens gegen seine sozialrechtlichen Verpflichtungen verstoßen? Gemäß den für diese Auftragsvergabe geltenden Vorgaben des nationalen Rechts, der einschlägigen Bekanntmachung, der Auftragsunterlagen oder des Artikels 18 Absatz 2 der Richtlinie 2014/24/EU.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>ad0d45f8-c283-450a-8489-2be9ada5ba42</cbc:Id>
+    <cbc:CriterionTypeCode>9</cbc:CriterionTypeCode>
+    <cbc:Name>Verstoß gegen arbeitsrechtliche Verpflichtungen</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer seines Wissens gegen seine arbeitsrechtlichen Verpflichtungen verstoßen? Gemäß den für diese Auftragsvergabe geltenden Vorgaben des nationalen Rechts, der einschlägigen Bekanntmachung, der Auftragsunterlagen oder des Artikels 18 Absatz 2 der Richtlinie 2014/24/EU.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>30e61913-4dd3-47d5-8676-4394982fdfe7</cbc:Id>
+    <cbc:CriterionTypeCode>10</cbc:CriterionTypeCode>
+    <cbc:Name>Zahlungsunfähigkeit</cbc:Name>
+    <cbc:Description>Ist der Wirtschaftsteilnehmer zahlungsunfähig?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>97fa7345-4ac3-4446-94b3-44431287b3f0</cbc:Id>
+    <cbc:CriterionTypeCode>11</cbc:CriterionTypeCode>
+    <cbc:Name>Insolvenz</cbc:Name>
+    <cbc:Description>Befindet sich der Wirtschaftsteilnehmer in einem Insolvenzverfahren oder in Liquidation?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>d3f75c11-099d-4712-8436-b9ae84a8cff7</cbc:Id>
+    <cbc:CriterionTypeCode>12</cbc:CriterionTypeCode>
+    <cbc:Name>Vergleichsverfahren</cbc:Name>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>b1bdb8c7-ee65-41ca-b922-4adde8c8c1cb</cbc:Id>
+    <cbc:CriterionTypeCode>13</cbc:CriterionTypeCode>
+    <cbc:Name>Befindet sich der Wirtschaftsteilnehmer aufgrund eines in den nationalen Rechtsvorschriften vorgesehenen gleichartigen Verfahrens in einer der Zahlungsunfähigkeit vergleichbaren Lage?</cbc:Name>
+    <cbc:Description>Der Zahlungsunfähigkeit vergleichbare Lage gemäß nationaler Rechtsvorschriften</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>92a17374-4bee-4cf9-824a-c49c006c2840</cbc:Id>
+    <cbc:CriterionTypeCode>14</cbc:CriterionTypeCode>
+    <cbc:Name>Verwaltung der Vermögenswerte durch einen Insolvenzverwalter</cbc:Name>
+    <cbc:Description>Werden die Vermögenswerte des Wirtschaftsteilnehmers von einem Insolvenzverwalter oder einem Gericht verwaltet?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>3c2d4594-0ad3-42c4-a907-511313d8b710</cbc:Id>
+    <cbc:CriterionTypeCode>15</cbc:CriterionTypeCode>
+    <cbc:Name>Einstellung der gewerblichen Tätigkeit</cbc:Name>
+    <cbc:Description>Wurde die gewerbliche Tätigkeit des Wirtschaftsteilnehmers eingestellt?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>6ab6a401-bb28-4e0f-a953-0402009721b8</cbc:Id>
+    <cbc:CriterionTypeCode>16</cbc:CriterionTypeCode>
+    <cbc:Name>Schwere Verfehlung im Rahmen der beruflichen Tätigkeit</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer im Rahmen seiner beruflichen Tätigkeit eine schwere Verfehlung begangen? Siehe ggf. Definitionen im nationalen Recht, in der einschlägigen Bekanntmachung oder in den Auftragsunterlagen.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>27c0cc06-92c1-4cef-92bd-9500709659db</cbc:Id>
+    <cbc:CriterionTypeCode>17</cbc:CriterionTypeCode>
+    <cbc:Name>Vereinbarungen mit anderen Wirtschaftsteilnehmern zur Verzerrung des Wettbewerbs</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer mit anderen Wirtschaftsteilnehmern Vereinbarungen getroffen, die auf eine Verzerrung des Wettbewerbs abzielen?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>42583e08-c42e-42bf-81b7-a984e23e738e</cbc:Id>
+    <cbc:CriterionTypeCode>18</cbc:CriterionTypeCode>
+    <cbc:Name>Interessenkonflikt aufgrund seiner Teilnahme an dem Vergabeverfahren</cbc:Name>
+    <cbc:Description>Sieht der Wirtschaftsteilnehmer einen Interessenkonflikt im Sinne des nationalen Rechts, der einschlägigen Bekanntmachung oder der Auftragsunterlagen aufgrund seiner Teilnahme an dem Vergabeverfahren?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>a629b1fd-b6cf-448a-8d77-5c2f82b1ecec</cbc:Id>
+    <cbc:CriterionTypeCode>19</cbc:CriterionTypeCode>
+    <cbc:Name>Direkte oder indirekte Beteiligung an der Vorbereitung des Vergabeverfahrens</cbc:Name>
+    <cbc:Description>Hat der Wirtschaftsteilnehmer oder ein mit ihm in Verbindung stehendes Unternehmen den öffentlichen Auftraggeber oder Sektorenauftraggeber beraten oder war er auf andere Art und Weise an der Vorbereitung des Vergabeverfahrens beteiligt?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>17a54bb5-cbc6-4643-9b2a-b6afa2193bb4</cbc:Id>
+    <cbc:CriterionTypeCode>20</cbc:CriterionTypeCode>
+    <cbc:Name>Vorzeitige Beendigung, Schadensersatz oder andere vergleichbare Sanktionen</cbc:Name>
+    <cbc:Description>Wurde in der Vergangenheit ein zwischen dem Wirtschaftsteilnehmer und einem öffentlichen Auftraggeber oder Sektorenauftraggeber geschlossener Vertrag über die Vergabe eines öffentlichen Auftrags oder einer Konzession vorzeitig beendigt oder hat ein entsprechender früherer Auftrag Schadenersatz oder andere vergleichbare Sanktionen nach sich gezogen?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>fd82380f-e536-49af-b509-e6db1b6c3f30</cbc:Id>
+    <cbc:CriterionTypeCode>21</cbc:CriterionTypeCode>
+    <cbc:Name>Schuldig der Täuschung, Zurückhaltung von Informationen, Unfähigkeit zur Vorlage verlangter Unterlagen und Erhalt vertraulicher Informationen zu dem Verfahren</cbc:Name>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>ee05c12a-b474-4d18-b03d-5ab2ee4c817f</cbc:Id>
+    <cbc:CriterionTypeCode>22</cbc:CriterionTypeCode>
+    <cbc:Name>Rein innerstaatliche Ausschlussgründe</cbc:Name>
+    <cbc:Description>Sonstige Ausschlussgründe, die in den für den öffentlichen Auftraggeber oder Sektorenauftraggeber maßgeblichen nationalen Rechtsvorschriften vorgesehen sein können. Liegen in der einschlägigen Bekanntmachung oder in den Auftragsunterlagen angegebene rein innerstaatliche Ausschlussgründe vor?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>36d533c8-1f85-447a-8f89-08c174a68f86</cbc:Id>
+    <cbc:CriterionTypeCode>23</cbc:CriterionTypeCode>
+    <cbc:Name>Eintragung in einem einschlägigen Berufsregister</cbc:Name>
+    <cbc:Description>Der Wirtschaftsteilnehmer ist in den einschlägigen Berufsregistern seines Niederlassungsmitgliedstaats verzeichnet; aufgelistet in Anhang XI der Richtlinie 2014/24/EU;. Wirtschaftsteilnehmer aus bestimmten Mitgliedstaaten müssen ggf. andere in jenem Anhang aufgeführte Anforderungen erfüllen.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>1c8e2b9f-8e66-45ef-8ae1-b2b754e08e8a</cbc:Id>
+    <cbc:CriterionTypeCode>24</cbc:CriterionTypeCode>
+    <cbc:Name>Eintragung in einem Handelsregister</cbc:Name>
+    <cbc:Description>Der Wirtschaftsteilnehmer ist in den einschlägigen Handelsregistern seines Niederlassungsmitgliedstaats verzeichnet; aufgelistet in Anhang XI der Richtlinie 2014/24/EU; Wirtschaftsteilnehmer aus bestimmten Mitgliedstaaten müssen ggf. andere in jenem Anhang aufgeführte Anforderungen erfüllen.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>6ae8ec8c-efb1-4fcf-8daf-213e07d85949</cbc:Id>
+    <cbc:CriterionTypeCode>26</cbc:CriterionTypeCode>
+    <cbc:Name>Bei Dienstleistungsaufträgen: Mitgliedschaft in einer bestimmten Organisation erforderlich</cbc:Name>
+    <cbc:Description>Ist die Mitgliedschaft in einer bestimmten Organisation erforderlich, um die betreffende Dienstleistung im Niederlassungsstaat des Wirtschaftsteilnehmers erbringen zu können?</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>b6e381d0-d7ce-47df-ab49-16bdf595f8f0</cbc:Id>
+    <cbc:CriterionTypeCode>27</cbc:CriterionTypeCode>
+    <cbc:Name>Allgemeiner Jahresumsatz</cbc:Name>
+    <cbc:Description>Der allgemeine Jahresumsatz des Wirtschaftsteilnehmers in der in der einschlägigen Bekanntmachung, in den Auftragsunterlagen oder in der EEE verlangten Anzahl von Geschäftsjahren betrug:</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>b0379a02-6870-4a00-b32a-2bb8e813dca1</cbc:Id>
+    <cbc:CriterionTypeCode>28</cbc:CriterionTypeCode>
+    <cbc:Name>Durchschnittlicher Jahresumsatz</cbc:Name>
+    <cbc:Description>Der durchschnittliche Jahresumsatz des Wirtschaftsteilnehmers in der in der einschlägigen Bekanntmachung, in den Auftragsunterlagen oder in der EEE verlangten Anzahl von Geschäftsjahren betrug:</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>b60b1d2f-088a-4e9d-be8d-764281e6d105</cbc:Id>
+    <cbc:CriterionTypeCode>29</cbc:CriterionTypeCode>
+    <cbc:Name>Spezifischer Jahresumsatz</cbc:Name>
+    <cbc:Description>Der spezifische Jahresumsatz des Wirtschaftsteilnehmers in dem vom Auftrag abgedeckten Geschäftsbereich betrug in den gemäß der einschlägigen Bekanntmachung, den Auftragsunterlagen oder der EEE verlangten Anzahl von Geschäftsjahren:</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>867c6e0b-6423-4ae0-9ea3-604538a4f49d</cbc:Id>
+    <cbc:CriterionTypeCode>35</cbc:CriterionTypeCode>
+    <cbc:Name>Bei Bauaufträgen: Durchführung von Arbeiten der genannten Art</cbc:Name>
+    <cbc:Description>Nur bei öffentlichen Bauaufträgen: Im Bezugszeitraum hat der Wirtschaftsteilnehmer folgende Arbeiten der genannten Art ausgeführt. Die öffentlichen Auftraggeber können einen Zeitraum von bis zu fünf Jahren vorgeben und Erfahrungen berücksichtigen, die mehr als fünf Jahre zurückliegen.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>1e2ce3ef-1dc9-4fee-a478-265dd880e7c8</cbc:Id>
+    <cbc:CriterionTypeCode>36</cbc:CriterionTypeCode>
+    <cbc:Name>Bei Lieferaufträgen: Ausführung von Lieferungen der genannten Art</cbc:Name>
+    <cbc:Description>Nur bei öffentlichen Lieferaufträgen: Im Bezugszeitraum hat der Wirtschaftsteilnehmer folgende wesentliche Lieferungen der genannten Art ausgeführt. Die öffentlichen Auftraggeber können einen Zeitraum von bis zu drei Jahren vorgeben und Erfahrungen berücksichtigen, die mehr als drei Jahre zurückliegen.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>cb69486a-0647-41ad-8454-976857c3e80f</cbc:Id>
+    <cbc:CriterionTypeCode>37</cbc:CriterionTypeCode>
+    <cbc:Name>Bei Dienstleistungsaufträgen: Erbringung von Dienstleistungen der genannten Art</cbc:Name>
+    <cbc:Description>Nur bei öffentlichen Dienstleistungsaufträgen: Im Bezugszeitraum hat der Wirtschaftsteilnehmer folgende wesentliche Dienstleistungen der genannten Art erbracht. Die öffentlichen Auftraggeber können einen Zeitraum von bis zu drei Jahren vorgeben und Erfahrungen berücksichtigen, die mehr als drei Jahre zurückliegen.</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>c669e5a9-c172-44f8-92b9-f0d13839b8a2</cbc:Id>
+    <cbc:CriterionTypeCode>49</cbc:CriterionTypeCode>
+    <cbc:Name>Als Unterauftrag vergebener Anteil</cbc:Name>
+    <cbc:Description>Der Wirtschaftsteilnehmer beabsichtigt, unter Umständen folgenden Teil (Prozentsatz) des Auftrags als Unterauftrag zu vergeben: Hat der Wirtschaftsteilnehmer beschlossen, einen Teil des Auftrags als Unterauftrag zu vergeben, und nimmt er für die Durchführung dieses Teils Kapazitäten des Unterauftragnehmers in Anspruch, füllen Sie bitte eine separate EEE für den betreffenden Unterauftragnehmer aus (siehe Teil II Abschnitt C).</cbc:Description>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterion>
+    <cbc:Id>1f4e56c3-8c74-4799-9ea9-5bb25fd8cce6</cbc:Id>
+    <cbc:CriterionTypeCode>55</cbc:CriterionTypeCode>
+    <cbc:Name>Der Wirtschaftsteilnehmer erfüllt die festgelegten Eignungskriterien, die in der einschlägigen Bekanntmachung oder in den in der Bekanntmachung genannten Auftragsunterlagen vorgegeben wurden.</cbc:Name>
+    <cac:Legislation>
+      <cbc:Id>1d1afa3c-e0d7-4d21-951b-dd37fd2ea734</cbc:Id>
+      <cbc:Title>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Title>
+      <cbc:Description>DIRECTIVE 2014/24/EU OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 26 February 2014 on public procurement and repealing Directive 2004/18/EC</cbc:Description>
+      <cbc:JurisdictionLevel>EU Directive</cbc:JurisdictionLevel>
+      <cbc:Article>57(1)</cbc:Article>
+      <cbc:URI>http://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex%3A32014L0024</cbc:URI>
+    </cac:Legislation>
+    <cac:IsChecked>true</cac:IsChecked>
+  </cac:TenderingCriterion>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>687331bc-4ca3-4b43-b133-10b90baac0fa</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ed5e78f0-2634-4cd0-b494-d69d5524bcc9</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8e38a9cd-9411-4ffa-8334-74e71c573e15</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>84a7e817-0a9d-4ff1-b87d-8148652afb7c</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>174de0e5-7918-4b43-91df-d443ce0093f3</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ffeef197-a4e6-431d-9e1b-10d8c40014a1</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>bdcab723-3a68-4a3d-a265-5c5dec264f47</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4641a92b-144a-4898-93a7-bb8f7bc48232</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>809d6d59-584f-47ab-a090-c02b2fcc2acb</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a080a22b-5bf4-4fab-8604-950340dfca09</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>79b82b0d-155a-47bd-a4c5-0820a10ee7bf</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>dfe4458f-ac0d-49b0-80ee-70208320148c</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>0c7fae4f-ae46-48e9-ba67-313a666b104a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>28c5d91e-46b5-49ba-98c9-4046ee50e7ea</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e0588962-ad87-4818-8869-593bd53934d5</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>85a9af75-9eab-461b-8d0d-1daa8e8ebc2d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8b1590a2-0f24-4630-b991-1f11808ace8f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>62b29fae-e4ce-4049-93b4-5090fa176abb</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a83e67b2-990d-4893-98c3-02df662e06bd</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>57054fe1-db83-4a17-ac4c-45132739ed01</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>408e3330-4d41-4dfd-84a5-a7a38cb44828</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>6f2c872f-9897-483b-ae47-9a8fd16f8a9a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>30b1dfcf-b4ba-4038-abcc-24c9be83870d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>1a7dbabd-be8d-44fe-9316-ae182db43911</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e89bc578-cef5-4f3f-88da-7718207ae930</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e8bf047b-6bf6-47a0-9144-1cd10ecf0994</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>142d5227-8fa3-4a19-b7bb-ad6fda81da4b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>40f485a1-7390-40ec-9e91-28e4193f97cc</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>191dd21c-7ae8-4ceb-8f49-687e42f87278</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>72c49e16-29cd-4c38-b80f-34babecbfd6b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>568c70a9-c55c-422a-bccb-ae753642d1bc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>68b511d7-fc81-439b-ac07-09e06b1e24ef</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>17ad055c-77b3-46a2-885b-205c637070b0</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>168c0e78-3e19-427c-9acf-aa66cb16269f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>bf3f03fa-4f20-4b0d-a23f-aa1f4a62382f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>020fcb5a-c8e9-4ee2-ad25-e0032acb081b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>72fc09c2-e0c7-4374-932a-4bcaa6fb8806</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>54d32798-b8bf-45bb-93c1-c0fdc84c6271</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1bbcb22c-a685-4803-a87f-53c043c01fde</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>70147c6a-f782-4a69-b54a-82dfdda7a0f4</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>92d3209c-a6d3-4757-b849-5bd85373f498</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>6fa1afbd-1c40-4389-879d-19ec1ffb0a1f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>d05022d7-3790-424b-84d3-8d7aa837fb51</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>3b115b71-8442-4399-866f-d2263198366e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ca57c1f0-c425-4ef3-8ce8-3310176e5219</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>43c9d1a5-7b03-4be9-9da1-4d1071871f25</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>74054541-0e2b-434d-8849-8d0871588617</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d51bd8c5-72e4-46a2-ba1d-d4d655c61333</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>15c27995-ca17-4f69-b424-093b9c81521e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0f941be2-fcd0-4ea4-b5f5-967e97d7744d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>75424ace-7d90-4fb3-855a-d1ea6f98a71d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>eab52769-7458-40c7-b9b9-3bddacf8a80e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>d6e70f5e-93ff-4eca-ac2e-add42376d215</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>689b8736-d180-4b90-ad85-9923686de3ce</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>105740fb-929e-4f0c-8fbe-13fbe8498cad</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>34e06fa0-0906-4ddf-90b4-38514ab41383</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4cefd2f8-3e79-44b8-85d4-2cdc10cf6daf</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7598edf6-8f5a-4f72-91cb-3b490cf748a0</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>61ac80c7-53b3-4a83-85fa-e59eb5b3b968</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>446ae89f-d77c-4ff0-a293-c48f4c37e7fb</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>524d6ae6-4f1c-427e-8880-08c5de92291f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>83b5dd22-d576-489d-b6cd-40a24ab84761</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>823a2a9e-d611-4fe2-be3f-8de9a4503669</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>45a06e7a-0790-4fab-9891-4ef6a3a968e4</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>cad20360-7842-44c8-a408-d5455f2f3f68</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>33ae0ada-f0ba-4a8d-b62b-32048e34632d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>60fdd8f7-a0ce-47ec-9373-74e9afa7162f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>86e93c92-45dc-4f2c-9b4c-272f374769d5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8686ac98-cbad-4427-882f-d38bca25502c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>f9668200-9053-4e15-8a02-31a6ceff0ee8</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>adeb1b99-2bfa-44c5-adaf-84ee80f1b575</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>2c4dfb6e-8a75-4967-a676-505835b14249</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>baa0f909-54b7-46eb-b028-9dce8f227d9d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e8e3a5e4-66cd-46cd-8f0a-1ebfa8d09fc0</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>164e78ea-27cb-4c5f-865e-af24ed883432</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cb22ef4b-7a53-406f-953b-efd27714b0c0</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>910f149d-a7ba-482c-82e1-d083737b74de</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>50fd208b-d5df-4cc6-86b9-1c4f93d83ff1</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1b465393-d2f6-4362-b197-a922b639186e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>200837d2-2b44-4fc3-bf4b-3476da3e097b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1fbe17f4-bcde-4866-94cc-2b43afdf2b6f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>129b50dc-c6ad-49b0-9165-ba2285ae5eab</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a829922c-0db4-4825-9c0e-ed111ee897f4</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>76abe748-8ed7-4541-8ea8-ee13fb338086</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>37b293b8-e1ee-431f-97bc-22dd86ea269b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>c2c1301e-561a-427d-977b-751720e9952f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>fc8b809e-51e8-4b7f-b2aa-9473f7fe4181</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>382eab1f-a4c4-4d6c-9d7b-6ba6aec9297b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>311e4c93-1b30-4cc2-a2b8-93dc109459a4</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b19b4c4a-b83d-4672-9db9-3ecfa09a5767</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>36b4a592-2a5b-4f94-960c-102bb7ee8f4e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>fd9ea24d-a1b7-4015-8d43-96fa6c5c12d6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>eae3c6c8-b089-4e30-a4ae-252ab4cdef8c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>64c9b99c-23fd-435b-bfb1-9cac074ea5a5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4d7aef4a-0a5d-4be2-86b3-633f621c9595</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>926b9099-6aa1-42e6-9ee3-3b6e859c5140</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>070b4aa7-4b1f-4ff3-a9e2-fb0f1ed52894</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>524d922e-86d7-4303-ab3b-690e2deca75d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>14a01765-37fa-44ce-9fec-d45b571f6199</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a54ca0b6-f24b-4af8-9e9a-95c9e5c2783a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a9e94fa9-e7b8-450a-823f-711bb96c36af</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7aff6cc7-8650-4496-82b0-74a190ea7ad8</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>3a4db7f4-4897-4d80-8b32-f2511b64d9f6</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>480812b1-d5f8-48b8-b818-8b2c1f9c15e7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6fbf8cf8-170e-4378-b9fc-77e6280c4228</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>39dc18d8-4924-4a3a-a7d9-9900b146a4a8</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>348d1a25-0364-45f5-b3ad-1cacffd0e224</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>83422337-ae82-4a8f-ab4c-eb9d8524209b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>12618387-9c54-488a-b0f2-13a2b54db6ff</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>62adeb18-f077-4f9e-8e7a-80ff7c26ec35</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2fe162eb-d7ff-4bc3-9b2c-e18979c89de1</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>25f71e9b-7b60-4731-994b-8247ff44eb75</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>91779b71-edaf-4930-b43f-1efad140a07c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>c827329c-da07-443e-9fb4-cd1ed4989bc5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>de0443cf-692c-4a1e-940b-2318c8cc0363</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7092f5e5-d05f-4761-b6d6-a8db332f4939</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>f86d7677-abdd-4307-8114-790e8d0696d2</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>3c36501b-7afd-4ea7-9990-9ad402e085c4</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4f04e7fc-6fd8-47fc-a394-dc98a174884e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>5d4cc48e-1eed-46d5-9919-b1945278d640</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>316b6211-f8d6-4190-94c1-04e7d47ec45d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>8a74b8d0-a9d2-42df-8d54-7747ba0a96ac</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>93d4ac65-8c4e-44ed-98b6-1e74bfbadf5b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e82322c7-0f8c-49cd-8fdb-a15bc4cfe1bf</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>d1e2577c-acbe-4d46-84a7-a84015fff1d4</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ac1ba27c-1ab6-4287-9bb9-5d0637678d82</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c164260f-e91c-4b97-b2f1-d2b5474d1cfb</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>fca9745d-9a9e-4718-92ca-519d21b57ec3</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>754e7a12-d59f-43af-a0ec-0626d32c02e6</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ddea0ef7-6162-443f-8923-cec5e1acb230</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>81191856-8b44-40dd-b759-859474e8a688</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0ef90925-f666-4683-89da-a1bbca843257</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>afec1440-9d2c-4411-9208-8bf96672019f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4c63027e-e19b-4598-9895-2f50ec740fb2</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>true</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4fb40185-5731-456d-b258-d5b2d3c2df34</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4b660e17-eee6-42e9-b991-0735b4a1b646</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>50fbec94-73d9-4bd5-9031-5e46c0716116</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>47360388-7ce3-4d74-b2a0-e6ddaab61080</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount>4000€</cbc:ResponseAmount>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>7e46a184-5c8d-4378-bfcc-6c0e8f6e6ddf</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0bb3aa53-75bb-42d0-afac-10b417d9fa8d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>063824d1-63e7-4cfa-898b-7bb606a463f0</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>bed8e07a-9fa5-453d-bfe5-2d9d358a1059</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>aeb517eb-626f-4e60-9a33-4be0b473a071</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>02b20e1f-b99b-4e74-9d87-ecb2ee09c86d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>bf3781df-65be-43a1-933f-52d1d378fb80</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>5a1e3c27-3e3d-483b-813e-f3da77e01bed</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>cb08915a-afc1-447d-906b-2a47710524c8</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>6de63071-90f8-46a8-8eb6-3ccb4879f3c7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+      <cbc:ResponseDate />
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b5f69ec8-0658-4000-af63-788c30d0f402</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>307bf52d-92ce-4a36-a1e9-6bddb7632bd5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>409e9f0e-65f2-4b98-ab39-d10ea743bd8b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>f9170011-abe0-4bf8-83b1-d89dd8fdbde0</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>d8574871-450d-4c27-a55d-6f1cea715d65</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>1777f78c-a17d-40b9-9c52-16a7a36095b5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9f1a13cf-2833-4d76-8710-e7b8158818de</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7c47df14-4e22-41bf-a594-ae3b9bd5a466</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1b87db4c-be7f-4d13-9be8-3ab9102f3f76</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>25f963b5-69dc-4bd3-a33f-12acb0162a57</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6bfa65a1-c813-4182-939e-883f1f29eb99</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>9b0d22f5-3f2a-4c03-afcb-073ecdfd7ac4</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4a1c2b15-47dd-43c5-9aff-848a5d8698f2</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b18cdfac-99b3-4887-9808-71665e113405</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>21840503-3c47-4737-8cf1-5ba49e515219</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>6d3ea50c-7bd7-48b0-9b68-33f27baccccf</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>58c1d06f-7682-46e8-9a8d-caddb0e3b149</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b6d9b318-61f9-46b6-a06d-64c77a8401d2</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>69a73d89-1e9a-47cf-8acd-a77567281fbc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>1191b8f8-468b-45f4-87c3-f8aa709e5463</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6bfa65a1-c813-4182-939e-883f1f29eb99</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>9b0d22f5-3f2a-4c03-afcb-073ecdfd7ac4</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6b7a6f15-1ac6-4c95-b4c7-9e1a52e1214a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a53409ec-48c0-4556-add1-9297485f1cba</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>40a13f4d-7580-466d-bdf9-90c526e4df4d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>2ea13d45-e950-436b-9b91-cd5c58665881</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c636524c-76b4-48f7-8d05-79e79f18fdfe</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ac69e383-7d37-4211-9293-1e21529cfd5a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b23fa142-86f2-497a-bbd3-501d4e62ff6d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>bc993090-865d-467e-adaf-1127aa86b73a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>315beb1a-6f59-4417-a121-0670ceead7fc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>52043a50-ae03-4a9f-a57a-6023b009e3d5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>62f5b92b-9451-47c4-be4e-5d47365d4310</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>64d6befd-3960-4fe2-b2e3-c33b4e3663a7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>91283f66-ec87-4be2-b996-3ad0b084a604</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d11d9ef8-82fc-498d-b983-08cac3190403</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>cd08c307-a872-4d03-8486-a500a5ac7490</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7240d249-9fe8-448c-a906-c894339a3f6d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>505b2fc2-e906-40d1-b4b8-54e801a3df58</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7d73c7e2-2d4c-45ac-b1d7-217f1b79a272</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>315beb1a-6f59-4417-a121-0670ceead7fc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>52043a50-ae03-4a9f-a57a-6023b009e3d5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>7b2fe366-9769-4288-9fd8-615cab2127c9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0cb03964-84cc-4410-ba6d-ac2f997ec28e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>acb58ba7-06ef-472c-9156-55692136a14c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>80be835f-f1b1-4096-9d32-7ac076bd0511</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>61f0970e-6ce1-42a6-aa83-4164a731825f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>982cbbb3-a469-4f2f-a244-d94c42327c3a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>173b97aa-0e6b-48c6-97ac-50a8fea2db5a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b68a7fa2-440e-406d-a9de-9ede4bb029a6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a79b9f9e-f294-4047-b45c-980bfe457ab8</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4f5042dd-92ac-4274-872e-3401af13f25b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1fbfb1de-2b8e-426d-b1e3-099eaeed897e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>529c7c2b-b2a1-4192-ac88-9a03faafb5e4</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>3da9fbe7-7915-464f-9693-cc322b243caa</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0362e5f2-fe0d-481f-9eb2-ee76ea84e2fe</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2796d47d-e21c-497d-a603-b5b52cb8e7ee</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a2c1032a-10d6-4457-b305-290bdddf2864</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2ced0e29-f2d2-4f93-a071-0beebdbc50e3</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>16cc2ff2-e8ce-4556-90bf-da3b09226819</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>360be896-9373-41ba-8b40-bc9cb2f62380</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a44a9cc5-7d51-425c-9d57-2e4a16308fa6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8297acdc-11d2-4eb8-951d-1fd5fbc70b96</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>dc11303e-6ba8-4474-8e96-f8874fbb3ec9</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8297acdc-11d2-4eb8-951d-1fd5fbc70b96</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>dc11303e-6ba8-4474-8e96-f8874fbb3ec9</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>3c681362-4c2e-4347-ae8d-73483079ccb6</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e9bb1138-3524-4e34-96d2-5731c5c7d27c</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a87673ea-3438-4c6d-96e6-750e03f0cce0</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>9ce37b49-08b6-423a-8307-3ee35b217b22</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c679ec04-13d9-4384-aab0-34cc5a454bdc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e752e751-946c-496f-811b-f64d059472d7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b87f5106-293a-43a2-a21a-00b037297d2e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ebf36696-9e54-4e65-86d2-cb9793dd629d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e69972bb-baa1-4fa5-9878-6d067c03f290</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>82456474-e97d-49fe-ac25-6b53ee1833de</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>0f0e58e4-b09f-40fb-b6ae-6df70285c357</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7161795f-c58c-4b78-8322-f60951b7d3b0</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>851ade4b-2537-4ee9-bfdf-aaab0f6d40e2</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a3b9827a-da8a-4abb-8ff3-40b30a8f4fd1</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>fdfd79f9-1f05-4cf2-9e60-b278e777fa2a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>2c5575ee-6210-4769-8671-7a1da89db0e6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>0f43874a-1e6b-4c58-9bb9-7d8941b5a232</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>13480344-45a5-46ca-9e88-c2e3cd835ed6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4543ceac-593b-417a-a903-e14d5761d155</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b58e3288-c593-4d8d-9783-4f58e26e3c32</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>080ba825-2958-41b5-a75a-071d18268074</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>dc41fc40-463c-406f-8c9d-5600fce31922</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>399040ec-aeb5-4505-ba42-09fa10020f12</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cf74b67a-06f4-4194-a1db-3926a8eff7c6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>dd076b88-3878-421c-a22a-974317236e9d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>1d0bfbdc-1204-44e9-b322-235f22234b93</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c03bb17d-16f9-494d-a42b-9743da586d51</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>83bb0b69-1b1a-4223-9beb-732936e74b16</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>d5dccac3-2f7c-4378-9c9f-c5a19fe82a2a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>765f561f-547f-4e50-9373-7f10b96d81c3</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>786377fa-6a90-409f-8a88-d1cddf24e930</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d0c73c0f-e530-4312-8df0-a221a294939a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e4631cee-53f5-4a42-bbb7-c2e9164a2cc9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>3377a5db-9bef-4d09-b0eb-db35b73a0fe2</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>34a0515e-564e-4a9c-b73d-3f3fb40e671c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>5db8f9b5-24aa-4427-b3ab-50d3564110fc</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>09979072-90a4-4701-b477-a547e133aeaa</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0f53115f-571e-4d6f-a8b5-ff7dc2dd4c55</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c0273f6c-f25a-404b-bdc2-ced997858972</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a7df734c-c5bc-4675-b615-28501067d995</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9574e5da-d118-4454-a082-07f292a5b747</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ca9912ce-0425-41a5-9ae7-22a575a417f5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>20fe4848-ae73-4b23-8088-3f8524caa6a3</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4fd866dc-7391-4148-a86e-1ac0cc4babb5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8df148c9-05fd-4bad-b1da-390b1559ff40</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>45e90d0a-deb5-4ce3-8cd3-968fdef69889</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9705a602-cc81-4a4d-91a7-1cfdca77661b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>157b4c7e-2176-460c-a901-5894c5432e94</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>53f53cb7-4b4e-4e06-b722-6edfef553d77</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>af7a34b9-e3fe-4411-9133-8f6f22f9d0d5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ceec2bed-3541-4aa6-b356-fd64db60ddf7</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>c997d0c7-5d00-4e19-886a-3ee8da5048ef</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c0c048d8-28db-446f-9d11-90f08c2c9598</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b3a97294-8a2e-47ed-b086-f60f46def879</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>7de92cd2-7a74-4d88-9063-81fd72f374af</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>eaa4bfae-6515-4920-b043-3cb1823f08ab</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>851fa4a5-ed9b-4563-b697-2df3d290714e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>3b524b98-d29a-4b02-8be3-02cd450e38f7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c3bd0a15-cb95-450a-b9fd-b215ef83112e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ea7bcd04-8ad5-4e7b-a849-fe2181220745</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>101e9dd1-394a-44ff-9d8d-ca67134b79cf</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>502030d5-d8b3-4a83-9f72-04b82145258c</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ed1f4faa-1b72-4baa-bfd4-3a666911675f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>fbd7de28-c941-40bd-a4bc-593a007947bf</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6b0df8c3-388a-4347-bff2-4676c77cd2c9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cd34ee13-cb01-4a3c-87dd-d8e38c916660</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>de57ec9d-cb19-48ab-aa75-e922de83b455</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4d572a5e-53f7-4525-97dc-e1a4217acc4d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2244b72c-7cc7-410b-a5fc-d37304c5e949</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e14e4f09-b64d-4113-8e57-60ecf8b4b6ee</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ab8c3709-96d0-40d0-b402-3bdade05259b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d41cb0a1-8e10-4d65-a975-316245598f30</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1acb378d-d73c-403b-8ae6-a40616bdb436</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>f338d123-cb36-46ff-b250-fa95b6e6ac31</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>eebd6ac4-6e2d-4166-b5d8-57e6b2068e60</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0fc4c836-876f-4408-92fc-3f3099833b1d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>true</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>77b8b0b9-cb17-4dc3-b075-be631cc25cb9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4e98144a-0edf-4821-a366-49d661eabddc</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>true</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>da5d2e97-2835-4f10-a989-9a666f3d3ece</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>fef6b0a1-f9cd-4849-a13e-0484488c457e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+    <cbc:EvidenceSupplied>
+      <cbc:Id>www.ankoe.at</cbc:Id>
+    </cbc:EvidenceSupplied>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8c1f8d47-7689-43ab-9d40-92c5b31823fc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>9b20891a-de22-4fbf-a30e-e09d90f49239</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>7a4e2f9b-134a-484d-9b17-3361320a90d7</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a8c609be-cf0f-4206-bfcc-f878d5036122</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>31a65060-000d-4b0c-8dab-9b310983b7d2</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>702c4c15-a372-4c41-9d74-8ccd1fd83c46</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b1740b9a-a6b2-4cf1-b7cc-04e9949b702f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>3e7910c0-ae58-4c53-9194-beaa3be1d3fd</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>true</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c61bf367-b784-476a-9b80-5d566d664c00</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>00fbdc32-71ed-4f32-840e-035c5445ef42</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>aedf5dac-813b-4c82-8eed-2c223252a00d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>bcb02179-a906-4ffa-9a4d-4c7c194f1c27</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1c8b9ec9-10e9-4278-9f56-56fe90da4495</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d7ff4891-ec2e-4735-bc02-429f4d1ac9f8</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>d1a41130-897f-481b-a429-feb4ce7b6442</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>026c5f78-b172-49a3-8508-694dfd5eca2d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9fe077a8-cf66-4f2d-a62f-e28729427a2d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d6b209af-9bca-44b7-80b3-0901abaa06ef</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b8cc4255-2e71-46af-b9e6-4f56349b0cec</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>88f0bf78-2ebc-46a7-8a48-499cd81e7006</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>3f60c6a1-787c-42ea-8254-56ef3af210eb</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>384c3773-c049-4dad-a65e-ec99cd166665</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>35a98ac0-0752-40b6-a107-5c8109008e72</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>25dab506-597c-4211-b16d-807f269c3318</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e8bfee51-812e-4c24-a4a6-8cb5bd2950c9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>92a2236c-c6fe-4c17-a3fc-4d643c4f8b40</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>acbb7e3b-a479-4c44-9479-4b41e56a8791</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>84d83f09-3e33-4de8-9eac-70162cd4edc3</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>fb502fd1-bff9-4acf-9279-a27300833854</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e92969e1-976f-492d-8385-6365ce70d3c0</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a89feda1-0bb4-43a7-92c1-6a5798871f74</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>75e534cb-b55b-4e87-91b6-2eeac311373a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>514ceb97-ef3d-47b9-9f62-a354347bfb7d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>883b9520-dc8e-4143-9f6f-9ef4c4f28360</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>631d24ba-227b-469f-b9a9-682cbad2f341</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>9dd5382a-eaee-4a12-a3c9-b6bb0b2539a7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c2202348-dd4b-466f-b9be-970e6ceec95e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>96085f64-840f-464e-afe8-7c63ae4feaba</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e3cfd749-4f13-4190-a008-bd203c265774</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>5b90acb2-7a7e-4f3e-b529-f005809770aa</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9cdc9c06-5417-4d99-be44-bdaf74225621</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cfbff104-09d2-42c5-9ab7-7b38ba3d9c0f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>490f8c1c-20f2-4038-8d54-203e5094b56a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>3536b0ad-1d1a-49ec-b362-13ac4cdff8a7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>68e73166-ce9d-44bd-8404-48b208f1b588</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>675fa268-625b-44ef-bd23-e42bd15065fb</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>65848f6f-579c-4604-8ab2-2bea2970958b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4e209f25-ec8a-470a-a784-89eedce9462f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>27e7a8ae-1a7a-4238-957e-416300b42abb</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>6e38a464-69e0-45cb-9f1c-2720153a4106</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ab298c01-e5eb-49a6-b21b-c7665981f967</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>fc56d44e-dc66-49d3-b09b-b2f8b4d7cc1d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e092a48f-f5a6-4c05-9a35-56748d259135</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>484bbca4-7ffe-4cb6-89c2-1514fefa0196</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>09696e8a-d9a6-4fed-b42c-2640c0e47414</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>4932ff1a-8801-46a1-825e-3750ab096920</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>510dd9d3-df73-49a1-a48d-2bce07612013</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d1be4143-9a34-449f-b8f8-2f879130b8a6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>889384e0-a73c-4931-a027-8129a44d8e7f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>66e6cad8-229d-403d-bcab-1a90564ef529</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e902127e-01e2-4e14-8cac-6e1bf7e25916</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>995c8c40-3ccb-438e-8f55-29113bd6a65b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c8235814-683a-4388-bd4e-037f1f93d982</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cdf0efa3-b6ba-40eb-8fb9-d64c78ecf3c6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>5a8ed808-0fee-4885-a8ac-db2d26a72a48</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>211fc389-cd58-47ca-ab5f-3101e378acca</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6442e2b6-cf58-441e-abbe-ed1a1c418db6</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>f22d34ba-e7e3-463d-8e64-b03d6c5fefdf</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>79bce164-0a4b-4461-afed-f2d0d8d9f7e0</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>29bb5b74-6d9d-4a7e-92ae-658570a512da</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>250855ab-9108-4c4c-90e7-8a99517aeadc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a191352a-f5ed-4060-9da8-2d1953724722</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9b834703-c7fd-4b36-8455-575ec885068c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>2cc895e4-01df-4323-8090-cb4b74214e89</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>277951f2-476a-4fa2-9f6e-0b1b407dd0e2</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>eab98df0-f152-4e25-a4ac-c8cce7b50e85</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>72e2d1c9-42fe-4ded-a1ab-a1a84261f5dc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>8880242d-a220-4b0f-9d33-6c703be6a35e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount>555555</cbc:ResponseAmount>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>94b31d11-8cb1-4dcb-aaa8-766abee57468</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7ea9f866-b53d-454b-8f88-f4816e77dafe</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>800054e2-4c20-4d1e-b231-1fed7f877c51</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>395d2a5e-1eed-4776-a8ae-80da7c45b23c</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>61444d1e-71cb-4ea7-a7aa-3815cef7656f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>aca9fd3c-d02f-47fa-95aa-fdcc56d916e7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>7217c202-647b-4c4f-bb55-ba7767ff5883</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>88d9cc82-a86b-4d23-aefb-14cc730bdab1</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9c784b5d-48c2-4f99-953d-c810580a6eac</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cb1967c8-5d30-4eae-8476-7619cc94dc7f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ec057b67-ebc0-4b23-acf3-a5e0b778ef5d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0615bc1c-c059-4bc0-966c-6393271fd928</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ac1912ad-ffbb-47b7-b63c-9e038349377e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>161bb549-ab09-47a9-ad4b-ac505a3a969d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1fd01676-59ba-4122-8190-6455f14bd7bf</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e0084dde-94a9-43ae-9640-189149ed8283</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>bc729be2-cb8a-4f6a-a4bc-d075908a6d85</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>bb602970-3e75-4400-9551-bceac89beb50</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>94c8fbdb-9061-492e-a764-3c94bd1dc3ef</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d46196c2-ffdb-4674-b398-3c1ea9ad8b8a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e6e68f45-8060-4d80-a0fa-cf3e1467cc83</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d745c201-96c0-4bcd-8342-c622b6549d8f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>19ab9400-8350-46e5-a69b-66f22177793d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a2c56610-0d34-4825-9ec0-c4bddca739fb</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b9770c08-0e20-451a-96d7-7b7b700ce8b1</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>1b64fdf0-b3c8-4592-a67f-2eaeabf649ae</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e2a9eaab-2039-48b5-8ff9-8bb527c49bc6</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>448c7102-8382-42cd-bf34-c30a2f604ec8</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4b9fb969-ccbc-480e-a19a-c8e8702dad11</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>498086df-529d-440b-a73e-1ab4e30f43a1</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>0742dad9-4682-4d53-903c-f7f36c0e3e53</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>66eaf195-4985-40d4-ad03-87e8eb74cbd1</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseAmount />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>bf8d4f62-d5d5-4e70-8183-b8f3cc0cee8b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>7029f5df-fad4-4b38-b68e-7b67986c6721</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ApplicablePeriod>
+      <cbc:StartDate />
+      <cbc:EndDate />
+    </cbc:ApplicablePeriod>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2a5af207-fdac-413c-bfba-fef460751fda</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e0e1c3cd-571f-47e4-a523-5bb7522a5287</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>11661dda-f53c-4762-81c2-126e326bb1ba</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>6b859289-7042-4dbf-b6b3-94e2d7102f5e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>470aec1b-9c23-4b99-a23d-72798cf83915</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>2895e000-87e3-4928-9a9f-3f7b0ea9f1ee</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ef324a29-5987-41bc-b4a0-f4f326f7c0e1</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>29dae2a7-cd31-48c3-a7f3-015551d4447a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a1b3bd2a-e702-4d12-a2a1-b46c97bbefc3</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0b64f184-fc1d-4106-88c7-d875264fbbbf</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>0d7b2428-c84a-4b82-b1fa-aae8cda96ee9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>c3bcfd6d-b66b-4272-9a86-02afb80fbc21</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>76baee05-c764-476a-ae09-c40192979287</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>8553606c-8f92-4eb7-b49e-c7235ac0cf97</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>798f7f5d-9dd7-4ba3-8f1a-a2acf5dbe4b5</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>bf206238-391f-4427-91a6-1638c8677d40</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>02f947a8-43cc-4172-974f-beb93861838c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>5db8793d-a605-417a-8220-b4bff3f90b04</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9f22e8e0-9265-4c51-8a94-d01ab8e444d1</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b342f9d5-1e3d-427a-90b1-2e46da6cf76f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>9f22e8e0-9265-4c51-8a94-d01ab8e444d1</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b342f9d5-1e3d-427a-90b1-2e46da6cf76f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>dc4b8092-6478-457e-ac9c-73bc98d274e0</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>c37f7e2a-96d0-4631-8de2-c5e7aeb2c812</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>7819c24c-7f5e-435b-9047-fbbe6bf9d809</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d99014ee-f01f-4e4c-8bf1-691a580b218d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2d982bc2-8aaa-4672-ab77-b3c926fdc861</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>080b86b0-ab7b-4c1e-bb20-208213867682</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>261d8ccb-494b-4e87-98d4-1c34bcb2284e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>c70dcbe2-f361-420d-9f91-afacfa0f06a5</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6ed9e96b-d55f-4105-8c8a-d87dbd29134a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>03f9f6e2-e8d8-4db2-9f74-99a63a52ade1</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a3d04a43-fc31-485b-a534-4f698a1f5e1b</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b99df0d1-cfd7-4f8b-8f25-dfb1151232b6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>89e41edc-9077-402e-9e43-cb8d38fc5554</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>99df15e8-4658-460e-a1e2-c4b326ecc4e6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ea0d27c6-f852-42ea-a53d-c2cc5c5871a5</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>be73aadf-19bb-4c9c-98c1-bb43804a5218</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>0be0189d-7971-41b7-9973-62a6d959e638</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ee784b18-3ee6-4188-b77b-e821a41f7e49</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>e9270341-d6d1-4185-8b10-7198bdcd8e31</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ce136851-003f-496f-98e0-8364582470f3</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a25f2283-46df-4166-ab33-47f299c72e2a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>eee0cbb9-9580-4111-a68a-a3afa8165308</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>11415e6e-3b9e-4eec-97fd-e58c43c5ffcc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b61053fa-db0b-4e07-9e05-2488ba155893</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c674e5bb-0d6c-44ab-b08f-168515fa4b9f</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a6902f53-3326-4e3d-8aa4-e68bd429c647</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>5b6fdcc5-fb02-4abe-90f5-7b8875f8c7b2</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ad6c4358-c4e0-4b85-af3c-cf1dbe6b46ce</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>fd56c437-6110-4db4-93f2-dae7fc6ce4c9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>2f2acf46-0830-4c65-9fec-6b88219827cb</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a226ce7b-8c10-4f72-9154-182d7af31bf9</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>dc7c7c08-d2b0-462a-918b-c0b258475738</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>5ea165fc-9e2e-4567-8760-b220700ae063</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>da059ca0-770f-4480-8d2c-309697f4d158</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8e5828ff-721d-45c0-8597-902136a6c419</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>ceb997d2-cc3f-4e70-bab6-9b09b0e58a03</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c2434150-8b47-4c13-b840-cefbb353d60d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e5b24b88-15cc-4005-b6eb-0e26f972300a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2f90af9f-c553-4df5-bd5f-c8f33bb9cc77</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>d1fda1f3-3b7e-43c3-94ee-3f8bfc4c27af</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b201e952-2cc5-41c4-a85e-814aef7a6de7</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>2445546d-7659-4225-8f66-13c8a78db3ea</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a0edc9d3-c35f-427c-88e0-811902d83945</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cdec895d-0244-4948-bc10-34e7fafb1f58</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>cf4eb661-e23b-49f5-a21e-f1281ba19af2</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>332ac56f-2aeb-40fd-9b64-c182bc1f1652</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>b0b3204f-ee35-4a3c-811f-239256530f11</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>e88f4ba9-a68f-48ca-b430-bd92ffd2e051</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>2acfd064-9e76-48a3-bc8c-0993d4b5e7fd</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>dff1f52c-d1c9-47b1-8ee5-d1367382764d</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>f2b4b927-ea2f-4623-98a9-9cf676d9e7a1</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>25c4885c-74aa-4ac9-a24d-9a4c22fe57fa</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>ce54ea46-88ab-4f57-8ba8-ccaece34d2ca</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>663e0382-7824-4883-b283-eeba7900bb19</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4558d11c-ad10-4226-9f56-eef5f5fd0de8</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>b264ecac-0dfd-4019-a960-125d3017735e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>4c65a4dd-4b51-4111-9e7f-bcdb7a87594e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a13a8aca-e059-4a99-a684-521b6d5a744e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>d31ddcbf-03c5-4819-88ba-1f21b73c9eac</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>50b8f183-46f8-409c-aea8-945da99989ab</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>78dd82bc-ec53-43f8-a978-86fb2b57e5e6</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0dfabaa0-41d9-4ec1-968a-5efef06af92f</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>f4bd89a7-294b-4767-8c47-5b05c6bb415e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>5d5b1c03-9663-4acf-935b-50df64fa4ef9</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>fd06dcb8-590b-4575-b04f-994233fcf302</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>942d86e4-bdca-4fbc-be11-b44a9e8639ce</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>bd95a586-392c-4f03-85cb-5233bba5b876</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>1b491e35-cb7e-4906-a0c9-3b49c1cfeac0</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>6a7eaf83-bc05-4d47-871c-b50cdb0e692d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>c3fa4f5b-a68c-43e8-ac4e-81f2c287210a</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>7046d46e-600b-4e44-8116-718c75e6fa9d</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>16c4d48f-ab61-4590-b1a2-b846832986a2</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>40b9f0d1-7b1b-4533-9a6c-f5a1ae7e3234</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>5ce34d93-f17c-47fd-b7bc-7895173d5610</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>389222a5-cb4b-4df7-b1fe-fb84824f411a</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>cc6f8e04-9f22-4fc3-bfe5-8f0f273729c9</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>38505451-2264-4938-be23-0c77ce6309b5</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>91f785c0-59c9-4f8d-9a59-3148ca91c4e6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>a96c25fd-0e5f-4d79-8328-2c856f0dbeff</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>dbddd464-a7e5-49d7-bfae-ea2b294e8466</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>dc38be8d-14d1-4aaa-bbd0-d8aa077a67fe</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>13f5596d-f548-4b2a-a011-1812e4d5abb9</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>71fa9e79-ca4b-495e-848c-fffa29d6036c</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a14f4e17-4467-4e17-87fd-a8e1c7f489ae</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>f973454b-246a-4c7f-96ec-ef76bbde35bc</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>df72516e-a97c-4cf9-b225-450859c90ed9</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>80d7e90d-eeb0-490c-8d93-04ad03d23215</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>af84f8de-9e92-4b1f-91d0-145ab4329cd7</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>c906b144-9d53-4447-a842-7685437a603e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>bf908a60-cf4d-4ad9-ace0-8a83c843604e</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8c8ab4a6-05bb-40db-9481-8b369c11bb89</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>0800ee1b-ee2e-48d9-893d-795fc93f2406</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>30143c03-59eb-4ccd-a24f-4c8a2ed20615</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>9c077fe0-486a-4993-b3b3-b04cc6df0978</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8180e651-c6e9-4dda-948a-8be7f088edc7</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>a8c61328-4122-46fb-bb1a-1a746d2565f6</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>fb6561cf-fbc4-4de0-85d1-71f39963f45e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>bf72a908-71a6-41cc-aded-4ed0e5c75a58</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:EvidenceSupplied />
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>8ab32277-477b-4e80-8ba9-ab13d465877e</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>1093016c-ec34-415a-b06f-8cda28ff94d8</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>1aa4cf2b-79ee-4124-a205-76fac4ecffb7</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>855a44d8-6e39-4287-a4b0-6a7e8f38271b</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+  <cbc:TenderingCriterionResponse>
+    <cbc:ID>99a7acf0-20d6-444e-b0d0-37dafcf127d7</cbc:ID>
+    <cbc:ValidatedCriterionPropertyID>84396b90-6df6-4ff4-a745-1aef479d94e2</cbc:ValidatedCriterionPropertyID>
+    <cbc:ConfidentialityLevelCode />
+    <cbc:ResponseValue>
+      <cbc:Description />
+      <cbc:ResponseIndicator>false</cbc:ResponseIndicator>
+    </cbc:ResponseValue>
+  </cbc:TenderingCriterionResponse>
+</QualificationApplicationResponse>

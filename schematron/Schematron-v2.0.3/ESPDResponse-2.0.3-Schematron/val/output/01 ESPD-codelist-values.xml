@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:cac="urn:X-test:UBL:Pre-award:CommonAggregate"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:cbc="urn:X-test:UBL:Pre-award:CommonBasic"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:espd-req="urn:X-test:UBL:Pre-award:QualificationApplicationRequest"
+                        xmlns:espd-resp="urn:X-test:UBL:Pre-award:QualificationApplicationResponse"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        title=""
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:active-pattern document="file:/C:/git/ESPD/schematron/Schematron-v2.0.3/ESPDResponse-2.0.3-Schematron/val/../../common/xml/ESPDResponse-CriteriaTaxonomy-REGULATED.V2.0.3.xml"
+                        id="code-list-values"
+                        name="code-list-values"/>
+</svrl:schematron-output>

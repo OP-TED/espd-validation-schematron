@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:cac="urn:X-test:UBL:Pre-award:CommonAggregate"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:cbc="urn:X-test:UBL:Pre-award:CommonBasic"
+                        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                        xmlns:espd-req="urn:X-test:UBL:Pre-award:QualificationApplicationRequest"
+                        xmlns:espd-resp="urn:X-test:UBL:Pre-award:QualificationApplicationResponse"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        title="Common Criterion Business Rules"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:ns-prefix-in-attribute-values uri="urn:X-test:UBL:Pre-award:CommonAggregate" prefix="cac"/>
+   <svrl:ns-prefix-in-attribute-values uri="urn:X-test:UBL:Pre-award:CommonBasic" prefix="cbc"/>
+   <svrl:active-pattern document="file:/C:/git/ESPD/schematron/Schematron-v2.0.2/ESPDResponse-2.0.2-Schematron/val/../../common/xml/Test_Response/REGULATED-ESPDResponse-02.00.02.xml"
+                        id="BR-COM-CL-ATT"
+                        name="BR-COM-CL-ATT"/>
+   <svrl:failed-assert test="(false() or not(@listVersionID != '1.0'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='ProcedureCode']">
+      <svrl:text>Invalid codelist attribute value '2.0.1'. The element 'QualificationApplicationResponse/cbc:ProcedureCode' must have the following attribute and value: 'listVersionID = 1.0'.</svrl:text>
+   </svrl:failed-assert>
+   <svrl:failed-assert test="(false() or not(@listAgencyID != 'EU-COM-OP'))" flag="fatal"
+                       location="/*[local-name()='QualificationApplicationResponse']/*[local-name()='ProcedureCode']">
+      <svrl:text>Invalid codelist attribute value 'EU-COM-GROW'. The element 'QualificationApplicationResponse/cbc:ProcedureCode' must have the following attribute and value: 'listAgencyID = EU-COM-OP'.</svrl:text>
+   </svrl:failed-assert>
+</svrl:schematron-output>
