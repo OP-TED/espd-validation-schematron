@@ -1,2 +1,0 @@
-# schematron
-All schematron projects
