@@ -38,18 +38,18 @@ This will create the folder `espd-validation-schematron` on your local computer.
 
 ### Repository structure
 
-`mock-ups` contains Microsoft Viso UI mock-ups of the various ESPD criterion and the exporterd version in PNG format. Those files are used for user visualisation and demonstration of possible look of the ESPD criteria. This folder is not maintained and is provided as is.
+`mock-ups` folder contains Microsoft Viso UI mock-ups of the various ESPD criterion and the exporterd version in PNG format. Those files are used for user visualisation and demonstration of possible look of the ESPD criteria. This folder is not maintained and is provided as is.
 
-`schematron` contains the validation rules for each version of ESPD, starting with version 2.0.1. (e.g. `schematron/Schematron-v3.3.0`). All the activity will take place in one of those folders.  
-For maintaining an existring release use the corresponding folder. For a new version make a copy of the latest version of ESPD and rename according to the new version (e.g. copy `schematron/Schematron-v3.3.0` to folder `schematron/Schematron-v4.0.0` to create the structure for a new version).
+`schematron` folder contains the validation rules for each version of ESPD, starting with version 2.0.1. (e.g. `schematron/Schematron-v3.3.0`). All the activity will take place in one of those folders.  
+Maintaining an existring release, please use the corresponding folder. For a new version make a copy of the latest version of ESPD and rename according to the new version (e.g. copy `schematron/Schematron-v3.3.0` to folder `schematron/Schematron-v4.0.0` to create the structure for a new version).
 
 `schematron/Schematron-vX.X.X` folder structure is standard and contains:
-- `espd-schematron-gc.bat` an Windows executable that is present in the root of the folder
+- `espd-schematron-gc.bat` an Windows batch executable that is present in the root of the folder
 - `ESPDReqeust` the folder containing the necessary input and output files for ESPD Request validation
 - `ESPDResponse` the folder containing the necessary input and output files for ESPD Response validation
 - `common` the folder contains all common artefacts, libraries, and XSD files necessary to validate and produce extra validators
 - `gc` the folders contains all Code List files of that specific ESPD version
-- all `logs` folders contain the output of the execution of internal pipelines and should be checked for errors in the log files after each execution. 
+- all `logs` folders contain the output of the execution of internal pipelines and should be checked for errors. If any errors occur during processing they are in the log files after each execution. 
 
 ## Documentation
 
@@ -66,7 +66,7 @@ all files are in XML format.
 
 **External data sources**
 
-Please update the files in ESPD-EDM repository first and then proceed.
+Please update the files in [ESPD-EDM](https://github.com/OP-TED/ESPD-EDM) repository first and then proceed.
 
 The following files are copied from [ESPD-EDM](https://github.com/OP-TED/ESPD-EDM) repository
 
@@ -101,13 +101,13 @@ The following internal files must be updated after all external files have been 
   - `xml.xsd` is used to validate ???
 - `schematron/Schematron-vX.X.X/common/xsdrt` contains the XSD run time files for UBL documents validation. ESPD documents are based on UBL `QualificationApplicationRequest` for Request and `QualificationApplicationResponse` for Response
 - `schematron/Schematron-vX.X.X/common/xsl/` contains generic XSL tranforamtion tools used to tansform schematron files, cva files and for internal pipelines. Those files should be updated if necessary only.
-  - `Crane-Constraints2SchematronXSLT.xsl`
-  - `Crane-cva2schXSLT.xsl`
+  - `Crane-Constraints2SchematronXSLT.xsl` 
+  - `Crane-cva2schXSLT.xsl` - used to transform the CVA to SCH
   - `Crane-genericode-CodeList.xsl`
   - `Message-Schematron-terminator.xsl`
   - `iso_schematron_skeleton_for_saxon.xsl`
   - `iso_schematron_skeleton_for_xslt1.xsl`
-  - `iso_svrl_for_xslt2.xsl`
+  - `iso_svrl_for_xslt2.xsl` - used to transform SCH to XSL
 - `schematron/Schematron-vX.X.X/ESPDRequest` contains ESPD Request validation related files
   - `sch` contains Schematron business rules that have to considered for full validation of ESPD Request. Some of the files are generated automatically some are managed manually
   - `xsl` contains the result of transfoming Schmematron files to XSL. The `criterionList.xml` file is maintained manually and `ESPD-criterion.xml` is from external sources.
@@ -130,66 +130,312 @@ Run file `schematron/Schematron-vX.X.X/espd-schematron-gc.bat` this will validat
 
 Run files in this order:
 - `schematron/Schematron-vX.X.X/ESPDRequest/01-espd-schematron-cva.bat`
-    | source | trasform | output | log |
-    | --- | --- | --- | --- |
-    | `schematron/Schematron-vX.X.X/common/cva/01-ESPD-codelist-values.cva` | `schematron/Schematron-vX.X.X/common/xsl/Crane-cva2schXSLT.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/01-CVAtoXSL.txt`|
-    | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/sch/01-ESPD-codelist-values.sch` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/02-XSLtoSCH.txt`|
+    1. | | |
+       | --- | --- |
+       | **source** | `schematron/Schematron-vX.X.X/common/cva/01-ESPD-codelist-values.cva` | 
+       | **transform** |  `schematron/Schematron-vX.X.X/common/xsl/Crane-cva2schXSLT.xsl` |  
+       | **output** |  `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xsl` |
+       | **log** |  `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/01-CVAtoXSL.txt` |  
+    2. | | |
+       | --- | --- |       
+       | **source** | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xsl` |
+       | **transform** | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xsl` |
+       | **output** |`schematron/Schematron-vX.X.X/ESPDRequest/sch/01-ESPD-codelist-values.sch` |
+       | **log** | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/02-XSLtoSCH.txt`|
 - `schematron/Schematron-vX.X.X/ESPDRequest/02-espd-schematron-sch.bat`  
-    | source | trasform | output | log |
-    | --- | --- | --- | --- |
-    | `schematron/Schematron-vX.X.X/ESPDRequest/sch/01-ESPD-codelist-values.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/04-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDRequest/sch/02-ESPD-req-cardinality-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/02-ESPD-req-cardinality-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/05-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/common/sch/04-ESPD-common-other-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-common-other-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/06-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDRequest/sch/05-ESPD-req-procurer-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-procurer-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/07-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDRequest/sch/04-ESPD-req-other-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-req-other-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/08-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/common/sch/03-ESPD-common-criterion-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-common-criterion-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/09-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDRequest/sch/03-ESPD-req-criterion-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-req-criterion-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/10-SCHtoXSLT.txt` |    
-    | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-attributes.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-attributes.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/11-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDRequest/sch/05-ESPD-req-specific-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-specific-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/12-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-values-restrictions.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-values-restrictions.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/13-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDRequest/sch/01-ESPD-codelist-values.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-codelist-values.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/04-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDRequest/sch/02-ESPD-req-cardinality-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/02-ESPD-req-cardinality-br.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/05-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/sch/04-ESPD-common-other-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-common-other-br.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/06-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDRequest/sch/05-ESPD-req-procurer-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-procurer-br.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/07-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   |  `schematron/Schematron-vX.X.X/ESPDRequest/sch/04-ESPD-req-other-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-req-other-br.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/08-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   |  `schematron/Schematron-vX.X.X/common/sch/03-ESPD-common-criterion-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-common-criterion-br.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/09-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDRequest/sch/03-ESPD-req-criterion-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-req-criterion-br.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/10-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-attributes.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-attributes.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/11-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDRequest/sch/05-ESPD-req-specific-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-specific-br.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/12-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-values-restrictions.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-values-restrictions.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/13-SCHtoXSLT.txt` |
+    
 - `schematron/Schematron-vX.X.X/ESPDRequest/03-espd-schematron-xml.bat`  
-    | source | trasform | output | log |
-    | --- | --- | --- | --- |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/common/xsdrt/maindoc/UBL-QualificationApplicationRequest-2.3.xsd` | `schematron/Schematron-vX.X.X/ESPDRequest/output/result-xsd.xml`  | on screen direct log. ESPD Request document validation agains UBL 2.3. XSD |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/05-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/02-ESPD-req-cardinality-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/02-ESPD-req-cardinality-br.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/05-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-common-other-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/04-ESPD-common-other-br.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/06-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-procurer-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/05-ESPD-req-procurer-br.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/07-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-req-other-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/04-ESPD-req-other-br.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/08-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-common-criterion-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/03-ESPD-common-criterion-br.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/09-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-req-criterion-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/03-ESPD-req-criterion-br.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/10-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-attributes.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-common-cl-attributes.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/11-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-specific-br.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/05-ESPD-req-specific-br.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/12-XML-validation.txt` |
-    | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-values-restrictions.xsl` | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-common-cl-values-restrictions.xml`  | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/12-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   |  `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsdrt/maindoc/UBL-QualificationApplicationRequest-2.3.xsd` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/result-xsd.xml` |
+      | **log**      | on screen direct log. ESPD Request document validation agains UBL 2.3. XSD |
+  1.  | | |
+      | --- | --- |  
+      | **source**   |  `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-codelist-values.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-codelist-values.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/05-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   |  `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml`|
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/02-ESPD-req-cardinality-br.xsl` |
+      | **output**   |  `schematron/Schematron-vX.X.X/ESPDRequest/output/02-ESPD-req-cardinality-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/05-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-common-other-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/04-ESPD-common-other-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/06-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-procurer-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/05-ESPD-req-procurer-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/07-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/04-ESPD-req-other-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/04-ESPD-req-other-br.xml`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/08-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-common-criterion-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/03-ESPD-common-criterion-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/09-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/03-ESPD-req-criterion-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/03-ESPD-req-criterion-br.xml`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/10-XML-validation.txt`|
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-attributes.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-common-cl-attributes.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/11-XML-validation.txt`|
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/05-ESPD-req-specific-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/05-ESPD-req-specific-br.xml`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/12-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/xml/ESPD-Request-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDRequest/xsl/01-ESPD-common-cl-values-restrictions.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDRequest/output/01-ESPD-common-cl-values-restrictions.xml`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDRequest/output/logs/12-XML-validation.txt`|
     
 **Phase III - ESPD Response validation**
 
 Run files in this order:
 - `schematron/Schematron-vX.X.X/ESPDResponse/01-espd-schematron-cva.bat`
-    | source | trasform | output | log |
-    | --- | --- | --- | --- |
-    | `schematron/Schematron-vX.X.X/common/cva/01-ESPD-codelist-values.cva` | `schematron/Schematron-vX.X.X/common/xsl/Crane-cva2schXSLT.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/01-CVAtoXSL.txt`|
-    | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-codelist-values.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/sch/01-ESPD-codelist-values.sch` | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/02-XSLtoSCH.txt`|
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/cva/01-ESPD-codelist-values.cva` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/Crane-cva2schXSLT.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-codelist-values.xsl` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/01-CVAtoXSL.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-codelist-values.xsl` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-codelist-values.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/01-ESPD-codelist-values.sch` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/02-XSLtoSCH.txt` |
+
 - `schematron/Schematron-vX.X.X/ESPDResponse/02-espd-schematron-sch.bat`  
-    | source | trasform | output | log |
-    | --- | --- | --- | --- |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/01-ESPD-codelist-values.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-codelist-values.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/04-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/02-ESPD-resp-cardinality-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/02-ESPD-resp-cardinality-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/05-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/common/sch/04-ESPD-common-other-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/04-ESPD-common-other-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/06-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-eo-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-eo-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/07-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/04-ESPD-resp-other-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/04-ESPD-resp-other-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/08-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/common/sch/03-ESPD-common-criterion-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/03-ESPD-common-criterion-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/09-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-role-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-role-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/10-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/03-ESPD-resp-criterion-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/11-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-qualification-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-qualification-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/12-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-specific-br.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-specific-br.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/13-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-attributes.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-common-cl-attributes.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/14-SCHtoXSLT.txt` |
-    | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-values-restrictions.sch` | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-common-cl-values-restrictions.xsl`  | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/15-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/01-ESPD-codelist-values.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-codelist-values.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/04-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/02-ESPD-resp-cardinality-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/02-ESPD-resp-cardinality-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/05-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/sch/04-ESPD-common-other-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/04-ESPD-common-other-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/06-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-eo-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-eo-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/07-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/04-ESPD-resp-other-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/04-ESPD-resp-other-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/08-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/sch/03-ESPD-common-criterion-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/03-ESPD-common-criterion-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/09-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-role-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-role-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/10-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/03-ESPD-resp-criterion-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/11-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-qualification-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-qualification-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/12-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/ESPDResponse/sch/05-ESPD-resp-specific-br.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-specific-br.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/13-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-attributes.sch` |
+      | **trasform** |  `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-common-cl-attributes.xsl`  |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/14-SCHtoXSLT.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/common/sch/01-ESPD-common-cl-values-restrictions.sch` |
+      | **trasform** | `schematron/Schematron-vX.X.X/common/xsl/iso_svrl_for_xslt2.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-common-cl-values-restrictions.xsl` | 
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/15-SCHtoXSLT.txt` |
+
 - `schematron/Schematron-vX.X.X/ESPDResponse/3-espd-schematron-xml.bat`  
-    | source | trasform | output | log |
-    | --- | --- | --- | --- |
-
-
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-codelist-values.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-codelist-values.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/05-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/02-ESPD-resp-cardinality-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/02-ESPD-resp-cardinality-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/05-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/04-ESPD-common-other-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/04-ESPD-common-other-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/06-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-eo-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/05-ESPD-resp-eo-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/07-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/04-ESPD-resp-other-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/04-ESPD-resp-other-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/08-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/03-ESPD-common-criterion-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/03-ESPD-common-criterion-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/09-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-role-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/05-ESPD-resp-role-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/10-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/03-ESPD-resp-criterion-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/03-ESPD-resp-criterion-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/11-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-qualification-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/05-ESPD-resp-qualification-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/12-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/05-ESPD-resp-specific-br.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/05-ESPD-resp-specific-br.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/13-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-common-cl-attributes.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-common-cl-attributes.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/14-XML-validation.txt` |
+  1.  | | |
+      | --- | --- |  
+      | **source**   | `schematron/Schematron-vX.X.X/commo/xml/ESPD-Response-BASE.xml` |
+      | **trasform** | `schematron/Schematron-vX.X.X/ESPDResponse/xsl/01-ESPD-common-cl-values-restrictions.xsl` |
+      | **output**   | `schematron/Schematron-vX.X.X/ESPDResponse/output/01-ESPD-common-cl-values-restrictions.xml` |
+      | **log**      | `schematron/Schematron-vX.X.X/ESPDResponse/output/logs/15-XML-validation.txt` |
 
 ### Errors and debugging
 
@@ -201,7 +447,23 @@ Please consult the input source file and the transfomation file in order to fix 
 
 ### How to use the results
 
-Once the 3 main parts are executed without any errors, especially validation errors, we can use the files produced in `find those folders ???` can be copied to ESPD-EDM `validation` folder. The files from `find that folder ???` should be copied to validation-resources-espd repository.
+Once the 3 main parts are executed successfully (check for any errors in the log files, especially validation errors), we can use the files produced in `ESPDRequest` and `ESPDResponse` folders to be copied to ESPD-EDM repository `validation` folder. The files from  ESPD-EDM repository should be copied to validation-resources-espd repository.
+
+| from espd-validation-schematron | to ESPD-EDM |
+| --- | --- |
+| `schematron/Schematron-vX.X.X/ESPDRequest/sch/` | `validation/ESPDRequest/sch/` |
+| `schematron/Schematron-vX.X.X/ESPDRequest/xsl/`| `validation/ESPDRequest/xsl/` |
+| `schematron/Schematron-vX.X.X/ESPDResponse/sch/` | `validation/ESPDResponse/sch/` |
+| `schematron/Schematron-vX.X.X/ESPDResponse/xsl/` | `validation/ESPDResponse/xsl/` |
+| `schematron/Schematron-vX.X.X/common/cva/` | `validation/common/cva/` |
+| `schematron/Schematron-vX.X.X/common/sch/` | `validation/common/sch/` |
+
+| from ESPD-EDM | to validator-resources-espd |
+| --- | --- |
+| `validation/ESPDRequest/xsl/` | `resources/vX.X.X/ESPDRequest/` |
+| `validation/ESPDResponse/xsl/` | `resources/vX.X.X/ESPDResponse/` |
+| `codelists/gc/` | `resources/vX.X.X/gc/` |
+| `ubl-2.3/xsdrt/` | `resources/vX.X.X/xsdrt/` |
 
 ## Licence  
 The project is developed and distributed under EUROPEAN UNION PUBLIC LICENCE v. 1.2.
