@@ -1,2 +1,0 @@
-Attempting well-formed, namespace-aware parse
-Parse succeeded (0.22) with no errors and no warnings.
