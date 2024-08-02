@@ -1,7 +1,7 @@
 # espd-validation-schematron
 ESPD validation tool based on Schematron rules 
 
-[![EUPL License](https://img.shields.io/badge/License-EUPL%20v1.2-blue.svg)](https://eupl.eu/1.2/en)
+[![EUPL Licence](https://img.shields.io/badge/Licence-EUPL%20v1.2-blue.svg)](https://eupl.eu/1.2/en)
 
 **Audience** 
 
@@ -466,4 +466,4 @@ Once the 3 main parts are executed successfully (check for any errors in the log
 | `ubl-2.3/xsdrt/` | `resources/vX.X.X/xsdrt/` |
 
 ## Licence  
-The project is developed and distributed under EUROPEAN UNION PUBLIC LICENCE v. 1.2.
+The project is developed and distributed under the [European Union Public Licence (EUPL) version 1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12).
