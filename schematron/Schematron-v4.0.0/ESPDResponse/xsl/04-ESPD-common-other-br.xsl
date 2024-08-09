@@ -1,60 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xsl:stylesheet xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-                xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                xmlns:espd="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
                 xmlns:espd-req="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
                 xmlns:espd-resp="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
-                xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:xhtml="http://www.w3.org/1999/xhtml"
-                xmlns:schold="http://www.ascc.net/xml/schematron"
-                xmlns:iso="http://purl.oclc.org/dsdl/schematron"
-                xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-                xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
-                xmlns:espd="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+                xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
                 xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                xmlns:schold="http://www.ascc.net/xml/schematron"
+                xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 version="2.0"><!--Implementers: please note that overriding process-prolog or process-root is 
     the preferred method for meta-stylesheets to use where possible. -->
-<xsl:param name="archiveDirParameter"/>
+   <xsl:param name="archiveDirParameter"/>
    <xsl:param name="archiveNameParameter"/>
    <xsl:param name="fileNameParameter"/>
    <xsl:param name="fileDirParameter"/>
    <xsl:variable name="document-uri">
       <xsl:value-of select="document-uri(/)"/>
    </xsl:variable>
-
    <!--PHASES-->
-
-
-<!--PROLOG-->
-<xsl:output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" method="xml"
+   <!--PROLOG-->
+   <xsl:output xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+               method="xml"
                omit-xml-declaration="no"
                standalone="yes"
                indent="yes"/>
-
    <!--XSD TYPES FOR XSLT2-->
-
-
-<!--KEYS AND FUNCTIONS-->
-
-
-<!--DEFAULT RULES-->
-
-
-<!--MODE: SCHEMATRON-SELECT-FULL-PATH-->
-<!--This mode can be used to generate an ugly though full XPath for locators-->
-<xsl:template match="*" mode="schematron-select-full-path">
+   <!--KEYS AND FUNCTIONS-->
+   <!--DEFAULT RULES-->
+   <!--MODE: SCHEMATRON-SELECT-FULL-PATH-->
+   <!--This mode can be used to generate an ugly though full XPath for locators-->
+   <xsl:template match="*" mode="schematron-select-full-path">
       <xsl:apply-templates select="." mode="schematron-get-full-path"/>
    </xsl:template>
-
    <!--MODE: SCHEMATRON-FULL-PATH-->
-<!--This mode can be used to generate an ugly though full XPath for locators-->
-<xsl:template match="*" mode="schematron-get-full-path">
+   <!--This mode can be used to generate an ugly though full XPath for locators-->
+   <xsl:template match="*" mode="schematron-get-full-path">
       <xsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
       <xsl:text>/</xsl:text>
       <xsl:choose>
          <xsl:when test="namespace-uri()=''">
             <xsl:value-of select="name()"/>
-            <xsl:variable name="p_1" select="1+    count(preceding-sibling::*[name()=name(current())])"/>
+            <xsl:variable name="p_1"
+                          select="1+    count(preceding-sibling::*[name()=name(current())])"/>
             <xsl:if test="$p_1&gt;1 or following-sibling::*[name()=name(current())]">[<xsl:value-of select="$p_1"/>]</xsl:if>
          </xsl:when>
          <xsl:otherwise>
@@ -81,10 +72,9 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-
    <!--MODE: SCHEMATRON-FULL-PATH-2-->
-<!--This mode can be used to generate prefixed XPath for humans-->
-<xsl:template match="node() | @*" mode="schematron-get-full-path-2">
+   <!--This mode can be used to generate prefixed XPath for humans-->
+   <xsl:template match="node() | @*" mode="schematron-get-full-path-2">
       <xsl:for-each select="ancestor-or-self::*">
          <xsl:text>/</xsl:text>
          <xsl:value-of select="name(.)"/>
@@ -99,9 +89,9 @@
       </xsl:if>
    </xsl:template>
    <!--MODE: SCHEMATRON-FULL-PATH-3-->
-<!--This mode can be used to generate prefixed XPath for humans 
+   <!--This mode can be used to generate prefixed XPath for humans 
 	(Top-level element has index)-->
-<xsl:template match="node() | @*" mode="schematron-get-full-path-3">
+   <xsl:template match="node() | @*" mode="schematron-get-full-path-3">
       <xsl:for-each select="ancestor-or-self::*">
          <xsl:text>/</xsl:text>
          <xsl:value-of select="name(.)"/>
@@ -115,9 +105,8 @@
          <xsl:text/>/@<xsl:value-of select="name(.)"/>
       </xsl:if>
    </xsl:template>
-
    <!--MODE: GENERATE-ID-FROM-PATH -->
-<xsl:template match="/" mode="generate-id-from-path"/>
+   <xsl:template match="/" mode="generate-id-from-path"/>
    <xsl:template match="text()" mode="generate-id-from-path">
       <xsl:apply-templates select="parent::*" mode="generate-id-from-path"/>
       <xsl:value-of select="concat('.text-', 1+count(preceding-sibling::text()), '-')"/>
@@ -139,9 +128,8 @@
       <xsl:text>.</xsl:text>
       <xsl:value-of select="concat('.',name(),'-',1+count(preceding-sibling::*[name()=name(current())]),'-')"/>
    </xsl:template>
-
    <!--MODE: GENERATE-ID-2 -->
-<xsl:template match="/" mode="generate-id-2">U</xsl:template>
+   <xsl:template match="/" mode="generate-id-2">U</xsl:template>
    <xsl:template match="*" mode="generate-id-2" priority="2">
       <xsl:text>U</xsl:text>
       <xsl:number level="multiple" count="*"/>
@@ -160,11 +148,12 @@
       <xsl:text>_</xsl:text>
       <xsl:value-of select="translate(name(),':','.')"/>
    </xsl:template>
-   <!--Strip characters--><xsl:template match="text()" priority="-1"/>
-
+   <!--Strip characters-->
+   <xsl:template match="text()" priority="-1"/>
    <!--SCHEMA SETUP-->
-<xsl:template match="/">
-      <svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Common Other Business Rules"
+   <xsl:template match="/">
+      <svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                              title="Common Other Business Rules"
                               schemaVersion="">
          <xsl:comment>
             <xsl:value-of select="$archiveDirParameter"/>   
@@ -194,18 +183,14 @@
          <xsl:apply-templates select="/" mode="M7"/>
       </svrl:schematron-output>
    </xsl:template>
-
    <!--SCHEMATRON PATTERNS-->
-<svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Common Other Business Rules</svrl:text>
-
+   <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Common Other Business Rules</svrl:text>
    <!--PATTERN BR-COM-OTH-->
-
-
-	<!--RULE -->
-<xsl:template match="cac:AdditionalDocumentReference" priority="1005" mode="M7">
+   <!--RULE -->
+   <xsl:template match="cac:AdditionalDocumentReference" priority="1005" mode="M7">
 
 		<!--ASSERT -->
-<xsl:choose>
+      <xsl:choose>
          <xsl:when test="(count(cbc:ID)=0) or not(cbc:DocumentTypeCode/text() = 'TED_CN') or ((count(cbc:ID))=1 and fn:matches(normalize-space(cbc:ID/text()), '^[0-9]{4}/S [0-9]{3}\-[0-9]{6}$'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
@@ -221,9 +206,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="(cbc:DocumentTypeCode/text() = 'TED_CN' and (count(cac:Attachment/cac:ExternalReference/cbc:Description) = 2)) or not(cbc:DocumentTypeCode/text() = 'TED_CN')"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
@@ -239,9 +223,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="(cbc:DocumentTypeCode)"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="(cbc:DocumentTypeCode)">
@@ -258,12 +241,11 @@
       </xsl:choose>
       <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M7"/>
    </xsl:template>
-
-	  <!--RULE -->
-<xsl:template match="cbc:UBLVersionID" priority="1004" mode="M7">
+   <!--RULE -->
+   <xsl:template match="cbc:UBLVersionID" priority="1004" mode="M7">
 
 		<!--ASSERT -->
-<xsl:choose>
+      <xsl:choose>
          <xsl:when test="text()='2.3'"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="text()='2.3'">
@@ -278,9 +260,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="@schemeAgencyID = 'OASIS-UBL-TC'"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
@@ -298,14 +279,13 @@
       </xsl:choose>
       <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M7"/>
    </xsl:template>
-
-	  <!--RULE -->
-<xsl:template match="cbc:ExpectedCode | cbc:IdentificationCode | cbc:DocumentTypeCode | cbc:ValueCurrencyCode | cbc:ProcedureCode | cbc:ProcurementTypeCode | cbc:ProcurementSubTypeCode"
+   <!--RULE -->
+   <xsl:template match="cbc:ExpectedCode | cbc:IdentificationCode | cbc:DocumentTypeCode | cbc:ValueCurrencyCode | cbc:ProcedureCode | cbc:ProcurementTypeCode | cbc:ProcurementSubTypeCode"
                  priority="1003"
                  mode="M7">
 
 		<!--ASSERT -->
-<xsl:choose>
+      <xsl:choose>
          <xsl:when test="@listID"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="@listID">
@@ -320,9 +300,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="@listAgencyID"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="@listAgencyID">
@@ -337,9 +316,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="@listVersionID"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="@listVersionID">
@@ -356,14 +334,13 @@
       </xsl:choose>
       <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M7"/>
    </xsl:template>
-
-	  <!--RULE -->
-<xsl:template match="cbc:TypeCode | cbc:PropertyGroupTypeCode | cbc:ValueDataTypeCode"
+   <!--RULE -->
+   <xsl:template match="cbc:TypeCode | cbc:PropertyGroupTypeCode | cbc:ValueDataTypeCode"
                  priority="1002"
                  mode="M7">
 
 		<!--ASSERT -->
-<xsl:choose>
+      <xsl:choose>
          <xsl:when test="@listID"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="@listID">
@@ -378,9 +355,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="@listAgencyID"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="@listAgencyID">
@@ -395,9 +371,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="@listVersionID"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="@listVersionID">
@@ -412,9 +387,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="starts-with(@listVersionID, '3.') or starts-with(@listVersionID, '03.')"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
@@ -434,14 +408,13 @@
       </xsl:choose>
       <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M7"/>
    </xsl:template>
-
-	  <!--RULE -->
-<xsl:template match="ext:ExtensionAgencyID | ext:ExtensionVersionID | cbc:AccountID | cbc:AdditionalAccountID | cbc:AgencyID | cbc:AircraftID | cbc:AttributeID | cbc:AwardID | cbc:AwardingCriterionID | cbc:BarcodeSymbologyID | cbc:BrokerAssignedID | cbc:BusinessClassificationEvidenceID |    cbc:BusinessIdentityEvidenceID | cbc:BuyerEventID | cbc:CV2ID | cbc:CarrierAssignedID | cbc:ChipApplicationID | cbc:CompanyID | cbc:ConsigneeAssignedID | cbc:ConsignorAssignedID | cbc:ConsumptionID | cbc:ConsumptionReportID | cbc:ContractFolderID | cbc:ContractedCarrierAssignedID |   cbc:CustomerAssignedAccountID | cbc:CustomizationID | cbc:DocumentID | cbc:ExchangeMarketID | cbc:ExpectedID | cbc:ExtendedID | cbc:FormatID | cbc:FreightForwarderAssignedID | cbc:HazardClassID | cbc:ID | cbc:IdentificationID | cbc:ImmobilizationCertificateID |   cbc:InstructionID | cbc:IssueNumberID | cbc:IssuerID | cbc:JourneyID | cbc:LanguageID | cbc:LicensePlateID | cbc:LineID | cbc:LoadingSequenceID | cbc:LocationID | cbc:LogoReferenceID | cbc:LotNumberID | cbc:LowerOrangeHazardPlacardID | cbc:MarkingID | cbc:MinimumImprovementBid |   cbc:NationalityID | cbc:NetworkID | cbc:OID| cbc:OpenTenderID | cbc:OriginalContractingSystemID | cbc:OriginalJobID | cbc:ParentDocumentID | cbc:ParentDocumentLineReferenceID | cbc:ParentDocumentVersionID | cbc:ParticipantID | cbc:PaymentID | cbc:PaymentMeansID |   cbc:PerformingCarrierAssignedID | cbc:PrepaidPaymentReferenceID | cbc:PreviousJobID | cbc:PreviousVersionID | cbc:PrimaryAccountNumberID | cbc:ProductTraceID | cbc:ProfileExecutionID | cbc:ProfileID | cbc:ProtocolID | cbc:RadioCallSignID | cbc:RailCarID | cbc:ReferenceID |    cbc:ReferencedConsignmentID | cbc:RegistrationID | cbc:RegistrationNationalityID | cbc:ReleaseID | cbc:RequestForQuotationLineID | cbc:RequiredCustomsID | cbc:ResponseID | cbc:RevisedForecastLineID | cbc:SalesOrderID | cbc:SalesOrderLineID | cbc:SecurityID | cbc:SellerEventID |   cbc:SequenceID | cbc:SequenceNumberID | cbc:SerialID | cbc:ShippingOrderID | cbc:SignatureID | cbc:SpecificationID| cbc:SubscriberID | cbc:SuccessiveSequenceID | cbc:SupplierAssignedAccountID | cbc:TenderEnvelopeID | cbc:TraceID | cbc:TrackingID | cbc:TrainID |    cbc:TransportExecutionPlanReferenceID | cbc:UBLVersionID | cbc:UUID | cbc:UpperOrangeHazardPlacardID | cbc:ValidatedCriterionPropertyID | cbc:ValidatorID | cbc:VariantID | cbc:VersionID | cbc:VesselID | cbc:WeighingDeviceID"
+   <!--RULE -->
+   <xsl:template match="ext:ExtensionAgencyID | ext:ExtensionVersionID | cbc:AccountID | cbc:AdditionalAccountID | cbc:AgencyID | cbc:AircraftID | cbc:AttributeID | cbc:AwardID | cbc:AwardingCriterionID | cbc:BarcodeSymbologyID | cbc:BrokerAssignedID | cbc:BusinessClassificationEvidenceID |    cbc:BusinessIdentityEvidenceID | cbc:BuyerEventID | cbc:CV2ID | cbc:CarrierAssignedID | cbc:ChipApplicationID | cbc:CompanyID | cbc:ConsigneeAssignedID | cbc:ConsignorAssignedID | cbc:ConsumptionID | cbc:ConsumptionReportID | cbc:ContractFolderID | cbc:ContractedCarrierAssignedID |   cbc:CustomerAssignedAccountID | cbc:CustomizationID | cbc:DocumentID | cbc:ExchangeMarketID | cbc:ExpectedID | cbc:ExtendedID | cbc:FormatID | cbc:FreightForwarderAssignedID | cbc:HazardClassID | cbc:ID | cbc:IdentificationID | cbc:ImmobilizationCertificateID |   cbc:InstructionID | cbc:IssueNumberID | cbc:IssuerID | cbc:JourneyID | cbc:LanguageID | cbc:LicensePlateID | cbc:LineID | cbc:LoadingSequenceID | cbc:LocationID | cbc:LogoReferenceID | cbc:LotNumberID | cbc:LowerOrangeHazardPlacardID | cbc:MarkingID | cbc:MinimumImprovementBid |   cbc:NationalityID | cbc:NetworkID | cbc:OID| cbc:OpenTenderID | cbc:OriginalContractingSystemID | cbc:OriginalJobID | cbc:ParentDocumentID | cbc:ParentDocumentLineReferenceID | cbc:ParentDocumentVersionID | cbc:ParticipantID | cbc:PaymentID | cbc:PaymentMeansID |   cbc:PerformingCarrierAssignedID | cbc:PrepaidPaymentReferenceID | cbc:PreviousJobID | cbc:PreviousVersionID | cbc:PrimaryAccountNumberID | cbc:ProductTraceID | cbc:ProfileExecutionID | cbc:ProfileID | cbc:ProtocolID | cbc:RadioCallSignID | cbc:RailCarID | cbc:ReferenceID |    cbc:ReferencedConsignmentID | cbc:RegistrationID | cbc:RegistrationNationalityID | cbc:ReleaseID | cbc:RequestForQuotationLineID | cbc:RequiredCustomsID | cbc:ResponseID | cbc:RevisedForecastLineID | cbc:SalesOrderID | cbc:SalesOrderLineID | cbc:SecurityID | cbc:SellerEventID |   cbc:SequenceID | cbc:SequenceNumberID | cbc:SerialID | cbc:ShippingOrderID | cbc:SignatureID | cbc:SpecificationID| cbc:SubscriberID | cbc:SuccessiveSequenceID | cbc:SupplierAssignedAccountID | cbc:TenderEnvelopeID | cbc:TraceID | cbc:TrackingID | cbc:TrainID |    cbc:TransportExecutionPlanReferenceID | cbc:UBLVersionID | cbc:UUID | cbc:UpperOrangeHazardPlacardID | cbc:ValidatedCriterionPropertyID | cbc:ValidatorID | cbc:VariantID | cbc:VersionID | cbc:VesselID | cbc:WeighingDeviceID"
                  priority="1001"
                  mode="M7">
 
 		<!--ASSERT -->
-<xsl:choose>
+      <xsl:choose>
          <xsl:when test="(@schemeAgencyID) and normalize-space(@schemeAgencyID) != ''"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
@@ -459,12 +432,11 @@
       </xsl:choose>
       <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M7"/>
    </xsl:template>
-
-	  <!--RULE -->
-<xsl:template match="cbc:EndpointID" priority="1000" mode="M7">
+   <!--RULE -->
+   <xsl:template match="cbc:EndpointID" priority="1000" mode="M7">
 
 		<!--ASSERT -->
-<xsl:choose>
+      <xsl:choose>
          <xsl:when test="(@schemeID)"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="(@schemeID)">
@@ -477,9 +449,8 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-
-		    <!--ASSERT -->
-<xsl:choose>
+      <!--ASSERT -->
+      <xsl:choose>
          <xsl:when test="(@schemeAgencyID) and normalize-space(@schemeAgencyID) != ''"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
