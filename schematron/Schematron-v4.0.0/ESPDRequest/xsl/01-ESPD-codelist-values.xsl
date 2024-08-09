@@ -428,10 +428,10 @@
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="( false() or ( (contains(translate('&#x7f;AMOUNT&#x7f;CERTIFICATION_LEVEL_DESCRIPTION&#x7f;CODE&#x7f;CODE_BOOLEAN&#x7f;CODE_COUNTRY&#x7f;COPY_QUALITY_TYPE_CODE&#x7f;DATE&#x7f;DESCRIPTION&#x7f;ECONOMIC_OPERATOR_IDENTIFIER&#x7f;EVIDENCE_IDENTIFIER&#x7f;IDENTIFIER&#x7f;INDICATOR&#x7f;LOT_IDENTIFIER&#x7f;MAXIMUM_AMOUNT&#x7f;MAXIMUM_VALUE_NUMERIC&#x7f;MINIMUM_AMOUNT&#x7f;MINIMUM_VALUE_NUMERIC&#x7f;NONE&#x7f;PERCENTAGE&#x7f;PERIOD&#x7f;QUAL_IDENTIFIER&#x7f;QUANTITY&#x7f;QUANTITY_INTEGER&#x7f;QUANTITY_YEAR&#x7f;TIME&#x7f;TRANSLATION_TYPE_CODE&#x7f;URL&#x7f;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#x7f;',translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#x7f;')) ) ) ) "/>
+         <xsl:when test="( false() or ( (contains(translate('&#x7f;AMOUNT&#x7f;CERTIFICATION_LEVEL_DESCRIPTION&#x7f;CODE&#x7f;CODE_BOOLEAN&#x7f;CODE_COUNTRY&#x7f;COPY_QUALITY_TYPE_CODE&#x7f;DATE&#x7f;DESCRIPTION&#x7f;ECONOMIC_OPERATOR_IDENTIFIER&#x7f;EVIDENCE_IDENTIFIER&#x7f;IDENTIFIER&#x7f;INDICATOR&#x7f;LOT_IDENTIFIER&#x7f;MAXIMUM_AMOUNT&#x7f;MAXIMUM_VALUE_NUMERIC&#x7f;MINIMUM_AMOUNT&#x7f;MINIMUM_VALUE_NUMERIC&#x7f;NONE&#x7f;PERCENTAGE&#x7f;PERIOD&#x7f;QUAL_IDENTIFIER&#x7f;QUANTITY&#x7f;QUANTITY_INTEGER&#x7f;QUANTITY_YEAR&#x7f;TIME&#x7f;TRANSLATION_TYPE_CODE&#x7f;URL&#x7f;MINIMUM_QUANTITY&#x7f;MINIMUM_QUANTITY_INTEGER&#x7f;MINIMUM_QUANTITY_YEAR&#x7f;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#x7f;',translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#x7f;')) ) ) ) "/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="( false() or ( (contains(translate('&#x7f;AMOUNT&#x7f;CERTIFICATION_LEVEL_DESCRIPTION&#x7f;CODE&#x7f;CODE_BOOLEAN&#x7f;CODE_COUNTRY&#x7f;COPY_QUALITY_TYPE_CODE&#x7f;DATE&#x7f;DESCRIPTION&#x7f;ECONOMIC_OPERATOR_IDENTIFIER&#x7f;EVIDENCE_IDENTIFIER&#x7f;IDENTIFIER&#x7f;INDICATOR&#x7f;LOT_IDENTIFIER&#x7f;MAXIMUM_AMOUNT&#x7f;MAXIMUM_VALUE_NUMERIC&#x7f;MINIMUM_AMOUNT&#x7f;MINIMUM_VALUE_NUMERIC&#x7f;NONE&#x7f;PERCENTAGE&#x7f;PERIOD&#x7f;QUAL_IDENTIFIER&#x7f;QUANTITY&#x7f;QUANTITY_INTEGER&#x7f;QUANTITY_YEAR&#x7f;TIME&#x7f;TRANSLATION_TYPE_CODE&#x7f;URL&#x7f;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#x7f;',translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#x7f;')) ) ) )">
+                                test="( false() or ( (contains(translate('&#x7f;AMOUNT&#x7f;CERTIFICATION_LEVEL_DESCRIPTION&#x7f;CODE&#x7f;CODE_BOOLEAN&#x7f;CODE_COUNTRY&#x7f;COPY_QUALITY_TYPE_CODE&#x7f;DATE&#x7f;DESCRIPTION&#x7f;ECONOMIC_OPERATOR_IDENTIFIER&#x7f;EVIDENCE_IDENTIFIER&#x7f;IDENTIFIER&#x7f;INDICATOR&#x7f;LOT_IDENTIFIER&#x7f;MAXIMUM_AMOUNT&#x7f;MAXIMUM_VALUE_NUMERIC&#x7f;MINIMUM_AMOUNT&#x7f;MINIMUM_VALUE_NUMERIC&#x7f;NONE&#x7f;PERCENTAGE&#x7f;PERIOD&#x7f;QUAL_IDENTIFIER&#x7f;QUANTITY&#x7f;QUANTITY_INTEGER&#x7f;QUANTITY_YEAR&#x7f;TIME&#x7f;TRANSLATION_TYPE_CODE&#x7f;URL&#x7f;MINIMUM_QUANTITY&#x7f;MINIMUM_QUANTITY_INTEGER&#x7f;MINIMUM_QUANTITY_YEAR&#x7f;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#x7f;',translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#x7f;')) ) ) )">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -444,7 +444,7 @@
       <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M0"/>
    </xsl:template>
    <!--RULE -->
-   <xsl:template match="cac:TenderingCriterionPropertyGroup[cbc:ID='b01d8f8f-ceac-4b47-b7aa-88cdeb630465']/cac:TenderingCriterionProperty/cbc:ExpectedCode"
+   <xsl:template match="cac:TenderingCriterionPropertyGroup[cbc:ID='C25_SC_prof-regist/RG1/RSG1']/cac:TenderingCriterionProperty/cbc:ExpectedCode"
                  priority="1000"
                  mode="M0">
 

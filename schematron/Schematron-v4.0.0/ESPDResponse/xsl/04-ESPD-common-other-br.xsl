@@ -389,10 +389,10 @@
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="starts-with(@listVersionID, '3.') or starts-with(@listVersionID, '03.')"/>
+         <xsl:when test="starts-with(@listVersionID, '4.')"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="starts-with(@listVersionID, '3.') or starts-with(@listVersionID, '03.')">
+                                test="starts-with(@listVersionID, '4.')">
                <xsl:attribute name="id">BR-OTH-01-40</xsl:attribute>
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
@@ -402,7 +402,7 @@
                   <xsl:value-of select="name()"/>
                   <xsl:text/>/listVersionID = <xsl:text/>
                   <xsl:value-of select="@listVersionID"/>
-                  <xsl:text/>' is not correct. ListVersionID should be '3.x.y' or '03.xx.yy'.</svrl:text>
+                  <xsl:text/>' is not correct. ListVersionID should be '4.x.x'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>

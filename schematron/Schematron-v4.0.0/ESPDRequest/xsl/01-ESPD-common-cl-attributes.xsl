@@ -366,10 +366,10 @@
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listVersionID != '3.3.0'))"/>
+         <xsl:when test="(false() or not(@listVersionID != '4.0.0'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listVersionID != '3.3.0'))">
+                                test="(false() or not(@listVersionID != '4.0.0'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -380,16 +380,16 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listVersionID = 3.3.0'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listVersionID = 4.0.0'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listSchemeURI != 'https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/CriterionElementType.gc'))"/>
+         <xsl:when test="(false() or not(@listSchemeURI != 'https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/CriterionElementType.gc'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listSchemeURI != 'https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/CriterionElementType.gc'))">
+                                test="(false() or not(@listSchemeURI != 'https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/CriterionElementType.gc'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -400,16 +400,16 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listSchemeURI = https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/CriterionElementType.gc'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listSchemeURI = https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/CriterionElementType.gc'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listURI != 'https://github.com/ESPD/ESPD-EDM'))"/>
+         <xsl:when test="(false() or not(@listURI != 'https://github.com/OP-TED/ESPD-EDM'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listURI != 'https://github.com/ESPD/ESPD-EDM'))">
+                                test="(false() or not(@listURI != 'https://github.com/OP-TED/ESPD-EDM'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -420,7 +420,7 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listURI = https://github.com/ESPD/ESPD-EDM'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listURI = https://github.com/OP-TED/ESPD-EDM'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
@@ -1044,10 +1044,10 @@
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listVersionID != '3.3.0'))"/>
+         <xsl:when test="(false() or not(@listVersionID != '4.0.0'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listVersionID != '3.3.0'))">
+                                test="(false() or not(@listVersionID != '4.0.0'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -1058,16 +1058,16 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listVersionID = 3.3.0'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listVersionID = 4.0.0'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listSchemeURI != 'https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/PropertyGroupType.gc'))"/>
+         <xsl:when test="(false() or not(@listSchemeURI != 'https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/PropertyGroupType.gc'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listSchemeURI != 'https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/PropertyGroupType.gc'))">
+                                test="(false() or not(@listSchemeURI != 'https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/PropertyGroupType.gc'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -1078,16 +1078,16 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listSchemeURI = https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/PropertyGroupType.gc'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listSchemeURI = https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/PropertyGroupType.gc'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listURI != 'https://github.com/ESPD/ESPD-EDM'))"/>
+         <xsl:when test="(false() or not(@listURI != 'https://github.com/OP-TED/ESPD-EDM'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listURI != 'https://github.com/ESPD/ESPD-EDM'))">
+                                test="(false() or not(@listURI != 'https://github.com/OP-TED/ESPD-EDM'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -1098,7 +1098,7 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listURI = https://github.com/ESPD/ESPD-EDM'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listURI = https://github.com/OP-TED/ESPD-EDM'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
@@ -1151,10 +1151,10 @@
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listVersionID != '3.3.0'))"/>
+         <xsl:when test="(false() or not(@listVersionID != '4.0.0'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listVersionID != '3.3.0'))">
+                                test="(false() or not(@listVersionID != '4.0.0'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -1165,16 +1165,16 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listVersionID = 3.3.0'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listVersionID = 4.0.0'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listSchemeURI != 'https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/ResponseDataType.gc'))"/>
+         <xsl:when test="(false() or not(@listSchemeURI != 'https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/ResponseDataType.gc'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listSchemeURI != 'https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/ResponseDataType.gc'))">
+                                test="(false() or not(@listSchemeURI != 'https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/ResponseDataType.gc'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -1185,16 +1185,16 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listSchemeURI = https://github.com/ESPD/ESPD-EDM/tree/v3.3.0/codelists/gc/ResponseDataType.gc'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listSchemeURI = https://raw.githubusercontent.com/OP-TED/ESPD-EDM/v4.0.0/codelists/gc/ResponseDataType.gc'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(false() or not(@listURI != 'https://github.com/ESPD/ESPD-EDM'))"/>
+         <xsl:when test="(false() or not(@listURI != 'https://github.com/OP-TED/ESPD-EDM'))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(false() or not(@listURI != 'https://github.com/ESPD/ESPD-EDM'))">
+                                test="(false() or not(@listURI != 'https://github.com/OP-TED/ESPD-EDM'))">
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
@@ -1205,7 +1205,7 @@
                   <xsl:value-of select="name(ancestor::*[1])"/>
                   <xsl:text/>/<xsl:text/>
                   <xsl:value-of select="name()"/>
-                  <xsl:text/>' must have the following attribute and value: 'listURI = https://github.com/ESPD/ESPD-EDM'.</svrl:text>
+                  <xsl:text/>' must have the following attribute and value: 'listURI = https://github.com/OP-TED/ESPD-EDM'.</svrl:text>
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>

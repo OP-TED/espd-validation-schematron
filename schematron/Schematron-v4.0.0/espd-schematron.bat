@@ -267,31 +267,31 @@ goto :done
 rem ESPD Dcoument valiation error
 :error_validation
 echo.
-echo [101m(!)[0m Error validating ESPD Document; process terminated!
+echo [101m ! [0m Error validating ESPD Document; process terminated!
 goto :done
 
 rem Code Lists validation error
 :error_gc
 echo.
-echo [101m(!)[0m Error validating Code Lists; process terminated!
+echo [101m ! [0m Error validating Code Lists; process terminated!
 goto :done
 
 rem CVA to SCH transformation error
 :error_cva2sch
 echo.
-echo [101m(!)[0m Error transforming CVA to XSL to SCH; process terminated!
+echo [101m ! [0m Error transforming CVA to XSL to SCH; process terminated!
 goto :done
 
 rem SCH to XSL transformation error
 :error_sch2xsl
 echo.
-echo [101m(!)[0m Error transforming SCH to XSL; process terminated!
+echo [101m ! [0m Error transforming SCH to XSL; process terminated!
 goto :done
 
 rem Checking UBL XSD files
 :nofile
 echo.
-echo [101m(!)[0m Error UBL XSD file not found
+echo [101m ! [0m Error UBL XSD file not found
 goto :done
 
 rem XJPARSE local function
