@@ -9,7 +9,7 @@ rem setup all files
 setlocal EnableDelayedExpansion
 rem PAHSE 0
 set gcxsd="common\xsd\genericode.xsd"
-set gclog="logs\gc\01-GC_Files.txt"
+set gclog="logs\gc\00-GC_Files.txt"
 
 rem PHASE 1 - Request
 set cva_filename="common\cva\01-ESPD-codelist-values.cva"
@@ -135,6 +135,8 @@ set ph3res[9].output="logs\ESPDResponse\output\05-ESPD-resp-specific-br.xml"
 set ph3res[10].output="logs\ESPDResponse\output\01-ESPD-common-cl-attributes.xml"
 set ph3res[11].output="logs\ESPDResponse\output\01-ESPD-common-cl-values-restrictions.xml"
 
+rem PHASE 4 - Prepare distribution files
+set log_dist="logs\dist\04-dist.txt"
 
 rem [- START PROCESSING -]
 
@@ -228,11 +230,11 @@ echo ----------------------------------------------- >  %log_req%
 echo Phase 3: ESPD Request validation vs UBL and XSL >> %log_req%
 echo ----------------------------------------------- >> %log_req%
 
-echo Checking UBL XSD file ...
+echo Checking UBL XSD file for Request ...
 if not exist %xsd_test_req% goto :nofile
 
 echo Validating against %xsd_test_req% >> %log_req%
-call :xjparse %xsd_test_req% %xml_test_req% %xsd_output_req%
+call :xjparse %xsd_test_req% %xml_test_req% %log_req%
 if %errorlevel% neq 0 goto :error_validation
 
 for /L %%i in (0 1 9) do (
@@ -245,11 +247,11 @@ echo ------------------------------------------------ >  %log_res%
 echo Phase 3: ESPD Response validation vs UBL and XSL >> %log_res%
 echo ------------------------------------------------ >> %log_res%
 
-echo Checking UBL XSD file ...
+echo Checking UBL XSD file for Response ...
 if not exist %xsd_test_res% goto :nofile
 
 echo Validating against %xsd_test_res% >> %log_res%
-call :xjparse %xsd_test_res% %xml_test_res% %xsd_output_res%
+call :xjparse %xsd_test_res% %xml_test_res% %log_res%
 if %errorlevel% neq 0 goto :error_validation
 
 for /L %%i in (0 1 11) do (
@@ -261,6 +263,32 @@ echo.
 call :msg Done successfully validating ESPD Document
 
 rem --- End of Phase 3 ---
+
+call :banner PHASE 4
+echo Build ESPD-EDM and validator-resources-espd distribution ...
+
+if exist logs\dist rmdir /S /Q logs\dist  
+mkdir logs\dist
+
+echo ---------------------------------------------- >  %log_dist%
+echo Phase 4: Making distribution files and folders >> %log_dist%
+echo ---------------------------------------------- >> %log_dist%
+
+mkdir logs\dist\ESPD-EDM\validation\ESPDRequest\sch logs\dist\ESPD-EDM\validation\ESPDRequest\xsl logs\dist\ESPD-EDM\validation\ESPDResponse\sch logs\dist\ESPD-EDM\validation\ESPDResponse\xsl logs\dist\ESPD-EDM\validation\common\cva logs\dist\ESPD-EDM\validation\common\sch logs\dist\validator-resources-espd\resources\v4.0.0\ESPDRequest logs\dist\validator-resources-espd\resources\v4.0.0\ESPDResponse logs\dist\validator-resources-espd\resources\v4.0.0\gc logs\dist\validator-resources-espd\resources\v4.0.0\xsdrt  >> %log_dist%
+
+copy /Y /V ESPDRequest\sch\*.* logs\dist\ESPD-EDM\validation\ESPDRequest\sch >> %log_dist%
+copy /Y /V ESPDRequest\xsl\*.* logs\dist\ESPD-EDM\validation\ESPDRequest\xsl >> %log_dist%
+copy /Y /V ESPDResponse\sch\*.* logs\dist\ESPD-EDM\validation\ESPDResponse\sch >> %log_dist%
+copy /Y /V ESPDResponse\xsl\*.* logs\dist\ESPD-EDM\validation\ESPDResponse\xsl >> %log_dist%
+copy /Y /V common\cva\*.* logs\dist\ESPD-EDM\validation\common\cva >> %log_dist%
+copy /Y /V common\sch\*.* logs\dist\ESPD-EDM\validation\common\sch >> %log_dist%
+
+copy /Y /V ESPDRequest\xsl\*.* logs\dist\validator-resources-espd\resources\v4.0.0\ESPDRequest >> %log_dist%
+copy /Y /V ESPDResponse\xsl\*.* logs\dist\validator-resources-espd\resources\v4.0.0\ESPDResponse >> %log_dist%
+copy /Y /V gc\*.* logs\dist\validator-resources-espd\resources\v4.0.0\gc >> %log_dist%
+xcopy /S /Y common\xsdrt logs\dist\validator-resources-espd\resources\v4.0.0\xsdrt >> %log_dist%
+
+call :msg Distribution available in logs\dist directory
 
 goto :done
 

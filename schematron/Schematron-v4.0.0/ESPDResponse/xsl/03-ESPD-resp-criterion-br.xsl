@@ -195,31 +195,6 @@
    <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">ESPD Response Criterion Business Rules</svrl:text>
    <!--PATTERN BR-RESP-CRI-->
    <!--RULE -->
-   <xsl:template match="cac:TenderingCriterionProperty/cbc:ID"
-                 priority="1003"
-                 mode="M11">
-      <xsl:variable name="responseIDs" select="key('CriterionResponseType', .)"/>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="count($responseIDs) &lt;= 1"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="count($responseIDs) &lt;= 1">
-               <xsl:attribute name="id">BR-TCR-01-03</xsl:attribute>
-               <xsl:attribute name="flag">fatal</xsl:attribute>
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>The criterion property ('cac:TenderingCriterionProperty/cbc:ID' = '<xsl:text/>
-                  <xsl:value-of select="."/>
-                  <xsl:text/>') has '<xsl:text/>
-                  <xsl:value-of select="count($responseIDs)"/>
-                  <xsl:text/>' responses.</svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M11"/>
-   </xsl:template>
-   <!--RULE -->
    <xsl:template match="cac:TenderingCriterionResponse" priority="1002" mode="M11">
       <xsl:variable name="currentDataType"
                     select="key('CriterionProperty', cbc:ValidatedCriterionPropertyID)/cbc:ValueDataTypeCode/text()"/>
@@ -730,10 +705,10 @@
                     select="key('CriterionResponseType', $parentUUID)/cac:ResponseValue/cbc:ResponseIndicator = false()"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 1)"/>
+         <xsl:when test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) &gt;= 1)"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) = 1)">
+                                test="not($parentTrueResponse) or ($parentTrueResponse and count(key('CriterionResponseType', cbc:ID)) &gt;= 1)">
                <xsl:attribute name="id">BR-TCR-06-01</xsl:attribute>
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">

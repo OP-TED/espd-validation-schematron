@@ -205,26 +205,6 @@
                     select="$currentExclusion[cac:TenderingCriterionPropertyGroup/cac:TenderingCriterionProperty[not(cbc:ID = $allResponses) and cbc:TypeCode='QUESTION']]/cbc:CriterionTypeCode/text()"/>
       <xsl:variable name="exclusionNotReqResponses"
                     select="$currentExclusion[cac:TenderingCriterionPropertyGroup[cac:TenderingCriterionProperty[cbc:TypeCode='REQUIREMENT']      and cac:SubsidiaryTenderingCriterionPropertyGroup/cac:TenderingCriterionProperty[not(cbc:ID = $allResponses) and cbc:TypeCode='QUESTION'] ]]/cbc:CriterionTypeCode"/>
-      <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="($isPQS) or(not($isPQS) and (count($currentExclusion) = (count($exclusionResponses) + count($exclusionReqResponses))) )"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="($isPQS) or(not($isPQS) and (count($currentExclusion) = (count($exclusionResponses) + count($exclusionReqResponses))) )">
-               <xsl:attribute name="id">BR-RESP-30</xsl:attribute>
-               <xsl:attribute name="flag">fatal</xsl:attribute>
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
-               </xsl:attribute>
-               <svrl:text>Information about compliance of exclusion grounds MUST be provided. The following exclusion criterion are not provided: <xsl:text/>
-                  <xsl:value-of select="$exclusionNotResponses"/>
-                  <xsl:text/>, <xsl:text/>
-                  <xsl:value-of select="$exclusionNotReqResponses"/>
-                  <xsl:text/>
-               </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
       <xsl:variable name="currentSelection"
                     select="cac:TenderingCriterion[contains($selectionList,concat('&#x7f;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#x7f;'))]"/>
       <xsl:variable name="selectionResponses"

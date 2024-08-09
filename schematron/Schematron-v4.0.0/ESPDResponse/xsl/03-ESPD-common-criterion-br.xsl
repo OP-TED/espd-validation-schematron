@@ -7,7 +7,6 @@
                 xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
                 xmlns:iso="http://purl.oclc.org/dsdl/schematron"
                 xmlns:schold="http://www.ascc.net/xml/schematron"
-                xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
                 xmlns:xhtml="http://www.w3.org/1999/xhtml"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -166,8 +165,6 @@
                                              prefix="cbc"/>
          <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
                                              prefix="ext"/>
-         <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
-                                             prefix="udt"/>
          <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
                                              prefix="espd"/>
          <svrl:active-pattern>
@@ -178,14 +175,14 @@
             <xsl:attribute name="name">BR-COM-CR</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
-         <xsl:apply-templates select="/" mode="M6"/>
+         <xsl:apply-templates select="/" mode="M5"/>
       </svrl:schematron-output>
    </xsl:template>
    <!--SCHEMATRON PATTERNS-->
    <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Common Criterion Business Rules</svrl:text>
    <!--PATTERN BR-COM-CR-->
    <!--RULE -->
-   <xsl:template match="cac:TenderingCriterion" priority="1003" mode="M6">
+   <xsl:template match="cac:TenderingCriterion" priority="1003" mode="M5">
       <xsl:variable name="currentID" select="cbc:ID"/>
       <xsl:variable name="currentIDExist"
                     select="(cbc:ID) and not(normalize-space(cbc:ID) = '')"/>
@@ -302,10 +299,10 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M6"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
    </xsl:template>
    <!--RULE -->
-   <xsl:template match="cac:Legislation" priority="1002" mode="M6">
+   <xsl:template match="cac:Legislation" priority="1002" mode="M5">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -349,12 +346,12 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M6"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
    </xsl:template>
    <!--RULE -->
    <xsl:template match="cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup"
                  priority="1001"
-                 mode="M6">
+                 mode="M5">
       <xsl:variable name="currentID" select="cbc:ID"/>
       <xsl:variable name="currentCode" select="cbc:PropertyGroupTypeCode"/>
       <xsl:variable name="parentID" select="ancestor::*[1]/cbc:ID"/>
@@ -583,10 +580,10 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M6"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
    </xsl:template>
    <!--RULE -->
-   <xsl:template match="cac:TenderingCriterionProperty" priority="1000" mode="M6">
+   <xsl:template match="cac:TenderingCriterionProperty" priority="1000" mode="M5">
       <xsl:variable name="currentID" select="cbc:ID"/>
       <xsl:variable name="currentDescr" select="cbc:Description"/>
       <xsl:variable name="currentType" select="cbc:TypeCode"/>
@@ -720,10 +717,10 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M6"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M6"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M6">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M6"/>
+   <xsl:template match="text()" priority="-1" mode="M5"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M5">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
    </xsl:template>
 </xsl:stylesheet>

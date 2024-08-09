@@ -8,7 +8,6 @@
                 xmlns:fn="http://www.w3.org/2005/xpath-functions"
                 xmlns:iso="http://purl.oclc.org/dsdl/schematron"
                 xmlns:schold="http://www.ascc.net/xml/schematron"
-                xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
                 xmlns:xhtml="http://www.w3.org/1999/xhtml"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -167,8 +166,6 @@
                                              prefix="cbc"/>
          <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
                                              prefix="ext"/>
-         <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
-                                             prefix="udt"/>
          <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
                                              prefix="espd"/>
          <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2005/xpath-functions" prefix="fn"/>
@@ -180,7 +177,7 @@
             <xsl:attribute name="name">BR-REQ-SC</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
-         <xsl:apply-templates select="/" mode="M7"/>
+         <xsl:apply-templates select="/" mode="M6"/>
       </svrl:schematron-output>
    </xsl:template>
    <!--SCHEMATRON PATTERNS-->
@@ -189,7 +186,7 @@
    <!--RULE -->
    <xsl:template match="espd:QualificationApplicationRequest"
                  priority="1002"
-                 mode="M7">
+                 mode="M6">
 
 		<!--ASSERT fatal-->
       <xsl:choose>
@@ -206,12 +203,12 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*" mode="M7"/>
+      <xsl:apply-templates select="*" mode="M6"/>
    </xsl:template>
    <!--RULE -->
    <xsl:template match="cac:TenderingCriterion[contains(translate('&#x7f;crime-org&#x7f;&#x7f;corruption&#x7f;&#x7f;fraud&#x7f;&#x7f;terr-offence&#x7f;&#x7f;finan-laund&#x7f;&#x7f;human-traffic&#x7f;&#x7f;tax-pay&#x7f;&#x7f;socsec-pay&#x7f;&#x7f;envir-law&#x7f;&#x7f;socsec-law&#x7f;&#x7f;labour-law&#x7f;&#x7f;bankruptcy&#x7f;&#x7f;insolvency&#x7f;&#x7f;cred-arran&#x7f;&#x7f;bankr-nat&#x7f;&#x7f;liq-admin&#x7f;&#x7f;susp-act&#x7f;&#x7f;prof-misconduct&#x7f;&#x7f;distorsion&#x7f;&#x7f;partic-confl&#x7f;&#x7f;prep-confl&#x7f;&#x7f;sanction&#x7f;&#x7f;misinterpr&#x7f;&#x7f;nati-ground&#x7f;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#x7f;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#x7f;'))]"
                  priority="1001"
-                 mode="M7">
+                 mode="M6">
       <xsl:variable name="allLots" select="cac:ProcurementProjectLotReference/cbc:ID"/>
       <xsl:variable name="testLots" select="count($allLots) &gt; 0"/>
       <!--ASSERT fatal-->
@@ -228,12 +225,12 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*" mode="M7"/>
+      <xsl:apply-templates select="*" mode="M6"/>
    </xsl:template>
    <!--RULE -->
    <xsl:template match="cac:TenderingCriterion[contains(translate('&#x7f;prof-regist&#x7f;&#x7f;trade-regist&#x7f;&#x7f;autorisation&#x7f;&#x7f;membership&#x7f;&#x7f;gen-year-to&#x7f;&#x7f;aver-year-to&#x7f;&#x7f;spec-aver-to&#x7f;&#x7f;spec-year-to&#x7f;&#x7f;finan-rat&#x7f;&#x7f;indem-insu&#x7f;&#x7f;finan-requ&#x7f;&#x7f;work-perform&#x7f;&#x7f;supply-perform&#x7f;&#x7f;service-perform&#x7f;&#x7f;qual-cont-tech&#x7f;&#x7f;work-tech&#x7f;&#x7f;qual-facil&#x7f;&#x7f;research-fac&#x7f;&#x7f;chain-manage&#x7f;&#x7f;qualification&#x7f;&#x7f;envir-measure&#x7f;&#x7f;tech-equip&#x7f;&#x7f;spec-req-check&#x7f;&#x7f;manage-staff&#x7f;&#x7f;year-manpower&#x7f;&#x7f;suncont-port&#x7f;&#x7f;wo-autent&#x7f;&#x7f;w-autent&#x7f;&#x7f;qa-certif-inst&#x7f;&#x7f;qu-certif-indep&#x7f;&#x7f;envir-certif-indep&#x7f;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#x7f;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#x7f;'))]"
                  priority="1000"
-                 mode="M7">
+                 mode="M6">
       <xsl:variable name="allLots" select="cac:ProcurementProjectLotReference/cbc:ID"/>
       <xsl:variable name="testLots" select="count($allLots) &gt; 0"/>
       <!--ASSERT fatal-->
@@ -250,10 +247,10 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*" mode="M7"/>
+      <xsl:apply-templates select="*" mode="M6"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M7"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M7">
-      <xsl:apply-templates select="*" mode="M7"/>
+   <xsl:template match="text()" priority="-1" mode="M6"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M6">
+      <xsl:apply-templates select="*" mode="M6"/>
    </xsl:template>
 </xsl:stylesheet>

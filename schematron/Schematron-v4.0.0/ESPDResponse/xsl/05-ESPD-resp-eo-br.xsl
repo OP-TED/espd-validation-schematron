@@ -6,7 +6,6 @@
                 xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
                 xmlns:iso="http://purl.oclc.org/dsdl/schematron"
                 xmlns:schold="http://www.ascc.net/xml/schematron"
-                xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
                 xmlns:xhtml="http://www.w3.org/1999/xhtml"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -165,8 +164,6 @@
                                              prefix="cbc"/>
          <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
                                              prefix="ext"/>
-         <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
-                                             prefix="udt"/>
          <svrl:active-pattern>
             <xsl:attribute name="document">
                <xsl:value-of select="document-uri(/)"/>
@@ -175,14 +172,14 @@
             <xsl:attribute name="name">BR-RESP-EO</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
-         <xsl:apply-templates select="/" mode="M5"/>
+         <xsl:apply-templates select="/" mode="M4"/>
       </svrl:schematron-output>
    </xsl:template>
    <!--SCHEMATRON PATTERNS-->
    <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">ESPD Response Economic Operator Business Rules</svrl:text>
    <!--PATTERN BR-RESP-EO-->
    <!--RULE -->
-   <xsl:template match="cac:EconomicOperatorParty" priority="1003" mode="M5">
+   <xsl:template match="cac:EconomicOperatorParty" priority="1003" mode="M4">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -214,12 +211,12 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M4"/>
    </xsl:template>
    <!--RULE -->
    <xsl:template match="cac:EconomicOperatorParty/cac:Party"
                  priority="1002"
-                 mode="M5">
+                 mode="M4">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -280,12 +277,12 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M4"/>
    </xsl:template>
    <!--RULE -->
    <xsl:template match="cac:ServiceProviderParty/cac:Party"
                  priority="1001"
-                 mode="M5">
+                 mode="M4">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -331,10 +328,10 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M4"/>
    </xsl:template>
    <!--RULE -->
-   <xsl:template match="cac:PowerOfAttorney" priority="1000" mode="M5">
+   <xsl:template match="cac:PowerOfAttorney" priority="1000" mode="M4">
 
 		<!--ASSERT -->
       <xsl:choose>
@@ -381,10 +378,10 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M4"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M5"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M5">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
+   <xsl:template match="text()" priority="-1" mode="M4"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M4">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M4"/>
    </xsl:template>
 </xsl:stylesheet>
