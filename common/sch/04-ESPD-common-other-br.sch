@@ -47,7 +47,7 @@
 			<assert test="@listAgencyID" flag="fatal" id="BR-OTH-01-21">The attribute listAgencyID is mandatory for the element: '<value-of select="name()"/>').</assert>
 			<assert test="@listVersionID" flag="fatal" id="BR-OTH-01-31">The attribute listVersionID is mandatory for the element: '<value-of select="name()"/>').</assert>
 			
-			<assert test="starts-with(@listVersionID, '4.')" flag="fatal" id="BR-OTH-01-40">List version identifier '<value-of select="name()"/>/listVersionID = <value-of select="@listVersionID"/>' is not correct. ListVersionID should be '4.x.x'.</assert>
+			<assert test="starts-with(@listVersionID, '5.')" flag="fatal" id="BR-OTH-01-40">List version identifier '<value-of select="name()"/>/listVersionID = <value-of select="@listVersionID"/>' is not correct. ListVersionID should be '5.x.x'.</assert>
 		</rule>
 		
 		<!-- BR-OTH-02: For identifiers, this ESPD V03.1.0 specification requires at least (and always) the mandatory attribute schemeAgencyID. -->

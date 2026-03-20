@@ -120,6 +120,9 @@ This bat file uses the `common/lib/xjparse.jar` and `common/lib/saxon9he.jar` li
 
 The order of execution of the bat files in previous releases was: all phases for the ESPD Request, then all phases for the ESPD Response. This order has been changed in the single bat file in this release to be per phase, with both ESPD Request and ESPD Response processed in some phases.
 
+This release contains two alternative files in the root folder: `espd-schematron.bat` for running in a Windows Command Line window, and espd-schematron.sh, for running in a Unix environment. In either case you must have a Java environment (JAVA_HOME, Path) set up for the command line execution.
+These files use the `common/lib/xjparse.jar` and `common/lib/saxon9he.jar` libraries.
+
 **Phase 0 - Code List XML validation against the Genericode schema**
 
 All Code List files `*.gc` are parsed against the Genericode schema `common\xsd\genericode.xsd` using `common\lib\xjparse-app-3.0.0.jar`, output is sent to `logs\gc\00-GC_Files.txt`.

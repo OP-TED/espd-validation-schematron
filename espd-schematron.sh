@@ -1,14 +1,12 @@
 #!/bin/sh
 # script name: espd-schematron.sh
 
-# This script is UNDER DEVELOPMENT
-
-# This script is an attempt to implement the MS DOS Batch script espd-schematron.bat
+# This script implements the MS DOS Batch script espd-schematron.bat
 #    as a Unix shell script
 
 # +----------------------------------+
 # | ESPD validation using Schematron |
-# | espd-schematron, v4.0.0 2024/07  |
+# | espd-schematron, v5.0.0 2026/03  |
 # +----------------------------------+
 
 # ESPD Dcoument valiation error

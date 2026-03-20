@@ -3519,7 +3519,7 @@
           <cbc:TypeCode listID="criterion-element-type" listAgencyID="OP" listVersionID="4.0.0">REQUIREMENT</cbc:TypeCode>
           <cbc:ValueDataTypeCode listID="response-data-type" listAgencyID="OP" listVersionID="4.0.0">CODE_BOOLEAN</cbc:ValueDataTypeCode>
           <!-- No answer is expected here from the economic operator, as this is a REQUIREMENT issued by the contracting authority. Hence the element "cbc:ValueDataTypeCode" contains the type of value of the requirement issued by the contracting authority  -->
-          <cbc:ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="4.0.0">CHECKBOX_TRUE</cbc:ExpectedCode>
+          <cbc:ExpectedCode listID="boolean-gui-control-type" listAgencyID="OP" listVersionID="4.0.0">CHECK_BOX_TRUE</cbc:ExpectedCode>
         </cac:TenderingCriterionProperty>
         <cac:TenderingCriterionProperty>
           <cbc:ID schemeID="Criterion" schemeAgencyID="OP" schemeVersionID="4.0.0">C29_SC_gen-year-to/RG1/RSG1/RQ3/R1/R1/R1</cbc:ID>
