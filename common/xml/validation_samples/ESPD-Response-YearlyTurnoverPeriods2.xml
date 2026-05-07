@@ -42,7 +42,7 @@
 		procedure; this information is provided by eForms and the concret notice per procedure. e.g. open = 	
 		In open procedures any interested economic operator may submit a tender in response to a call for competition.
 		-->
-        <cbc:ProcedureCode listID="ProcedureType" listAgencyID="OP" listVersionID="4.0.0">open</cbc:ProcedureCode>
+        <cbc:ProcedureCode listID="ProcedureType" listAgencyID="OP" listVersionID="5.0.0">open</cbc:ProcedureCode>
         <cac:ContractingParty>
                 <cac:Party/>
         </cac:ContractingParty>
@@ -733,7 +733,7 @@
                 <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">280e5b46-66b3-40c4-bb7a-0dcbbbea519b</cbc:ValidatedCriterionPropertyID>
                 <cac:ResponseValue>
                         <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="5.0.0">9ae6fa3d-b94b-40dd-830a-d6a9d043029a</cbc:ID>
-                        <cbc:ResponseCode listID="CountryCodeIdentifier" listName="ISO-1-ALPHA-2" listAgencyID="ISO" listVersionID="20201216-0">DUMMY_COUNTRY_CODE</cbc:ResponseCode>
+                        <cbc:ResponseCode listID="http://publications.europa.eu/resource/authority/country" listName="ISO-1-ALPHA-2" listAgencyID="ISO" listVersionID="20250618-0">DUMMY_COUNTRY_CODE</cbc:ResponseCode>
                 </cac:ResponseValue>
         </cac:TenderingCriterionResponse>
         <!-- Answer to Criterion:Payment of taxes -->
@@ -875,7 +875,7 @@
                 <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">6f7145e0-1a5d-41f4-bf8a-a4e143e0889b</cbc:ValidatedCriterionPropertyID>
                 <cac:ResponseValue>
                         <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="5.0.0">7a0f706a-06ff-4d0c-b81d-22c7452ac40a</cbc:ID>
-                        <cbc:ResponseCode listID="CountryCodeIdentifier" listName="ISO-1-ALPHA-2" listAgencyID="ISO" listVersionID="20201216-0">DUMMY_COUNTRY_CODE</cbc:ResponseCode>
+                        <cbc:ResponseCode listID="http://publications.europa.eu/resource/authority/country" listName="ISO-1-ALPHA-2" listAgencyID="ISO" listVersionID="20250618-0">DUMMY_COUNTRY_CODE</cbc:ResponseCode>
                 </cac:ResponseValue>
         </cac:TenderingCriterionResponse>
         <!-- Answer to Criterion:Payment of social security contributions -->
@@ -5660,7 +5660,7 @@
                 <cbc:ValidatedCriterionPropertyID schemeID="criterion" schemeAgencyID="OP" schemeVersionID="5.0.0">6faaca99-4653-49ab-bbbb-c3b2967b120b</cbc:ValidatedCriterionPropertyID>
                 <cac:ResponseValue>
                         <cbc:ID schemeID="ISO/IEC 9834-8:2008 - 4UUID" schemeAgencyID="OP" schemeVersionID="5.0.0">835af9e3-7939-4370-9a8a-08583ee6e8df</cbc:ID>
-                        <cbc:ResponseCode listAgencyID="OP" listVersionID="4.0.0" listID="PleaseSpecifyTheCorrectOne">DUMMY_CODE</cbc:ResponseCode>
+                        <cbc:ResponseCode listAgencyID="OP" listVersionID="5.0.0" listID="PleaseSpecifyTheCorrectOne">DUMMY_CODE</cbc:ResponseCode>
                 </cac:ResponseValue>
         </cac:TenderingCriterionResponse>
         <!-- Answer to Criterion:Economic Operator together with others -->
@@ -5890,7 +5890,7 @@
         </cac:TenderingCriterionResponse>
         <cac:Evidence>
                 <cbc:ID schemeAgencyID="OP">EVIDENCE-00001</cbc:ID>
-                <cbc:ConfidentialityLevelCode listID="access-right" listAgencyID="OP" listVersionID="4.0.0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
+                <cbc:ConfidentialityLevelCode listID="http://publications.europa.eu/resource/authority/access-right" listAgencyID="OP" listVersionID="20240612-0">CONFIDENTIAL</cbc:ConfidentialityLevelCode>
                 <cac:DocumentReference>
                         <cbc:ID schemeAgencyID="OP">SAT-11121233</cbc:ID>
                         <cac:Attachment>
