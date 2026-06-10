@@ -9,9 +9,9 @@
         
         <!--
 		ESPD code list values constraints - 01-ESPD-common-cl-attributes.sch
-		Version 4.0.0
+		Version 5.0.0
 	
-        $Id: 01-ESPD-common-cl-attributes.sch,v 4.0.0 $
+        $Id: 01-ESPD-common-cl-attributes.sch,v 5.0.0 $
         
         -->
         <!-- BR-OTH-03: Compulsory use of the code list identified within the document. -->

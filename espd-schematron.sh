@@ -6,7 +6,7 @@
 
 # +----------------------------------+
 # | ESPD validation using Schematron |
-# | espd-schematron, v5.0.0 2026/03  |
+# | espd-schematron, v5.0.0 2026/07  |
 # +----------------------------------+
 
 # ESPD Dcoument valiation error
@@ -148,7 +148,7 @@ ph2res_xsl[11]="ESPDResponse/xsl/01-ESPD-common-cl-values-restrictions.xsl"
 
 # PHASE 3 - Request
 xml_test_req="common/xml/ESPD-Request-BASE.xml"
-xsd_test_req="common/xsdrt/maindoc/UBL-QualificationApplicationRequest-2.3.xsd"
+xsd_test_req="common/xsdrt/maindoc/UBL-QualificationApplicationRequest-2.4.xsd"
 xsd_output_req="logs/ESPDRequest/output/result-xsd.xml"
 log_req="logs/ESPDRequest/03-validation.txt"
 
@@ -176,7 +176,7 @@ ph3req_output[9]="logs/ESPDRequest/output/01-ESPD-common-cl-values-restrictions.
 
 # PHASE 3 - Response
 xml_test_res="common/xml/ESPD-Response-BASE.xml"
-xsd_test_res="common/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd"
+xsd_test_res="common/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd"
 xsd_output_res="logs/ESPDResponse/output/result-xsd.xml"
 log_res="logs/ESPDResponse/03-validation.txt"
 
@@ -236,7 +236,7 @@ msg Done successfully checking Code Lists.
 # --- End of Phase 0 ---
 
 banner PHASE 1
-echo CVA to XLS transformation ...
+echo CVA to XSL transformation ...
 rm -f logs/ESPDRequest/output/*.* logs/ESPDResponse/output/*.* ${sch_filename_req} ${sch_filename_res}
 
 echo "-------------------------------------------------" >  "${cva2schlog_req}"
@@ -345,7 +345,7 @@ echo "----------------------------------------------" >  "${log_dist}"
 echo "Phase 4: Making distribution files and folders" >> "${log_dist}"
 echo "----------------------------------------------" >> "${log_dist}"
 
-mkdir -p logs/dist/ESPD-EDM/validation/ESPDRequest/sch logs/dist/ESPD-EDM/validation/ESPDRequest/xsl logs/dist/ESPD-EDM/validation/ESPDResponse/sch logs/dist/ESPD-EDM/validation/ESPDResponse/xsl logs/dist/ESPD-EDM/validation/common/cva logs/dist/ESPD-EDM/validation/common/sch logs/dist/validator-resources-espd/resources/v4.0.0/ESPDRequest logs/dist/validator-resources-espd/resources/v4.0.0/ESPDResponse logs/dist/validator-resources-espd/resources/v4.0.0/gc logs/dist/validator-resources-espd/resources/v4.0.0/xsdrt  >> ${log_dist}
+mkdir -p logs/dist/ESPD-EDM/validation/ESPDRequest/sch logs/dist/ESPD-EDM/validation/ESPDRequest/xsl logs/dist/ESPD-EDM/validation/ESPDResponse/sch logs/dist/ESPD-EDM/validation/ESPDResponse/xsl logs/dist/ESPD-EDM/validation/common/cva logs/dist/ESPD-EDM/validation/common/sch logs/dist/validator-resources-espd/resources/v5.0.0/ESPDRequest logs/dist/validator-resources-espd/resources/v5.0.0/ESPDResponse logs/dist/validator-resources-espd/resources/v5.0.0/gc logs/dist/validator-resources-espd/resources/v5.0.0/xsdrt  >> ${log_dist}
 
 cp -v ESPDRequest/sch/*.* "logs/dist/ESPD-EDM/validation/ESPDRequest/sch" >> "${log_dist}"
 cp -v ESPDRequest/xsl/*.* "logs/dist/ESPD-EDM/validation/ESPDRequest/xsl" >> "${log_dist}"
@@ -354,10 +354,10 @@ cp -v ESPDResponse/xsl/*.* "logs/dist/ESPD-EDM/validation/ESPDResponse/xsl" >> "
 cp -v common/cva/*.* "logs/dist/ESPD-EDM/validation/common/cva" >> "${log_dist}"
 cp -v common/sch/*.* "logs/dist/ESPD-EDM/validation/common/sch" >> "${log_dist}"
 
-cp -v ESPDRequest/xsl/*.* "logs/dist/validator-resources-espd/resources/v4.0.0/ESPDRequest" >> "${log_dist}"
-cp -v ESPDResponse/xsl/*.* "logs/dist/validator-resources-espd/resources/v4.0.0/ESPDResponse" >> "${log_dist}"
-cp -v gc/*.* "logs/dist/validator-resources-espd/resources/v4.0.0/gc" >> "${log_dist}"
-cp -v -r common/xsdrt/* "logs/dist/validator-resources-espd/resources/v4.0.0/xsdrt" >> "${log_dist}"
+cp -v ESPDRequest/xsl/*.* "logs/dist/validator-resources-espd/resources/v5.0.0/ESPDRequest" >> "${log_dist}"
+cp -v ESPDResponse/xsl/*.* "logs/dist/validator-resources-espd/resources/v5.0.0/ESPDResponse" >> "${log_dist}"
+cp -v gc/*.* "logs/dist/validator-resources-espd/resources/v5.0.0/gc" >> "${log_dist}"
+cp -v -r common/xsdrt/* "logs/dist/validator-resources-espd/resources/v5.0.0/xsdrt" >> "${log_dist}"
 
 msg Distribution available in logs/dist directory
 

@@ -9,9 +9,9 @@
         
         <!--
 		ESPD code list values restrictions - 01-ESPD-common-cl-values-restrictions.sch
-		Version 4.0.0
+		Version 5.0.0
 	
-        $Id: 01-ESPD-common-cl-values-restrictions.sch,v 4.0.0 $
+        $Id: 01-ESPD-common-cl-values-restrictions.sch,v 5.0.0 $
 
         -->
         <!-- STATUS -->

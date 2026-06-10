@@ -12,7 +12,7 @@
     Start of synthesis of rules from cardinality constraints ESPD Request and ESPD Response
 
     Illustration of cardinality constraints - 04-ESPD-common-other-br.sch
-	ESPD Version: 4.0.0
+	ESPD Version: 5.0.0
 -->
 	
 	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="BR-COM-OTH">
@@ -28,9 +28,9 @@
 			<assert test="(cbc:DocumentTypeCode)" flag="fatal"  id="BR-COM-10-03">The type of document being referenced, expressed as a code ('/cac:AdditionalDocumentReference/cbc:DocumentTypeCode') is mandatory (cbc:ID = '<value-of select="cbc:ID"/>').</assert>
 		</rule>
 		
-		<!-- BR-OTH-05: Identifies the earliest version of the UBL 2 schema. Use the value "2.3". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute. -->
+		<!-- BR-OTH-05: Identifies the version of the UBL 2 schema. Use the value "2.4". Use also "OASIS-UBL-TC" for the schemeAgencyID attribute. -->
 		<rule context="cbc:UBLVersionID">
-			<assert test="text()='2.3'" flag="fatal" id="BR-OTH-05-01">'cbc:UBLVersionID' must use the value "2.3" (cbc:UBLVersionID = '<value-of select="."/>').</assert>
+			<assert test="text()='2.4'" flag="fatal" id="BR-OTH-05-01">'cbc:UBLVersionID' must use the value "2.4" (cbc:UBLVersionID = '<value-of select="."/>').</assert>
 			<assert test="@schemeAgencyID = 'OASIS-UBL-TC'" flag="fatal" id="BR-OTH-05-02">'cbc:UBLVersionID/@schemeAgencyID' must use the value "OASIS-UBL-TC" (cbc:UBLVersionID/@schemeAgencyID = '<value-of select="@schemeAgencyID"/>').</assert>
 		</rule>
 		

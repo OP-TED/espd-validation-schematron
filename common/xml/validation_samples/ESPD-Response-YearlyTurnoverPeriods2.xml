@@ -10,12 +10,10 @@
         xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
         xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
         xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:util="java:java.util.UUID"
-        xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2 ../xsdrt/maindoc/UBL-QualificationApplicationResponse-2.3.xsd">
-        <!-- The ESPD-EDM-V3.0.0 is entirely
-		based on OASIS UBL-2.3 -->
-        <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.3</cbc:UBLVersionID>
-        <!-- How ESPD-EDM-V3.0.0 uses the
-		UBL-2.3 schemas whilst keeping conformance -->
+        xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2 ../xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd">
+        <!-- The ESPD-EDM-V5.0.0 is entirely based on OASIS UBL-2.4 -->
+        <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.4</cbc:UBLVersionID>
+        <!-- How ESPD-EDM-V5.0.0 uses the UBL-2.4 schemas whilst keeping conformance -->
         <cbc:CustomizationID schemeAgencyID="CEN-BII" schemeVersionID="3.0">urn:www.cenbii.eu:transaction:biitrdm070:ver3.0</cbc:CustomizationID>
         <!-- The transactional profile where
 		the ESPD is used. ESPD-EDM-V3.0.0 refers to the CEN profile -->

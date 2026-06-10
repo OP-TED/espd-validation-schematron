@@ -243,15 +243,15 @@
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="text()='2.3'"/>
+         <xsl:when test="text()='2.4'"/>
          <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="text()='2.3'">
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl" test="text()='2.4'">
                <xsl:attribute name="id">BR-OTH-05-01</xsl:attribute>
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>'cbc:UBLVersionID' must use the value "2.3" (cbc:UBLVersionID = '<xsl:text/>
+               <svrl:text>'cbc:UBLVersionID' must use the value "2.4" (cbc:UBLVersionID = '<xsl:text/>
                   <xsl:value-of select="."/>
                   <xsl:text/>').</svrl:text>
             </svrl:failed-assert>

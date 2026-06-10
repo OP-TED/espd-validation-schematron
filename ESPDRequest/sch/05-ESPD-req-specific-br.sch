@@ -14,7 +14,7 @@
     Start of synthesis of rules from other constraints ESPD Request
 
     Illustration of procurer constraints - 05-ESPD-req-specific-br.sch
-	ESPD Version: 4.0.0
+	ESPD Version: 5.0.0
 -->
 
 	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="BR-REQ-SC">
@@ -27,7 +27,7 @@
 		</rule>
 
 		<rule
-			context="cac:TenderingCriterion[contains(translate('&#127;crime-org&#127;&#127;corruption&#127;&#127;fraud&#127;&#127;terr-offence&#127;&#127;finan-laund&#127;&#127;human-traffic&#127;&#127;tax-pay&#127;&#127;socsec-pay&#127;&#127;envir-law&#127;&#127;socsec-law&#127;&#127;labour-law&#127;&#127;bankruptcy&#127;&#127;insolvency&#127;&#127;cred-arran&#127;&#127;bankr-nat&#127;&#127;liq-admin&#127;&#127;susp-act&#127;&#127;prof-misconduct&#127;&#127;distorsion&#127;&#127;partic-confl&#127;&#127;prep-confl&#127;&#127;sanction&#127;&#127;misinterpr&#127;&#127;nati-ground&#127;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#127;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#127;'))]">						
+			context="cac:TenderingCriterion[contains(translate('&#127;exg-crim-part&#127;&#127;exg-crim-corrpt&#127;&#127;exg-crim-fraud&#127;&#127;exg-crim-terror&#127;&#127;exg-crim-laund&#127;&#127;exg-crim-traffick&#127;&#127;exg-pmt-bre-tax&#127;&#127;exg-pmt-bre-ssc&#127;&#127;exg-mis-bre-env-law&#127;&#127;exg-mis-bre-soc-law&#127;&#127;exg-mis-bre-lab-law&#127;&#127;exg-sitn-bankr&#127;&#127;exg-sitn-insolvency&#127;&#127;exg-sitn-cred-arran&#127;&#127;exg-sitn-other&#127;&#127;exg-sitn-liq-admin&#127;&#127;exg-sitn-as-susp&#127;&#127;exg-mis-misconduct&#127;&#127;exg-mis-distortion&#127;&#127;exg-mis-partic-confl&#127;&#127;exg-mis-prep-confl&#127;&#127;exg-mis-sanction&#127;&#127;exg-mis-misrepresent&#127;&#127;exg-natl-bre-nat-law&#127;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#127;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#127;'))]">						
 			<let name="allLots" value="cac:ProcurementProjectLotReference/cbc:ID"/>
 			<let name="testLots" value="count($allLots) &gt; 0"/>
 			
@@ -37,7 +37,7 @@
 		</rule>
 		
 		<rule
-			context="cac:TenderingCriterion[contains(translate('&#127;prof-regist&#127;&#127;trade-regist&#127;&#127;autorisation&#127;&#127;membership&#127;&#127;gen-year-to&#127;&#127;aver-year-to&#127;&#127;spec-aver-to&#127;&#127;spec-year-to&#127;&#127;finan-rat&#127;&#127;indem-insu&#127;&#127;finan-requ&#127;&#127;work-perform&#127;&#127;supply-perform&#127;&#127;service-perform&#127;&#127;qual-cont-tech&#127;&#127;work-tech&#127;&#127;qual-facil&#127;&#127;research-fac&#127;&#127;chain-manage&#127;&#127;qualification&#127;&#127;envir-measure&#127;&#127;tech-equip&#127;&#127;spec-req-check&#127;&#127;manage-staff&#127;&#127;year-manpower&#127;&#127;suncont-port&#127;&#127;wo-autent&#127;&#127;w-autent&#127;&#127;qa-certif-inst&#127;&#127;qu-certif-indep&#127;&#127;envir-certif-indep&#127;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#127;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#127;'))]">						
+			context="cac:TenderingCriterion[contains(translate('&#127;slc-suit-reg-prof&#127;&#127;slc-suit-reg-trade&#127;&#127;slc-suit-auth-mbrshp&#127;&#127;slc-suit-auth-mbrshp&#127;&#127;slc-stand-to-gen&#127;&#127;slc-stand-to-avg&#127;&#127;slc-stand-to-spec-avg&#127;&#127;slc-stand-to-spec&#127;&#127;slc-stand-ratio&#127;&#127;slc-stand-ins&#127;&#127;slc-stand-other&#127;&#127;slc-abil-ref-work&#127;&#127;slc-abil-ref-supply&#127;&#127;slc-abil-ref-services&#127;&#127;slc-abil-staff-tech-ctrl&#127;&#127;slc-abil-staff-tech-work&#127;&#127;slc-abil-mgmt-qual&#127;&#127;slc-abil-facil-res&#127;&#127;slc-abil-mgmt-supply&#127;&#127;slc-abil-staff-qual&#127;&#127;slc-abil-mgmt-env&#127;&#127;slc-abil-facil-tools&#127;&#127;slc-abil-check&#127;&#127;slc-abil-staff-yrly-no-mgmt&#127;&#127;slc-abil-staff-yrly-avg-mp&#127;&#127;slc-abil-subc&#127;&#127;slc-abil-qual-smp-wo-autent&#127;&#127;slc-abil-qual-smp-w-autent&#127;&#127;slc-abil-qual-inst&#127;&#127;slc-sche-qu-cert-indep&#127;&#127;slc-sche-env-cert-indep&#127;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#127;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#127;'))]">						
 			<let name="allLots" value="cac:ProcurementProjectLotReference/cbc:ID"/>
 			<let name="testLots" value="count($allLots) &gt; 0"/>
 		

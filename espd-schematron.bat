@@ -2,7 +2,7 @@
 
 rem +----------------------------------+
 rem | ESPD validation using Schematron |
-rem | espd-schematron, v4.0.0 2024/07  |
+rem | espd-schematron, v5.0.0 2026/07  |
 rem +----------------------------------+
 
 rem setup all files
@@ -77,7 +77,7 @@ set ph2res[11].xsl="ESPDResponse\xsl\01-ESPD-common-cl-values-restrictions.xsl"
 
 rem PAHSE 3 - Request
 set xml_test_req="common\xml\ESPD-Request-BASE.xml"
-set xsd_test_req="common\xsdrt\maindoc\UBL-QualificationApplicationRequest-2.3.xsd"
+set xsd_test_req="common\xsdrt\maindoc\UBL-QualificationApplicationRequest-2.4.xsd"
 set xsd_output_req="logs\ESPDRequest\output\result-xsd.xml"
 set log_req="logs\ESPDRequest\03-validation.txt"
 
@@ -105,7 +105,7 @@ set ph3req[9].output="logs\ESPDRequest\output\01-ESPD-common-cl-values-restricti
 
 rem PAHSE 3 - Response
 set xml_test_res="common\xml\ESPD-Response-BASE.xml"
-set xsd_test_res="common\xsdrt\maindoc\UBL-QualificationApplicationResponse-2.3.xsd"
+set xsd_test_res="common\xsdrt\maindoc\UBL-QualificationApplicationResponse-2.4.xsd"
 set xsd_output_res="logs\ESPDResponse\output\result-xsd.xml"
 set log_res="logs\ESPDResponse\03-validation.txt"
 
@@ -274,7 +274,7 @@ echo ---------------------------------------------- >  %log_dist%
 echo Phase 4: Making distribution files and folders >> %log_dist%
 echo ---------------------------------------------- >> %log_dist%
 
-mkdir logs\dist\ESPD-EDM\validation\ESPDRequest\sch logs\dist\ESPD-EDM\validation\ESPDRequest\xsl logs\dist\ESPD-EDM\validation\ESPDResponse\sch logs\dist\ESPD-EDM\validation\ESPDResponse\xsl logs\dist\ESPD-EDM\validation\common\cva logs\dist\ESPD-EDM\validation\common\sch logs\dist\validator-resources-espd\resources\v4.0.0\ESPDRequest logs\dist\validator-resources-espd\resources\v4.0.0\ESPDResponse logs\dist\validator-resources-espd\resources\v4.0.0\gc logs\dist\validator-resources-espd\resources\v4.0.0\xsdrt  >> %log_dist%
+mkdir logs\dist\ESPD-EDM\validation\ESPDRequest\sch logs\dist\ESPD-EDM\validation\ESPDRequest\xsl logs\dist\ESPD-EDM\validation\ESPDResponse\sch logs\dist\ESPD-EDM\validation\ESPDResponse\xsl logs\dist\ESPD-EDM\validation\common\cva logs\dist\ESPD-EDM\validation\common\sch logs\dist\validator-resources-espd\resources\v5.0.0\ESPDRequest logs\dist\validator-resources-espd\resources\v5.0.0\ESPDResponse logs\dist\validator-resources-espd\resources\v5.0.0\gc logs\dist\validator-resources-espd\resources\v5.0.0\xsdrt  >> %log_dist%
 
 copy /Y /V ESPDRequest\sch\*.* logs\dist\ESPD-EDM\validation\ESPDRequest\sch >> %log_dist%
 copy /Y /V ESPDRequest\xsl\*.* logs\dist\ESPD-EDM\validation\ESPDRequest\xsl >> %log_dist%
@@ -283,10 +283,10 @@ copy /Y /V ESPDResponse\xsl\*.* logs\dist\ESPD-EDM\validation\ESPDResponse\xsl >
 copy /Y /V common\cva\*.* logs\dist\ESPD-EDM\validation\common\cva >> %log_dist%
 copy /Y /V common\sch\*.* logs\dist\ESPD-EDM\validation\common\sch >> %log_dist%
 
-copy /Y /V ESPDRequest\xsl\*.* logs\dist\validator-resources-espd\resources\v4.0.0\ESPDRequest >> %log_dist%
-copy /Y /V ESPDResponse\xsl\*.* logs\dist\validator-resources-espd\resources\v4.0.0\ESPDResponse >> %log_dist%
-copy /Y /V gc\*.* logs\dist\validator-resources-espd\resources\v4.0.0\gc >> %log_dist%
-xcopy /S /Y common\xsdrt logs\dist\validator-resources-espd\resources\v4.0.0\xsdrt >> %log_dist%
+copy /Y /V ESPDRequest\xsl\*.* logs\dist\validator-resources-espd\resources\v5.0.0\ESPDRequest >> %log_dist%
+copy /Y /V ESPDResponse\xsl\*.* logs\dist\validator-resources-espd\resources\v5.0.0\ESPDResponse >> %log_dist%
+copy /Y /V gc\*.* logs\dist\validator-resources-espd\resources\v5.0.0\gc >> %log_dist%
+xcopy /S /Y common\xsdrt logs\dist\validator-resources-espd\resources\v5.0.0\xsdrt >> %log_dist%
 
 call :msg Distribution available in logs\dist directory
 

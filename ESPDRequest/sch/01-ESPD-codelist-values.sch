@@ -8,9 +8,9 @@
         xmlns:fn="http://www.w3.org/2005/xpath-functions">
    <pattern id="code-list-values"><!--
 		ESPD code list values constraints - ESPD-codelist-values.cva
-		Version 4.0.0
+		Version 5.0.0
 	
-$Id: ESPD-codelist-values.cva,v 4.0.0 $
+$Id: ESPD-codelist-values.cva,v 5.0.0 $
 
     Required namespace declarations as indicated in this set of rules:
 

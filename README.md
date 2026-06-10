@@ -70,9 +70,6 @@ The following files should be copied from the [ESPD-EDM](https://github.com/OP-T
 | from ESPD-EDM | to espd-validation-schematron | _comments_ |
 | --- | --- | --- |
 | `codelists/gc`| `gc`| Update both external and technical Code Lists in ESPD-EDM and then copy the content of the folder to espd-validation-schematron |
-| `xml-examples/ESPD-criterion.xml` | `ESPDRequest/xsl` and `ESPDResponse/xsl` | This is the same file as ESPD-Request.xml from ESPD-EDM repository. Copy the same file to 2 different folders |
-| `xml-examples/ESPD-Request.xml` | `common/xml/ESPD-Request-BASE.xml` and `common/xml/validation_samples/ESPD-Request.xml` | Copy the same file to 2 different folders |
-| `xml-examples/ESPD-Response.xml` | `common/xml/ESPD-Response-BASE.xml` and `common/xml/validation_samples/ESPD-Response.xml` | Copy the same file to 2 different folders |
 | `ubl-2.4/xsdrt` | `common/xsdrt` | Update the UBL distribution file in ESPD-EDM and then copy the content of the folder to espd-validation-schematron |
 
 External Code Lists are provided by EU Vocabularies. The ESPD example files are generated from the Excel Criterion file or from the ESPD Demo site. The UBL files are directly downloaded from the UBL distribution site.
@@ -296,12 +293,12 @@ This phase converts the codelist value constraints document into schematron file
    | **output**    | `ESPDResponse/xsl/01-ESPD-common-cl-values-restrictions.xsl` |
    | **log**       | `logs/ESPDResponse/02-SCHtoXSL.txt` |
 
-**Phase 3: ESPD Response validation vs UBL and XSL**
+**Phase 3: ESPD Request validation vs UBL and XSL**
 
 1. | | |
    | --- | --- |
    | **source**    |  `common/xml/ESPD-Request-BASE.xml` |
-   | **transform** | `common/xsdrt/maindoc/UBL-QualificationApplicationRequest-2.3.xsd` |
+   | **transform** | `common/xsdrt/maindoc/UBL-QualificationApplicationRequest-2.4.xsd` |
    | **output**    | `logs/ESPDRequest/output/result-xsd.xml` |
    | **log**       | `logs/ESPDRequest/03-validation.txt` |
 1. | | |
@@ -367,6 +364,12 @@ This phase converts the codelist value constraints document into schematron file
 
 **Phase 3: ESPD Response validation vs UBL and XSL**
 
+1. | | |
+   | --- | --- |
+   | **source**    |  `common/xml/ESPD-Response-BASE.xml` |
+   | **transform** | `common/xsdrt/maindoc/UBL-QualificationApplicationResponse-2.4.xsd` |
+   | **output**    | `logs/ESPDResponse/output/result-xsd.xml` |
+   | **log**       | `logs/ESPDResponse/03-validation.txt` |
 1. | | |
    | --- | --- |
    | **source**    | `common/xml/ESPD-Response-BASE.xml` |
@@ -466,7 +469,7 @@ Once the validation is executed successfully (check for any errors in the log fi
 | `validation/ESPDRequest/xsl/` | `resources/vX.X.X/ESPDRequest/` |
 | `validation/ESPDResponse/xsl/` | `resources/vX.X.X/ESPDResponse/` |
 | `codelists/gc/` | `resources/vX.X.X/gc/` |
-| `ubl-2.3/xsdrt/` | `resources/vX.X.X/xsdrt/` |
+| `ubl-2.4/xsdrt/` | `resources/vX.X.X/xsdrt/` |
 
 ## Licence
 The project is developed and distributed under the [European Union Public Licence (EUPL) version 1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12).

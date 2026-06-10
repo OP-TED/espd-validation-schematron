@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Library:           OASIS Universal Business Language (UBL) 2.3 OS
-                     http://docs.oasis-open.org/ubl/os-UBL-2.3/
-  Release Date:      15 June 2021
-  Module:            xsdrt/maindoc/UBL-QualificationApplicationRequest-2.3.xsd
-  Generated on:      2021-06-18 19:57z
-  Copyright (c) OASIS Open 2021. All Rights Reserved.
+  Library:           OASIS Universal Business Language (UBL) 2.4
+                     http://docs.oasis-open.org/ubl/os-UBL-2.4/
+  Release Date:      20 June 2024
+  Module:            xsdrt/maindoc/UBL-QualificationApplicationRequest-2.4.xsd
+  Generated on:      2024-06-25 15:49z
+  Copyright (c) OASIS Open 2024. All Rights Reserved.
 -->
 <xsd:schema xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -15,13 +15,13 @@
             targetNamespace="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified"
-            version="2.3">
+            version="2.4">
    <xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-               schemaLocation="../common/UBL-CommonAggregateComponents-2.3.xsd"/>
+               schemaLocation="../common/UBL-CommonAggregateComponents-2.4.xsd"/>
    <xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-               schemaLocation="../common/UBL-CommonBasicComponents-2.3.xsd"/>
+               schemaLocation="../common/UBL-CommonBasicComponents-2.4.xsd"/>
    <xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
-               schemaLocation="../common/UBL-CommonExtensionComponents-2.3.xsd"/>
+               schemaLocation="../common/UBL-CommonExtensionComponents-2.4.xsd"/>
    <xsd:element name="QualificationApplicationRequest"
                 type="QualificationApplicationRequestType"/>
    <xsd:complexType name="QualificationApplicationRequestType">

@@ -7,7 +7,7 @@
 	xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" 
 	xmlns:espd-req="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2" 
 	xmlns:espd-resp="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2" 
-	xmlns:fn="http://www.w3.org/2005/xpath-functions" id="urn:x-illustration" name="code-list-values" version="$Id: ESPD-codelist-values.cva,v 4.0.0 $">
+	xmlns:fn="http://www.w3.org/2005/xpath-functions" id="urn:x-illustration" name="code-list-values" version="$Id: ESPD-codelist-values.cva,v 5.0.0 $">
 	
 	<Annotation>
 		<Description>
@@ -19,7 +19,7 @@
 	</Annotation>
 	<Title>
 		ESPD code list values constraints - ESPD-codelist-values.cva
-		Version 4.0.0
+		Version 5.0.0
 	</Title>
 	<!-- BR-OTH-03: List all of the genericode files -->
 	<ValueLists>

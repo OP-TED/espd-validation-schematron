@@ -2,168 +2,168 @@
 
 <criteria>
     <exclusion-criterion type='conviction'>
-        <name>crime-org</name>
+        <name>exg-crim-part</name>
     </exclusion-criterion>
     <exclusion-criterion type='conviction'>
-        <name>corruption</name>
+        <name>exg-crim-corrpt</name>
     </exclusion-criterion>
     <exclusion-criterion type='conviction'>
-        <name>fraud</name>
+        <name>exg-crim-fraud</name>
     </exclusion-criterion>
     <exclusion-criterion type='conviction'>
-        <name>terr-offence</name>
+        <name>exg-crim-terror</name>
     </exclusion-criterion>
     <exclusion-criterion type='conviction'>
-        <name>finan-laund</name>
+        <name>exg-crim-laund</name>
     </exclusion-criterion>
     <exclusion-criterion type='conviction'>
-        <name>human-traffic</name>
+        <name>exg-crim-traffick</name>
     </exclusion-criterion>
     <exclusion-criterion type='contributions'>
-        <name>tax-pay</name>
+        <name>exg-pmt-bre-tax</name>
     </exclusion-criterion>
     <exclusion-criterion type='contributions'>
-        <name>socsec-pay</name>
+        <name>exg-pmt-bre-ssc</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>envir-law</name>
+        <name>exg-mis-bre-env-law</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>socsec-law</name>
+        <name>exg-mis-bre-soc-law</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>labour-law</name>
+        <name>exg-mis-bre-lab-law</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>bankruptcy</name>
+        <name>exg-sitn-bankr</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>insolvency</name>
+        <name>exg-sitn-insolvency</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>cred-arran</name>
+        <name>exg-sitn-cred-arran</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>bankr-nat</name>
+        <name>exg-sitn-other</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>liq-admin</name>
+        <name>exg-sitn-liq-admin</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>susp-act</name>
+        <name>exg-sitn-as-susp</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>prof-misconduct</name>
+        <name>exg-mis-misconduct</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>distorsion</name>
+        <name>exg-mis-distortion</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>partic-confl</name>
+        <name>exg-mis-partic-confl</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>prep-confl</name>
+        <name>exg-mis-prep-confl</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>sanction</name>
+        <name>exg-mis-sanction</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>misinterpr</name>
+        <name>exg-mis-misrepresent</name>
     </exclusion-criterion>
     <exclusion-criterion>
-        <name>nati-ground</name>
+        <name>exg-natl-bre-nat-law</name>
     </exclusion-criterion>
     <selection-criterion>
-        <name>prof-regist</name>
+        <name>slc-suit-reg-prof</name>
     </selection-criterion>
     <selection-criterion>
-        <name>trade-regist</name>
+        <name>slc-suit-reg-trade</name>
     </selection-criterion>
     <selection-criterion>
-        <name>autorisation</name>
+        <name>slc-suit-auth-mbrshp</name>
     </selection-criterion>
     <selection-criterion>
-        <name>membership</name>
+        <name>slc-suit-auth-mbrshp</name>
     </selection-criterion>
     <selection-criterion>
-        <name>gen-year-to</name>
+        <name>slc-stand-to-gen</name>
     </selection-criterion>
     <selection-criterion>
-        <name>aver-year-to</name>
+        <name>slc-stand-to-avg</name>
     </selection-criterion>
     <selection-criterion>
-        <name>spec-aver-to</name>
+        <name>slc-stand-to-spec-avg</name>
     </selection-criterion>
     <selection-criterion>
-        <name>spec-year-to</name>
+        <name>slc-stand-to-spec</name>
     </selection-criterion>
     <selection-criterion>
-        <name>finan-rat</name>
+        <name>slc-stand-ratio</name>
     </selection-criterion>
     <selection-criterion>
-        <name>indem-insu</name>
+        <name>slc-stand-ins</name>
     </selection-criterion>
     <selection-criterion>
-        <name>finan-requ</name>
+        <name>slc-stand-other</name>
     </selection-criterion>
     <selection-criterion>
-        <name>work-perform</name>
+        <name>slc-abil-ref-work</name>
     </selection-criterion>
     <selection-criterion>
-        <name>supply-perform</name>
+        <name>slc-abil-ref-supply</name>
     </selection-criterion>
     <selection-criterion>
-        <name> service-perform</name>
+        <name>slc-abil-ref-services</name>
     </selection-criterion>
     <selection-criterion>
-        <name>qual-cont-tech</name>
+        <name>slc-abil-staff-tech-ctrl</name>
     </selection-criterion>
     <selection-criterion>
-        <name>work-tech</name>
+        <name>slc-abil-staff-tech-work</name>
     </selection-criterion>
     <selection-criterion>
-        <name>qual-facil</name>
+        <name>slc-abil-mgmt-qual</name>
     </selection-criterion>
     <selection-criterion>
-        <name>research-fac</name>
+        <name>slc-abil-facil-res</name>
     </selection-criterion>
     <selection-criterion>
-        <name>chain-manage</name>
+        <name>slc-abil-mgmt-supply</name>
     </selection-criterion>
     <selection-criterion>
-        <name>qualification</name>
+        <name>slc-abil-staff-qual</name>
     </selection-criterion>
     <selection-criterion>
-        <name>envir-measure</name>
+        <name>slc-abil-mgmt-env</name>
     </selection-criterion>
     <selection-criterion>
-        <name>tech-equip</name>
+        <name>slc-abil-facil-tools</name>
     </selection-criterion>
     <selection-criterion>
-        <name>spec-req-check</name>
+        <name>slc-abil-check</name>
     </selection-criterion>
     <selection-criterion>
-        <name>manage-staff</name>
+        <name>slc-abil-staff-yrly-no-mgmt</name>
     </selection-criterion>
     <selection-criterion>
-        <name>year-manpower</name>
+        <name>slc-abil-staff-yrly-avg-mp</name>
     </selection-criterion>
     <selection-criterion>
-        <name>suncont-port</name>
+        <name>slc-abil-subc</name>
     </selection-criterion>
     <selection-criterion>
-        <name>wo-autent</name>
+        <name>slc-abil-qual-smp-wo-autent</name>
     </selection-criterion>
     <selection-criterion>
-        <name>w-autent</name>
+        <name>slc-abil-qual-smp-w-autent</name>
     </selection-criterion>
     <selection-criterion>
-        <name>qa-certif-inst</name>
+        <name>slc-abil-qual-inst</name>
     </selection-criterion>
     <selection-criterion>
-        <name>qu-certif-indep</name>
+        <name>slc-sche-qu-cert-indep</name>
     </selection-criterion>
     <selection-criterion>
-        <name>envir-certif-indep</name>
+        <name>slc-sche-env-cert-indep</name>
     </selection-criterion>
 </criteria>

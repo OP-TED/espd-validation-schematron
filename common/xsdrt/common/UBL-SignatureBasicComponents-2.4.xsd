@@ -1,56 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Library:           OASIS Universal Business Language (UBL) 2.3 OS
-                     http://docs.oasis-open.org/ubl/os-UBL-2.3/
-  Release Date:      15 June 2021
-  Module:            UBL-ExtensionContentDataType-2.3.xsd
-  Generated on:      2016-06-24 19:50(UTC)
-  Copyright (c) OASIS Open 2016. All Rights Reserved.
-  
-  Release Note: This is a module that can be modified by users, typically
-  only to add extension schema fragments for lax detection when encountered.
-  Changes to the complex type should not be required for typical use.
+  Library:           OASIS Universal Business Language (UBL) 2.4
+                     http://docs.oasis-open.org/ubl/os-UBL-2.4/
+  Release Date:      20 June 2024
+  Module:            xsdrt/common/UBL-SignatureBasicComponents-2.4.xsd
+  Generated on:      2024-06-25 15:49z
+  Copyright (c) OASIS Open 2024. All Rights Reserved.
 -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns=
-     "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
-            targetNamespace=
-     "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
-            elementFormDefault="qualified" 
-            attributeFormDefault="unqualified" 
-            version="2.2">
-
-  <!-- ===== import here all extension schemas ===== -->
-  
-  <!-- UBL Technical Committee extensions -->
-  <xsd:import namespace=
-     "urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2"
-              schemaLocation="UBL-CommonSignatureComponents-2.3.xsd"/>
-
-  <!-- Incorporate ETSI signature specifications -->
-  <xsd:import namespace="http://uri.etsi.org/01903/v1.3.2#"
-              schemaLocation="UBL-XAdES01903v132-201601-2.3.xsd"/>
-  <xsd:import namespace="http://uri.etsi.org/01903/v1.4.1#"
-              schemaLocation="UBL-XAdES01903v141-201601-2.3.xsd"/>
-
-  <!-- ===== Type Declaration ===== -->
-  <xsd:complexType name="ExtensionContentType">
-    <xsd:sequence>
-      <xsd:any namespace="##other" processContents="lax"
-               minOccurs="1" maxOccurs="1">
-        <xsd:annotation>
-          <xsd:documentation>
-            Any element in any namespace other than the UBL extension
-            namespace is allowed to be the apex element of an extension.
-            Only those elements found in the UBL schemas and in the
-            trees of schemas imported in this module are validated.
-            Any element for which there is no schema declaration in any
-            of the trees of schemas passes validation and is not
-            treated as a schema constraint violation.
-          </xsd:documentation>
-        </xsd:annotation>
-      </xsd:any>
-    </xsd:sequence>
-  </xsd:complexType>
+<xsd:schema xmlns="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
+            xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+            xmlns:udt="urn:oasis:names:specification:bdndr:schema:xsd:UnqualifiedDataTypes-1"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="2.4">
+   <xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+               schemaLocation="UBL-QualifiedDataTypes-2.4.xsd"/>
+   <xsd:import namespace="urn:oasis:names:specification:bdndr:schema:xsd:UnqualifiedDataTypes-1"
+               schemaLocation="BDNDR-UnqualifiedDataTypes-1.1.xsd"/>
+   <xsd:element name="ReferencedSignatureID" type="ReferencedSignatureIDType"/>
+   <xsd:complexType name="ReferencedSignatureIDType">
+      <xsd:simpleContent>
+         <xsd:restriction base="udt:IdentifierType"/>
+      </xsd:simpleContent>
+   </xsd:complexType>
 </xsd:schema>
 <!-- ===== Copyright Notice ===== -->
 <!--
@@ -97,5 +71,5 @@
   WARRANTY THAT THE USE OF THE INFORMATION HEREIN 
   WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED 
   WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A 
-  PARTICULAR PURPOSE.
+  PARTICULAR PURPOSE.    
 -->
