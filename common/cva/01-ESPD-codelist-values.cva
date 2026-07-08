@@ -36,7 +36,8 @@
 		<ValueList xml:id="PropertyGroupType" uri="../../gc/PropertyGroupType.gc"/><!-- /cac:TenderingCriterionPropertyGroup/cbc:PropertyGroupTypeCode -->
 		<ValueList xml:id="ResponseDataType" uri="../../gc/ResponseDataType.gc"/><!-- /cac:TenderingCriterionProperty/cbc:ValueDataTypeCode -->		
 		<ValueList xml:id="occupation" uri="../../gc/Occupation.gc"/><!-- /cac:TenderingCriterionProperty/cbc:ExpectedCode -->		
-		<ValueList xml:id="criterion" uri="../../gc/Criterion.gc"/> <!-- cbc:CriterionTypeCode -->
+		<ValueList xml:id="selection-criterion" uri="../../gc/SelectionCriterion.gc"/> <!-- cbc:CriterionTypeCode -->
+		<ValueList xml:id="exclusion-ground" uri="../../gc/ExclusionGround.gc"/> <!-- cbc:CriterionTypeCode -->
 		<!-- Missing from this list: BooleanGUIControlType.gc -->
 	</ValueLists>
 	
