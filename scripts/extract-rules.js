@@ -38,9 +38,50 @@ const SCH_DIRS = [
 // ---------------------------------------------------------------------------
 
 /**
- * Determine scope (Request / Response / Common) from the file path.
+ * Parse the standardized header comment block from a .sch file.
+ * Returns an object with keys: file, scope, version, maintenance, dependencies, rules, description.
+ * Returns null if no structured header is found.
  */
-function inferScope(filePath) {
+function parseHeader(xml) {
+  const headerMatch = xml.match(/<!--\s*([\s\S]*?)-->/);
+  if (!headerMatch) return null;
+
+  const block = headerMatch[1];
+  const result = {};
+
+  const fields = ['File', 'Scope', 'Version', 'Maintenance', 'Dependencies', 'Rules', 'Description'];
+  for (const field of fields) {
+    const re = new RegExp(`^\\s*${field}:\\s*(.+)`, 'mi');
+    const m = block.match(re);
+    if (m) {
+      // For multi-line fields (like Rules), capture continuation lines
+      const startIdx = block.indexOf(m[0]) + m[0].length;
+      let value = m[1].trim();
+      // Check for continuation lines (indented lines following the match)
+      const remaining = block.slice(startIdx);
+      const continuation = remaining.match(/^((?:\s{9,}.+\n?)*)/);
+      if (continuation && continuation[1]) {
+        value += ' ' + continuation[1].replace(/\s+/g, ' ').trim();
+      }
+      result[field.toLowerCase()] = value;
+    }
+  }
+
+  return Object.keys(result).length > 0 ? result : null;
+}
+
+/**
+ * Determine scope (Request / Response / Common) from the file header or path.
+ */
+function inferScope(filePath, header) {
+  // Prefer header metadata if available
+  if (header && header.scope) {
+    const s = header.scope.toLowerCase();
+    if (s.includes('request') && !s.includes('response')) return 'Request';
+    if (s.includes('response') && !s.includes('request')) return 'Response';
+    if (s.includes('common') || (s.includes('request') && s.includes('response'))) return 'Common';
+  }
+  // Fallback to path heuristic
   if (filePath.includes('ESPDRequest')) return 'Request';
   if (filePath.includes('ESPDResponse')) return 'Response';
   return 'Common';
@@ -110,7 +151,8 @@ function extractRulesFromFile(filePath) {
   const xml = readFileSync(filePath, 'utf-8');
   const relPath = relative(ROOT_DIR, filePath).replace(/\\/g, '/');
   const filename = basename(filePath);
-  const scope = inferScope(relPath);
+  const header = parseHeader(xml);
+  const scope = inferScope(relPath, header);
   const category = inferCategory(filename);
 
   const parser = new XMLParser({
