@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 03-ESPD-req-criterion-br.sch
+  Scope: ESPD Request only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-REQ-30, BR-REQ-40
+  Description: Validates mandatory exclusion criteria (8 criminal/tax types must be present)
+               and warns if no selection criteria are provided.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Request Criterion Business Rules</title>

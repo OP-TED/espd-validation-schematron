@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 02-ESPD-req-cardinality-br.sch
+  Scope: ESPD Request only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-OTH-04-01, BR-OTH-04-03, BR-OTH-04-04, BR-OTH-04-06
+  Description: Cardinality constraints for ESPD Request — mandatory elements
+               beyond what the UBL XSD enforces (UBLVersionID, ID, UUID, TenderingCriterion).
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Request Cardinality Business Rules</title>
   

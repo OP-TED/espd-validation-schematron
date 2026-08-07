@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 05-ESPD-resp-qualification-br.sch
+  Scope: ESPD Response only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-RESP-40, BR-RESP-80-S10, BR-RESP-80-S20
+  Description: Validates rules related to pre-qualification systems: selection criteria
+               responses are required unless the EO is registered on a system that covers them.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Response pre-qualification system Business Rules</title>
   

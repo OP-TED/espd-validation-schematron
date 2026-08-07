@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 05-ESPD-resp-eo-br.sch
+  Scope: ESPD Response only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-RESP-10-02, BR-RESP-10-03, BR-RESP-10-04, BR-RESP-10-05, BR-RESP-10-06,
+         BR-RESP-10-07, BR-RESP-10-09, BR-RESP-10-10, BR-RESP-10-11,
+         BR-RESP-20-01, BR-RESP-20-02, BR-RESP-20-03
+  Description: Validates mandatory fields for the economic operator (identification,
+               name, size, country), service provider, and power of attorney representatives.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Response Economic Operator Business Rules</title>
   

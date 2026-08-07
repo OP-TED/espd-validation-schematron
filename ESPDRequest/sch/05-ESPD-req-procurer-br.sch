@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 05-ESPD-req-procurer-br.sch
+  Scope: ESPD Request only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-REQ-20-01, BR-REQ-20-02, BR-REQ-20-03, BR-REQ-20-04,
+         BR-REQ-20-05, BR-REQ-20-06, BR-REQ-20-07
+  Description: Validates mandatory fields for the contracting party (procurer):
+               party identification, name, country, endpoint, contact details.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Request Procurer Business Rules</title>
   

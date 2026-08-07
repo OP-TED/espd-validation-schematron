@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 01-ESPD-common-cl-attributes.sch
+  Scope: Common (ESPD Request and Response)
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: gc/*.gc (Genericode code lists)
+  Description: Validates that code list elements carry mandatory attributes (listID, listAgencyID, listVersionID).
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <title>Common Criterion Business Rules</title>
+    <title>Common Code List Attributes Business Rules</title>
     
     <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
     <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 04-ESPD-req-other-br.sch
+  Scope: ESPD Request only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: (none with @id — placeholder assertions only)
+  Description: Reserved for ESPD Request-specific other business rules.
+               Currently empty of enforceable rules.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Request Other Business Rules</title>
   

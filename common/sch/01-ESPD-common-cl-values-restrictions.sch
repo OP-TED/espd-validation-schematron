@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 01-ESPD-common-cl-values-restrictions.sch
+  Scope: Common (ESPD Request and Response)
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: gc/*.gc (Genericode code lists)
+  Description: Restrictions on code list values (currently no active restrictions).
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <title>Common Code lists Values Restrictions</title>
     
