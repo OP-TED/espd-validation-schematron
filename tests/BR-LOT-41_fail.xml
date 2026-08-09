@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Test fixture: BR-LOT-41 (fail)
+  Rule: All Selection Criteria must have associated LOT.
+  Expected: FATAL error — selection criterion has no ProcurementProjectLotReference.
+-->
+<QualificationApplicationRequest
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+  <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.4</cbc:UBLVersionID>
+  <cbc:ID schemeAgencyID="DGPE">TEST-BR-LOT-41-FAIL</cbc:ID>
+  <cbc:UUID schemeAgencyID="TEST" schemeID="ISO/IEC 9834-8:2008 - 4UUID">00000000-0000-0000-0000-000000000006</cbc:UUID>
+  <cbc:ContractFolderID schemeAgencyID="DGPE">PP.TEST</cbc:ContractFolderID>
+  <cbc:IssueDate>2026-01-01</cbc:IssueDate>
+
+  <cac:ContractingParty>
+    <cac:Party>
+      <cac:PartyName><cbc:Name>Test Authority</cbc:Name></cac:PartyName>
+    </cac:Party>
+  </cac:ContractingParty>
+
+  <!-- Selection criterion WITHOUT lot reference — VIOLATION -->
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">aaaa0000-0000-0000-0000-000000000001</cbc:ID>
+    <cbc:CriterionTypeCode listID="selection-criterion" listAgencyID="OP" listVersionID="20240612-0">slc-stand-to-gen</cbc:CriterionTypeCode>
+    <cbc:Name>General yearly turnover</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+    <!-- MISSING: ProcurementProjectLotReference — required for selection criteria -->
+  </cac:TenderingCriterion>
+
+</QualificationApplicationRequest>

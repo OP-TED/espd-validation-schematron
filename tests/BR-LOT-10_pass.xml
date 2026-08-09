@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Test fixture: BR-LOT-10 (pass)
+  Rule: The lot the EO tenders for MUST be provided (exactly one ProcurementProjectLot).
+  Expected: No error — exactly one ProcurementProjectLot/ID is present.
+-->
+<QualificationApplicationResponse
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+  <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.4</cbc:UBLVersionID>
+  <cbc:ID schemeAgencyID="DGPE">TEST-BR-LOT-10-PASS</cbc:ID>
+  <cbc:UUID schemeAgencyID="TEST" schemeID="ISO/IEC 9834-8:2008 - 4UUID">00000000-0000-0000-0000-000000000007</cbc:UUID>
+  <cbc:ContractFolderID schemeAgencyID="DGPE">PP.TEST</cbc:ContractFolderID>
+  <cbc:IssueDate>2026-01-01</cbc:IssueDate>
+
+  <cac:ContractingParty>
+    <cac:Party>
+      <cac:PartyName><cbc:Name>Test Authority</cbc:Name></cac:PartyName>
+    </cac:Party>
+  </cac:ContractingParty>
+
+  <cac:EconomicOperatorParty>
+    <cac:EconomicOperatorRole>
+      <cbc:RoleCode listID="eo-role-type" listAgencyID="OP" listVersionID="20240612-0">sole-tenderer</cbc:RoleCode>
+    </cac:EconomicOperatorRole>
+    <cac:Party>
+      <cac:PartyName><cbc:Name>Test EO</cbc:Name></cac:PartyName>
+    </cac:Party>
+  </cac:EconomicOperatorParty>
+
+  <!-- Exactly one lot — correct -->
+  <cac:ProcurementProjectLot>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">LOT-0001</cbc:ID>
+  </cac:ProcurementProjectLot>
+
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">005eb9ed-1347-4ca3-bb29-9bc0db64e1ab</cbc:ID>
+    <cbc:CriterionTypeCode listID="exclusion-ground" listAgencyID="OP" listVersionID="20240612-0">exg-crim-part</cbc:CriterionTypeCode>
+    <cbc:Name>Test criterion</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+  </cac:TenderingCriterion>
+
+  <cac:TenderingCriterionResponse>
+    <cbc:ValidatedCriterionPropertyID schemeAgencyID="OP">prop-001</cbc:ValidatedCriterionPropertyID>
+    <cac:ResponseValue>
+      <cbc:ResponseIndicator>true</cbc:ResponseIndicator>
+    </cac:ResponseValue>
+  </cac:TenderingCriterionResponse>
+
+</QualificationApplicationResponse>

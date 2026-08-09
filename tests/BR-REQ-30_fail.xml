@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Test fixture: BR-REQ-30 (fail)
+  Rule: Both 'Part III, A - Criminal convictions' and 'Part III, B - Payment of taxes'
+        exclusion criteria are REQUIRED.
+  Expected: FATAL error — missing 'exg-pmt-bre-tax' and 'exg-pmt-bre-ssc' (only 6 of 8 present).
+-->
+<QualificationApplicationRequest
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+  <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.4</cbc:UBLVersionID>
+  <cbc:ID schemeAgencyID="DGPE">TEST-BR-REQ-30-FAIL</cbc:ID>
+  <cbc:UUID schemeAgencyID="TEST" schemeID="ISO/IEC 9834-8:2008 - 4UUID">00000000-0000-0000-0000-000000000002</cbc:UUID>
+  <cbc:ContractFolderID schemeAgencyID="DGPE">PP.TEST</cbc:ContractFolderID>
+  <cbc:IssueDate>2026-01-01</cbc:IssueDate>
+  <cbc:ProcedureCode listID="procurement-procedure-type" listAgencyID="OP" listVersionID="20240101-0">Open</cbc:ProcedureCode>
+
+  <cac:ContractingParty>
+    <cac:Party>
+      <cac:PartyName><cbc:Name>Test Authority</cbc:Name></cac:PartyName>
+    </cac:Party>
+  </cac:ContractingParty>
+
+  <!-- Only 6 of 8 mandatory exclusion criteria — MISSING exg-pmt-bre-tax and exg-pmt-bre-ssc -->
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">005eb9ed-1347-4ca3-bb29-9bc0db64e1ab</cbc:ID>
+    <cbc:CriterionTypeCode listID="exclusion-ground" listAgencyID="OP" listVersionID="20240612-0">exg-crim-part</cbc:CriterionTypeCode>
+    <cbc:Name>Participation in a criminal organisation</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+  </cac:TenderingCriterion>
+
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">c27b7c4e-c837-4529-b867-ed55ce639db5</cbc:ID>
+    <cbc:CriterionTypeCode listID="exclusion-ground" listAgencyID="OP" listVersionID="20240612-0">exg-crim-corrpt</cbc:CriterionTypeCode>
+    <cbc:Name>Corruption</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+  </cac:TenderingCriterion>
+
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">297d2323-3ede-424e-94bc-a91561e6f320</cbc:ID>
+    <cbc:CriterionTypeCode listID="exclusion-ground" listAgencyID="OP" listVersionID="20240612-0">exg-crim-fraud</cbc:CriterionTypeCode>
+    <cbc:Name>Fraud</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+  </cac:TenderingCriterion>
+
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">d486fb70-86b3-4e75-97f2-0d71b5697c7d</cbc:ID>
+    <cbc:CriterionTypeCode listID="exclusion-ground" listAgencyID="OP" listVersionID="20240612-0">exg-crim-terror</cbc:CriterionTypeCode>
+    <cbc:Name>Terrorist offences</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+  </cac:TenderingCriterion>
+
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">47112079-6fec-47a3-988f-e561668c3aef</cbc:ID>
+    <cbc:CriterionTypeCode listID="exclusion-ground" listAgencyID="OP" listVersionID="20240612-0">exg-crim-laund</cbc:CriterionTypeCode>
+    <cbc:Name>Money laundering</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+  </cac:TenderingCriterion>
+
+  <cac:TenderingCriterion>
+    <cbc:ID schemeAgencyID="OP" schemeID="Criterion">d789d01a-fe03-4ccd-9898-73f9cfa080d1</cbc:ID>
+    <cbc:CriterionTypeCode listID="exclusion-ground" listAgencyID="OP" listVersionID="20240612-0">exg-crim-traffick</cbc:CriterionTypeCode>
+    <cbc:Name>Child labour and human trafficking</cbc:Name>
+    <cbc:Description>Test</cbc:Description>
+  </cac:TenderingCriterion>
+
+  <!-- MISSING: exg-pmt-bre-tax -->
+  <!-- MISSING: exg-pmt-bre-ssc -->
+
+</QualificationApplicationRequest>
