@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BR-TCR-03 fail: ResponseValue and ApplicablePeriod are both supplied. -->
+<QualificationApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:TenderingCriterionProperty><cbc:ID>property-001</cbc:ID></cac:TenderingCriterionProperty>
+  <cac:TenderingCriterionResponse>
+    <cbc:ValidatedCriterionPropertyID>property-001</cbc:ValidatedCriterionPropertyID>
+    <cac:ResponseValue><cbc:ResponseIndicator>true</cbc:ResponseIndicator></cac:ResponseValue>
+    <cac:ApplicablePeriod><cbc:StartDate>2026-01-01</cbc:StartDate></cac:ApplicablePeriod>
+  </cac:TenderingCriterionResponse>
+</QualificationApplicationResponse>

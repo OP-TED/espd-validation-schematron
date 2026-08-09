@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BR-TCR-01-02 pass: the response references exactly one existing criterion property. -->
+<QualificationApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:TenderingCriterion>
+    <cac:TenderingCriterionPropertyGroup>
+      <cac:TenderingCriterionProperty>
+        <cbc:ID>property-001</cbc:ID>
+      </cac:TenderingCriterionProperty>
+    </cac:TenderingCriterionPropertyGroup>
+  </cac:TenderingCriterion>
+  <cac:TenderingCriterionResponse>
+    <cbc:ValidatedCriterionPropertyID>property-001</cbc:ValidatedCriterionPropertyID>
+    <cac:ResponseValue><cbc:ResponseIndicator>true</cbc:ResponseIndicator></cac:ResponseValue>
+  </cac:TenderingCriterionResponse>
+</QualificationApplicationResponse>

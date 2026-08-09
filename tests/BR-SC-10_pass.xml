@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BR-SC-10 pass: the Request supplies its procedure code. -->
+<QualificationApplicationRequest xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.4</cbc:UBLVersionID>
+  <cbc:ProcedureCode listID="procurement-procedure-type" listAgencyID="OP" listVersionID="20240101-0">Open</cbc:ProcedureCode>
+</QualificationApplicationRequest>

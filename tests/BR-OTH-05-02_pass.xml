@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BR-OTH-05-02 pass: UBLVersionID identifies the required scheme agency. -->
+<QualificationApplicationRequest xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.4</cbc:UBLVersionID>
+</QualificationApplicationRequest>
