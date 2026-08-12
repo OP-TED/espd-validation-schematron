@@ -26,6 +26,10 @@ import { XMLParser } from 'fast-xml-parser';
 const ROOT_DIR = join(dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1')), '..');
 const OUTPUT_DIR = join(ROOT_DIR, 'output');
 
+// GitHub repository base URL (used to build links in AsciiDoc output)
+const GITHUB_REPO_URL = 'https://github.com/OP-TED/espd-validation-schematron';
+const GITHUB_BRANCH = 'feature/testing_and_doc';
+
 // Directories containing .sch source files (relative to ROOT_DIR)
 const SCH_DIRS = [
   'common/sch',
@@ -264,25 +268,26 @@ function toAsciiDoc(rules) {
   lines.push(`// Total rules: ${rules.length}`);
   lines.push(`// Generated: ${new Date().toISOString().split('T')[0]}`);
   lines.push('');
-  lines.push('[cols="2,1,1,1,4,3",options="header"]');
-  lines.push('|===');
-  lines.push('| Rule ID | Severity | Scope | Category | Description | Source File');
-  lines.push('');
 
   for (const r of rules) {
-    // Escape pipe characters in descriptions
-    const desc = r.description.replace(/\|/g, '\\|');
-    const ctx = r.context.replace(/\|/g, '\\|');
-    lines.push(`| ${r.id}`);
-    lines.push(`| ${r.severity}`);
-    lines.push(`| ${r.scope}`);
-    lines.push(`| ${r.category}`);
-    lines.push(`| ${desc}`);
-    lines.push(`| ${r.sourceFile}`);
+    const severityIcon = r.severity === 'fatal' ? '🔴' : r.severity === 'error' ? '🟠' : '🟡';
+    const sourceUrl = `${GITHUB_REPO_URL}/blob/${GITHUB_BRANCH}/${r.sourceFile}`;
+
+    lines.push(`[[${r.id}]]`);
+    lines.push(`[.rule]`);
+    lines.push(`====`);
+    lines.push(`*${r.id}* ${severityIcon} `);
+    lines.push(`[.rule-meta]`);
+    lines.push(`Severity:: ${r.severity}`);
+    lines.push(`Scope:: ${r.scope}`);
+    lines.push(`Category:: ${r.category}`);
+    lines.push(`Source:: link:${sourceUrl}[${r.sourceFile}]`);
+    lines.push('');
+    lines.push(r.description);
+    lines.push(`====`);
     lines.push('');
   }
 
-  lines.push('|===');
   return lines.join('\n');
 }
 
