@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 04-ESPD-resp-other-br.sch
+  Scope: ESPD Response only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: (none with @id — placeholder only)
+  Description: Reserved for ESPD Response-specific other business rules.
+               Currently empty of enforceable rules.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Response Other Business Rules</title>
 	

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BR-RESP-10-05 pass: the economic operator has a name. -->
+<QualificationApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:EconomicOperatorParty>
+    <cac:Party>
+      <cac:PartyIdentification><cbc:ID>EO-001</cbc:ID></cac:PartyIdentification>
+      <cac:PartyName><cbc:Name>Test EO</cbc:Name></cac:PartyName>
+    </cac:Party>
+  </cac:EconomicOperatorParty>
+</QualificationApplicationResponse>

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 05-ESPD-req-specific-br.sch
+  Scope: ESPD Request only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-SC-10, BR-LOT-40, BR-LOT-41
+  Description: ESPD Request-specific rules: procurement procedure code is mandatory,
+               exclusion criteria cannot have lots, selection criteria must have lots.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:fn="http://www.w3.org/2005/xpath-functions">

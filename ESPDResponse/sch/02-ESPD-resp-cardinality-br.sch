@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 02-ESPD-resp-cardinality-br.sch
+  Scope: ESPD Response only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-OTH-04-01, BR-OTH-04-03, BR-OTH-04-04, BR-OTH-04-06, BR-OTH-04-07
+  Description: Cardinality constraints for ESPD Response — mandatory elements
+               beyond what the UBL XSD enforces (includes TenderingCriterionResponse).
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Response Cardinality Business Rules</title>
 	

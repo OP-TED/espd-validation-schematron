@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 04-ESPD-common-other-br.sch
+  Scope: Common (ESPD Request and Response)
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-COM-10-01, BR-COM-10-02, BR-COM-10-03, BR-OTH-01-10, BR-OTH-01-11,
+         BR-OTH-01-20, BR-OTH-01-21, BR-OTH-01-30, BR-OTH-01-31, BR-OTH-01-40,
+         BR-OTH-02, BR-OTH-05-01, BR-OTH-05-02, BR-OTH-08
+  Description: General business rules for document references (TED CN format),
+               mandatory attributes on codes and identifiers, UBL version, and endpoints.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>Common Other Business Rules</title>
   

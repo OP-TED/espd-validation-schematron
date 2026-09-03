@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 05-ESPD-resp-specific-br.sch
+  Scope: ESPD Response only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-LOT-10
+  Description: ESPD Response-specific rules: the EO must specify exactly one
+               procurement project lot to which the ESPD applies.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions">
 	<title>ESPD Response Business Rules</title>
   

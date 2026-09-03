@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BR-RESP-10-05 fail: the economic operator has no name. -->
+<QualificationApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:EconomicOperatorParty>
+    <cac:Party>
+      <cac:PartyIdentification><cbc:ID>EO-001</cbc:ID></cac:PartyIdentification>
+    </cac:Party>
+  </cac:EconomicOperatorParty>
+</QualificationApplicationResponse>

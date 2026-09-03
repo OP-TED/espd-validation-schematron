@@ -1,0 +1,14 @@
+{
+  "name": "espd-schematron-scripts",
+  "version": "1.0.0",
+  "description": "Tooling scripts for ESPD validation schematron: rules extraction, register generation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract-rules": "node extract-rules.js",
+    "test": "node run-tests.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}

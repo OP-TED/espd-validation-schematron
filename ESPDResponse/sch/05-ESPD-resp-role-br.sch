@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 05-ESPD-resp-role-br.sch
+  Scope: ESPD Response only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None
+  Rules: BR-LEAD-10-S10, BR-LEAD-10-S20, BR-LEAD-10-S30, BR-LAED-10, BR-SUBCONT-01
+  Description: Validates EO role-specific rules: group leader must provide group name
+               and participant info, relied-upon entities and subcontractors must have
+               responses, subcontractors don't need to answer selection criteria.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Response Role Business Rules</title>
 	

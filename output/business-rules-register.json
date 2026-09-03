@@ -1,0 +1,1041 @@
+{
+  "generated": "2026-08-12T11:02:49.258Z",
+  "totalRules": 115,
+  "rules": [
+    {
+      "id": "BR-COM-10-01",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cac:AdditionalDocumentReference",
+      "description": "If the document referenced is a Contract Notice published on TED the ID must follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (cbc:ID = '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-COM-10-02",
+      "severity": "warning",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cac:AdditionalDocumentReference",
+      "description": "If the document being referenced is a Notice being published on TED, use two description lines ('/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:Description'). Use the second description line to place therein the temporary number received from TED (cbc:ID = '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-COM-10-03",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cac:AdditionalDocumentReference",
+      "description": "The type of document being referenced, expressed as a code ('/cac:AdditionalDocumentReference/cbc:DocumentTypeCode') is mandatory (cbc:ID = '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-LAED-10",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:TenderingCriterion[ starts-with(cbc:CriterionTypeCode, 'eo-group') ]",
+      "description": "Information about the other participants MUST be provided (criteria 'eo-group').",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-role-br.sch"
+    },
+    {
+      "id": "BR-LEAD-10-S10",
+      "severity": "warning",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "The current EO role is 'group-lead', the information about the group ('/cbc:EconomicOperatorGroupName') must be provided.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-role-br.sch"
+    },
+    {
+      "id": "BR-LEAD-10-S20",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:TenderingCriterion[ starts-with(cbc:CriterionTypeCode, 'relied') ]",
+      "description": "Information about all the entities the EO relies on MUST be provided (criteria 'relied').",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-role-br.sch"
+    },
+    {
+      "id": "BR-LEAD-10-S30",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:TenderingCriterion[ starts-with(cbc:CriterionTypeCode, 'subco-ent') ]",
+      "description": "Information about all the entities the EO relies on MUST be provided (criteria 'subco-ent').",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-role-br.sch"
+    },
+    {
+      "id": "BR-LOT-10",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "The lot the EO tenders for MUST be provided.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-specific-br.sch"
+    },
+    {
+      "id": "BR-LOT-40",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:TenderingCriterion[contains(translate('&#127;exg-crim-part&#127;&#127;exg-crim-corrpt&#127;&#127;exg-crim-fraud&#127;&#127;exg-crim-terror&#127;&#127;exg-crim-laund&#127;&#127;exg-crim-traffick&#127;&#127;exg-pmt-bre-tax&#127;&#127;exg-pmt-bre-ssc&#127;&#127;exg-mis-bre-env-law&#127;&#127;exg-mis-bre-soc-law&#127;&#127;exg-mis-bre-lab-law&#127;&#127;exg-sitn-bankr&#127;&#127;exg-sitn-insolvency&#127;&#127;exg-sitn-cred-arran&#127;&#127;exg-sitn-other&#127;&#127;exg-sitn-liq-admin&#127;&#127;exg-sitn-as-susp&#127;&#127;exg-mis-misconduct&#127;&#127;exg-mis-distortion&#127;&#127;exg-mis-partic-confl&#127;&#127;exg-mis-prep-confl&#127;&#127;exg-mis-sanction&#127;&#127;exg-mis-misrepresent&#127;&#127;exg-natl-bre-nat-law&#127;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#127;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#127;'))]",
+      "description": "Lots apply only to Selection Criteria. Exclusion Criteria cannot have Lot associated.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-specific-br.sch"
+    },
+    {
+      "id": "BR-LOT-41",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:TenderingCriterion[contains(translate('&#127;slc-suit-reg-prof&#127;&#127;slc-suit-reg-trade&#127;&#127;slc-suit-auth-mbrshp&#127;&#127;slc-suit-auth-mbrshp&#127;&#127;slc-stand-to-gen&#127;&#127;slc-stand-to-avg&#127;&#127;slc-stand-to-spec-avg&#127;&#127;slc-stand-to-spec&#127;&#127;slc-stand-ratio&#127;&#127;slc-stand-ins&#127;&#127;slc-stand-other&#127;&#127;slc-abil-ref-work&#127;&#127;slc-abil-ref-supply&#127;&#127;slc-abil-ref-services&#127;&#127;slc-abil-staff-tech-ctrl&#127;&#127;slc-abil-staff-tech-work&#127;&#127;slc-abil-mgmt-qual&#127;&#127;slc-abil-facil-res&#127;&#127;slc-abil-mgmt-supply&#127;&#127;slc-abil-staff-qual&#127;&#127;slc-abil-mgmt-env&#127;&#127;slc-abil-facil-tools&#127;&#127;slc-abil-check&#127;&#127;slc-abil-staff-yrly-no-mgmt&#127;&#127;slc-abil-staff-yrly-avg-mp&#127;&#127;slc-abil-subc&#127;&#127;slc-abil-qual-smp-wo-autent&#127;&#127;slc-abil-qual-smp-w-autent&#127;&#127;slc-abil-qual-inst&#127;&#127;slc-sche-qu-cert-indep&#127;&#127;slc-sche-env-cert-indep&#127;','ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),concat('&#127;',translate(cbc:CriterionTypeCode,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'&#127;'))]",
+      "description": "All Selection Criteria must have associated LOT.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-specific-br.sch"
+    },
+    {
+      "id": "BR-OTH-01-10",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:ExpectedCode | cbc:IdentificationCode | cbc:DocumentTypeCode | cbc:ValueCurrencyCode | cbc:ProcedureCode | cbc:ProcurementTypeCode | cbc:ProcurementSubTypeCode",
+      "description": "The attribute listID is mandatory for the element: '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-01-11",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:TypeCode | cbc:PropertyGroupTypeCode | cbc:ValueDataTypeCode",
+      "description": "The attribute listID is mandatory for the element: '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-01-20",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:ExpectedCode | cbc:IdentificationCode | cbc:DocumentTypeCode | cbc:ValueCurrencyCode | cbc:ProcedureCode | cbc:ProcurementTypeCode | cbc:ProcurementSubTypeCode",
+      "description": "The attribute listAgencyID is mandatory for the element: '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-01-21",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:TypeCode | cbc:PropertyGroupTypeCode | cbc:ValueDataTypeCode",
+      "description": "The attribute listAgencyID is mandatory for the element: '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-01-30",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:ExpectedCode | cbc:IdentificationCode | cbc:DocumentTypeCode | cbc:ValueCurrencyCode | cbc:ProcedureCode | cbc:ProcurementTypeCode | cbc:ProcurementSubTypeCode",
+      "description": "The attribute listVersionID is mandatory for the element: '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-01-31",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:TypeCode | cbc:PropertyGroupTypeCode | cbc:ValueDataTypeCode",
+      "description": "The attribute listVersionID is mandatory for the element: '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-01-40",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:TypeCode | cbc:PropertyGroupTypeCode | cbc:ValueDataTypeCode",
+      "description": "List version identifier '/listVersionID =' is not correct. ListVersionID should be '5.x.x'.",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-02",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "ext:ExtensionAgencyID | ext:ExtensionVersionID | cbc:AccountID | cbc:AdditionalAccountID | cbc:AgencyID | cbc:AircraftID | cbc:AttributeID | cbc:AwardID | cbc:AwardingCriterionID | cbc:BarcodeSymbologyID | cbc:BrokerAssignedID | cbc:BusinessClassificationEvidenceID | cbc:BusinessIdentityEvidenceID | cbc:BuyerEventID | cbc:CV2ID | cbc:CarrierAssignedID | cbc:ChipApplicationID | cbc:CompanyID | cbc:ConsigneeAssignedID | cbc:ConsignorAssignedID | cbc:ConsumptionID | cbc:ConsumptionReportID | cbc:ContractFolderID | cbc:ContractedCarrierAssignedID | cbc:CustomerAssignedAccountID | cbc:CustomizationID | cbc:DocumentID | cbc:ExchangeMarketID | cbc:ExpectedID | cbc:ExtendedID | cbc:FormatID | cbc:FreightForwarderAssignedID | cbc:HazardClassID | cbc:ID | cbc:IdentificationID | cbc:ImmobilizationCertificateID | cbc:InstructionID | cbc:IssueNumberID | cbc:IssuerID | cbc:JourneyID | cbc:LanguageID | cbc:LicensePlateID | cbc:LineID | cbc:LoadingSequenceID | cbc:LocationID | cbc:LogoReferenceID | cbc:LotNumberID | cbc:LowerOrangeHazardPlacardID | cbc:MarkingID | cbc:MinimumImprovementBid | cbc:NationalityID | cbc:NetworkID | cbc:OID| cbc:OpenTenderID | cbc:OriginalContractingSystemID | cbc:OriginalJobID | cbc:ParentDocumentID | cbc:ParentDocumentLineReferenceID | cbc:ParentDocumentVersionID | cbc:ParticipantID | cbc:PaymentID | cbc:PaymentMeansID | cbc:PerformingCarrierAssignedID | cbc:PrepaidPaymentReferenceID | cbc:PreviousJobID | cbc:PreviousVersionID | cbc:PrimaryAccountNumberID | cbc:ProductTraceID | cbc:ProfileExecutionID | cbc:ProfileID | cbc:ProtocolID | cbc:RadioCallSignID | cbc:RailCarID | cbc:ReferenceID | cbc:ReferencedConsignmentID | cbc:RegistrationID | cbc:RegistrationNationalityID | cbc:ReleaseID | cbc:RequestForQuotationLineID | cbc:RequiredCustomsID | cbc:ResponseID | cbc:RevisedForecastLineID | cbc:SalesOrderID | cbc:SalesOrderLineID | cbc:SecurityID | cbc:SellerEventID | cbc:SequenceID | cbc:SequenceNumberID | cbc:SerialID | cbc:ShippingOrderID | cbc:SignatureID | cbc:SpecificationID| cbc:SubscriberID | cbc:SuccessiveSequenceID | cbc:SupplierAssignedAccountID | cbc:TenderEnvelopeID | cbc:TraceID | cbc:TrackingID | cbc:TrainID | cbc:TransportExecutionPlanReferenceID | cbc:UBLVersionID | cbc:UUID | cbc:UpperOrangeHazardPlacardID | cbc:ValidatedCriterionPropertyID | cbc:ValidatorID | cbc:VariantID | cbc:VersionID | cbc:VesselID | cbc:WeighingDeviceID",
+      "description": "The attribute schemeAgencyID is mandatory for the element: '', and it should not be empty.",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-02.",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:EndpointID",
+      "description": "The attribute schemeAgencyID is mandatory for the element: '', and it should not be empty.",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-01",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "The element '/cbc:UBLVersionID' is mandatory.",
+      "sourceFile": "ESPDRequest/sch/02-ESPD-req-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-01",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "The element '/cbc:UBLVersionID' is mandatory.",
+      "sourceFile": "ESPDResponse/sch/02-ESPD-resp-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-03",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "The element '/cbc:ID' is mandatory.",
+      "sourceFile": "ESPDRequest/sch/02-ESPD-req-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-03",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "The element '/cbc:ID' is mandatory.",
+      "sourceFile": "ESPDResponse/sch/02-ESPD-resp-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-04",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "The element '/cbc:UUID' is mandatory.",
+      "sourceFile": "ESPDRequest/sch/02-ESPD-req-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-04",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "The element '/cbc:UUID' is mandatory.",
+      "sourceFile": "ESPDResponse/sch/02-ESPD-resp-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-06",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "The element '/cac:TenderingCriterion' is mandatory.",
+      "sourceFile": "ESPDRequest/sch/02-ESPD-req-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-06",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "The element '/cac:TenderingCriterion' is mandatory.",
+      "sourceFile": "ESPDResponse/sch/02-ESPD-resp-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-04-07",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Cardinality",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "The element '/cac:TenderingCriterionResponse' is mandatory.",
+      "sourceFile": "ESPDResponse/sch/02-ESPD-resp-cardinality-br.sch"
+    },
+    {
+      "id": "BR-OTH-05-01",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:UBLVersionID",
+      "description": "'cbc:UBLVersionID' must use the value \"2.4\" (cbc:UBLVersionID = '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-05-02",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:UBLVersionID",
+      "description": "'cbc:UBLVersionID/@schemeAgencyID' must use the value \"OASIS-UBL-TC\" (cbc:UBLVersionID/@schemeAgencyID = '').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-OTH-08",
+      "severity": "error",
+      "scope": "Common",
+      "category": "Other",
+      "context": "cbc:EndpointID",
+      "description": "An end-point identifier MUST have a scheme identifier attribute ('/cac:ServiceProviderParty/cac:Party/cbc:EndpointID/@schemeID').",
+      "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-REQ-20-01",
+      "severity": "warning",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "The ESPD only expects data about one buyer ('/cac:ContractingParty'). There are currently '' buyers.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-procurer-br.sch"
+    },
+    {
+      "id": "BR-REQ-20-02",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:ContractingParty/cac:Party",
+      "description": "The use of the official name of the contracting body ('/cac:ContractingParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-procurer-br.sch"
+    },
+    {
+      "id": "BR-REQ-20-03",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:ContractingParty/cac:Party",
+      "description": "The country of the contracting body ('/cac:ContractingParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') must always be specified.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-procurer-br.sch"
+    },
+    {
+      "id": "BR-REQ-20-04",
+      "severity": "warning",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:ContractingParty/cac:Party",
+      "description": "At least one identifier ('cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID') should be specified.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-procurer-br.sch"
+    },
+    {
+      "id": "BR-REQ-20-05",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:ServiceProviderParty/cac:Party",
+      "description": "An identifier for the service provider ('/cac:ServiceProviderParty/cac:Party/cac:PartyIdentification/cbc:ID') must always be provided.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-procurer-br.sch"
+    },
+    {
+      "id": "BR-REQ-20-06",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:ServiceProviderParty/cac:Party",
+      "description": "The name of the service provider ('/cac:ServiceProviderParty/cac:Party/cac:PartyName/cbc:Name') must always be specified.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-procurer-br.sch"
+    },
+    {
+      "id": "BR-REQ-20-07",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "cac:ServiceProviderParty/cac:Party",
+      "description": "The country of the service provider ('/cac:ServiceProviderParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') must always be specified.",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-procurer-br.sch"
+    },
+    {
+      "id": "BR-REQ-30",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Criterion",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "Both 'Part III, A – Criminal convictions' and 'Part III and B – Payment of taxes' exclusion criterion are REQUIRED.",
+      "sourceFile": "ESPDRequest/sch/03-ESPD-req-criterion-br.sch"
+    },
+    {
+      "id": "BR-REQ-40",
+      "severity": "warning",
+      "scope": "Request",
+      "category": "Criterion",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "The current ESPD request does not provide selection criteria.",
+      "sourceFile": "ESPDRequest/sch/03-ESPD-req-criterion-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-02",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:EconomicOperatorParty",
+      "description": "The function of the economic operator ('/cac:EconomicOperatorParty/cac:EconomicOperatorRole') is mandatory.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-03",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:EconomicOperatorParty",
+      "description": "The role of the economic operator ('/cac:EconomicOperatorParty/cac:EconomicOperatorRole/cbc:RoleCode') is mandatory.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-04",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:EconomicOperatorParty/cac:Party",
+      "description": "An identifier that identifies the economic operator ('/cac:EconomicOperatorParty/cac:Party/cac:PartyIdentification/cbc:ID') is mandatory.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-05",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:EconomicOperatorParty/cac:Party",
+      "description": "The name of the economic operator ('/cac:EconomicOperatorParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-06",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:EconomicOperatorParty/cac:Party",
+      "description": "The size of the company ('/cac:EconomicOperatorParty/cac:Party/cbc:IndustryClassificationCode') is mandatory.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-07",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:EconomicOperatorParty/cac:Party",
+      "description": "The country of the company ('/cac:EconomicOperatorParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') is mandatory.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-09",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:ServiceProviderParty/cac:Party",
+      "description": "The name of the service provider ('/cac:ServiceProviderParty/cac:Party/cac:PartyName/cbc:Name') must always be specified.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-10",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:ServiceProviderParty/cac:Party",
+      "description": "The country of the service provider ('/cac:ServiceProviderParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') must always be specified.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-10-11",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:ServiceProviderParty/cac:Party",
+      "description": "An identifier for the service provider ('/cac:ServiceProviderParty/cac:Party/cac:PartyIdentification/cbc:ID') must always be provided.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-20-01",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:PowerOfAttorney",
+      "description": "Name of the natural person ('/cac:PowerOfAttorney/cac:AgentParty/cac:Person/cbc:FirstName') must always be provided.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-20-02",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:PowerOfAttorney",
+      "description": "Family Name of the natural person ('/cac:PowerOfAttorney/cac:AgentParty/cac:Person/cbc:FamilyName') must always be provided.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-20-03",
+      "severity": "error",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "cac:PowerOfAttorney",
+      "description": "A code that identifies the country ('/cac:PowerOfAttorney/cac:AgentParty/cac:Person/cac:ResidenceAddress/cac:Country/cbc:IdentificationCode') must always be provided.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-eo-br.sch"
+    },
+    {
+      "id": "BR-RESP-40",
+      "severity": "warning",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "Information about compliance of selection criteria MUST be provided. The following selection criterion are not provided:,",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-qualification-br.sch"
+    },
+    {
+      "id": "BR-RESP-80-S10",
+      "severity": "warning",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "When the pre-qualification system the EO is registered on does not cover all the selection criteria, information about compliance of selection criteria MUST be provided. The following selection criterion are not provided:,",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-qualification-br.sch"
+    },
+    {
+      "id": "BR-RESP-80-S20",
+      "severity": "warning",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "When the pre-qualification system the EO is registered on covers all the selection criteria, information about compliance of selection criteria IS NOT required.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-qualification-br.sch"
+    },
+    {
+      "id": "BR-SC-10",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationRequest",
+      "description": "Information about the procurement procedure MUST be provided ('/cbc:ProcedureCode).",
+      "sourceFile": "ESPDRequest/sch/05-ESPD-req-specific-br.sch"
+    },
+    {
+      "id": "BR-SUBCONT-01",
+      "severity": "warning",
+      "scope": "Response",
+      "category": "Specific",
+      "context": "espd:QualificationApplicationResponse",
+      "description": "If EO role is 'subcont - Subcontractor', the entity does not have to provide information about the selection criteria.",
+      "sourceFile": "ESPDResponse/sch/05-ESPD-resp-role-br.sch"
+    },
+    {
+      "id": "BR-TC-02-01",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterion",
+      "description": "The identifier of the criterion ('/cac:TenderingCriterion/cbc:ID') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-02-02",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterion",
+      "description": "Each criterion must use the UUID supplied by e-Certis. The '/cac:TenderingCriterion/cbc:ID =' is not defined in e-Certis.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-03",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterion",
+      "description": "Classification code ('/cac:TenderingCriterion/cbc:CriterionTypeCode') to represent the criterion in the ESPD taxonomy of criteria is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-04",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterion",
+      "description": "The criterion type code should match the one from e-Certis. The code '/cac:TenderingCriterion/cbc:CriterionTypeCode =' is not defined in e-Certis.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-05",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterion",
+      "description": "The name of the criterion ('/cac:TenderingCriterion/cbc:Name') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-06",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterion",
+      "description": "An extended description of the criterion ('/cac:TenderingCriterion/cbc:Description') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-07",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterion",
+      "description": "The Tendering Criterion, which 'cac:TenderingCriterion/cbc:ID =', has '' missing 'cac:TenderingCriterionPropertyGroup' element(s).",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-09",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:Legislation",
+      "description": "The complete title of the legislation (/cac:TenderingCriterion/cac:Legislation/cbc:Title') provided is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-10",
+      "severity": "warning",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:Legislation",
+      "description": "The description of the legislation (/cac:TenderingCriterion/cac:Legislation/cbc:Description') provided in the original legal text SHOULD be provided.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-11",
+      "severity": "warning",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:Legislation",
+      "description": "Other articles where the Criterion is referred to (/cac:TenderingCriterion/cac:Legislation/cbc:Article') SHOULD also be provided.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-12",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "The identifier of a group of requirements ('/cbc:ID') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-13",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "Compulsory use of the UUIDs supplied by e-Certis. The('[cbc:ID = '']/[cbc:ID = '']') does not exist in e-Certis.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-14",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "Code addressed to control the behavior of the group of criteria ('/cbc:PropertyGroupTypeCode') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-15-01",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "The property group type code should match the one from e-Certis. The tendering criterion property group ('') does not exisit in the e-Certis for the following element '[cbc:ID = '']/[cbc:ID = ''].",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-15-02",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "The property group type code should match the one from e-Certis. The subtendering criterion property group ('') does not exisit in the e-Certis for the following element '[cbc:ID = '']/[cbc:ID = ''].",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-16-01",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "The tendering criterion property group ('[cbc:ID = '']/[cbc:ID = '']') has '' missing 'cac:TenderingCriterionProperty' element(s).",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-16-02",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "The subtendering criterion property group ('[cbc:ID = '']/[cbc:ID = '']') has '' missing 'cac:TenderingCriterionProperty' element(s).",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-17-01",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "The tendering criterion property group ('[cbc:ID = '']/[cbc:ID = '']') has '' missing 'cac:SubsidiaryTenderingCriterionPropertyGroup' element(s).",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-17-02",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup",
+      "description": "The subtendering criterion property group ('[cbc:ID = '']/[cbc:ID = '']') has '' missing 'cac:SubsidiaryTenderingCriterionPropertyGroup' element(s).",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-18",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionProperty",
+      "description": "The identifier of a specific property ('/cbc:ID') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-19",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionProperty",
+      "description": "The text of the caption, requirement or question ('/cbc:Description') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-20",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionProperty",
+      "description": "The type of property ('/cbc:TypeCode') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-20-02",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionProperty",
+      "description": "The tendering criterion property group ('The tendering criterion property type code should match the one from e-Certis. The, which 'cbc:ID =', does not have a '/cac:TenderingCriterionProperty[cbc:ID =]/cbc:TypeCode =' defined in e-Certis.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-21-01",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionProperty",
+      "description": "The type of answer expected by the contracting authority ('/cbc:ValueDataTypeCode') is mandatory.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TC-21-03",
+      "severity": "fatal",
+      "scope": "Common",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionProperty",
+      "description": "The tendering criterion property value data type should match the one from e-Certis. The, which 'cbc:ID =', does not have a '/cac:TenderingCriterionProperty[cbc:ID =]/cbc:ValueDataTypeCode =' defined in e-Certis.",
+      "sourceFile": "common/sch/03-ESPD-common-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-01-01",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "A cross-reference ('/cbc:ValidatedCriterionPropertyID') to the criterion property is mandatory.",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-01-02",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The criterion response ('cbc:ValidatedCriterionPropertyID' = '') does not have a cross-reference to a criterion property ('cac:TenderingCriterionProperty/cbc:ID').",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-03",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "One and only one response element ('/cac:ResponseValue', '/cac:ApplicablePeriod' or '/cac:EvidenceSupplied') per criterion response ('/cac:TenderingCriterionResponse/cbc:ValidatedCriterionPropertyID =') is mandatory.",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-04",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "Only one sub-element within '/cac:TenderingCriterionResponse/cac:ResponseValue' is admitted at the same time. The criteria response ('/cac:TenderingCriterionResponse/cbc:ValidatedCriterionPropertyID =') has '' sub-element(s).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-06-01",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:PropertyGroupTypeCode = 'ONTRUE']/cac:TenderingCriterionProperty",
+      "description": "As the response '' is TRUE and the property group is codified as ONTRUE, 'cbc:ID =' must be answered as well.",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-06-02",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:PropertyGroupTypeCode = 'ONTRUE']/cac:TenderingCriterionProperty",
+      "description": "As the response '' is FALSE but the property group is codified as ONTRUE, 'cbc:ID =' must not be answered.",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-07-01",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:PropertyGroupTypeCode = 'ONFALSE']/cac:TenderingCriterionProperty",
+      "description": "As the response '' is FALSE and the property group is codified as ONFALSE, 'cbc:ID =' must be answered as well.",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-07-02",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:SubsidiaryTenderingCriterionPropertyGroup[cbc:PropertyGroupTypeCode = 'ONFALSE']/cac:TenderingCriterionProperty",
+      "description": "As the response '' is TRUE but the property group is codified as ONFALSE, 'cbc:ID =' must not be answered.",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-01",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-02",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-03",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'CODE_COUNTRY' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-04",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'DATE' ('cac:ResponseValue/cbc:ResponseDate' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-05",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-06",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'EVIDENCE_IDENTIFIER' ('cac:EvidenceSupplied/cbc:ID' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-07",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'INDICATOR' ('cac:ResponseValue/cbc:ResponseIndicator' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-08",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'PERCENTAGE' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-09",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'PERIOD' ('cac:ApplicablePeriod' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-10",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'QUANTITY_INTEGER' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-11",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'QUANTITY_YEAR' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-12",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'QUANTITY' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-13",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-14",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'URL' ('cac:ResponseValue/cbc:ResponseURI' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-15",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'MAXIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-16",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'MINIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-17",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'MAXIMUM_VALUE_NUMERIC' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-18",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'TRANSLATION_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-19",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'CERTIFICATION_LEVEL_DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-20",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'COPY_QUALITY_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-21",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'TIME' ('cac:ResponseValue/cbc:ResponseTime' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-22",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'ECONOMIC_OPERATOR_IDENTIFIER' ('cac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-25",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'QUAL_IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-08-26",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The type of answer expected by the contracting authority is 'CODE_BOOLEAN' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    },
+    {
+      "id": "BR-TCR-09",
+      "severity": "fatal",
+      "scope": "Response",
+      "category": "Criterion",
+      "context": "cac:TenderingCriterionResponse",
+      "description": "The evidence response ('cac:EvidenceSupplied/cbc:ID' = '') does not have a corss-reference to the evidence identifier ('cac:Evidence/cbc:ID').",
+      "sourceFile": "ESPDResponse/sch/03-ESPD-resp-criterion-br.sch"
+    }
+  ]
+}

@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 03-ESPD-common-criterion-br.sch
+  Scope: Common (ESPD Request and Response)
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: ESPD-criterion.xml (from ESPD-EDM / e-Certis)
+  Rules: BR-TC-02-01, BR-TC-02-02, BR-TC-03, BR-TC-04, BR-TC-05, BR-TC-06, BR-TC-07,
+         BR-TC-09, BR-TC-10, BR-TC-11, BR-TC-12, BR-TC-13, BR-TC-14, BR-TC-15-01,
+         BR-TC-15-02, BR-TC-16-01, BR-TC-16-02, BR-TC-17-01, BR-TC-17-02, BR-TC-18,
+         BR-TC-19, BR-TC-20, BR-TC-20-02, BR-TC-21-01, BR-TC-21-03
+  Description: Validates TenderingCriterion structure, property groups, and properties
+               against the canonical e-Certis reference data (UUIDs, type codes, cardinalities).
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>Common Criterion Business Rules</title>
   

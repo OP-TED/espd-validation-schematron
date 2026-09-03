@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  File: 03-ESPD-resp-criterion-br.sch
+  Scope: ESPD Response only
+  Version: 5.0.0
+  Maintenance: Manual
+  Dependencies: None (uses xsl:key for cross-referencing within the document)
+  Rules: BR-TCR-01-01, BR-TCR-01-02, BR-TCR-03, BR-TCR-04, BR-TCR-06-01, BR-TCR-06-02,
+         BR-TCR-07-01, BR-TCR-07-02, BR-TCR-08-01 through BR-TCR-08-22, BR-TCR-08-25,
+         BR-TCR-08-26, BR-TCR-09
+  Description: Validates TenderingCriterionResponse structure: cross-references to
+               criterion properties, response data type matching, ONTRUE/ONFALSE
+               conditional logic, and evidence references.
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<title>ESPD Response Criterion Business Rules</title>
   
