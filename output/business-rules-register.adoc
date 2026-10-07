@@ -2,7 +2,7 @@
 // Regenerate with: cd scripts && npm run extract-rules
 
 // Total rules: 115
-// Generated: 2026-08-12
+// Generated: 2026-10-07
 
 [[BR-COM-10-01]]
 [.rule]
@@ -430,7 +430,7 @@ Scope:: Request
 Category:: Specific
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDRequest/sch/05-ESPD-req-procurer-br.sch[ESPDRequest/sch/05-ESPD-req-procurer-br.sch]
 
-The use of the official name of the contracting body ('/cac:ContractingParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.
+The use of the official name of the buyer ('/cac:ContractingParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.
 ====
 
 [[BR-REQ-20-03]]
@@ -443,7 +443,7 @@ Scope:: Request
 Category:: Specific
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDRequest/sch/05-ESPD-req-procurer-br.sch[ESPDRequest/sch/05-ESPD-req-procurer-br.sch]
 
-The country of the contracting body ('/cac:ContractingParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') must always be specified.
+The country of the buyer ('/cac:ContractingParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') must always be specified.
 ====
 
 [[BR-REQ-20-04]]
@@ -586,7 +586,7 @@ Scope:: Response
 Category:: Specific
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/05-ESPD-resp-eo-br.sch[ESPDResponse/sch/05-ESPD-resp-eo-br.sch]
 
-The size of the company ('/cac:EconomicOperatorParty/cac:Party/cbc:IndustryClassificationCode') is mandatory.
+The size of the economic operator ('/cac:EconomicOperatorParty/cac:Party/cbc:IndustryClassificationCode') is mandatory.
 ====
 
 [[BR-RESP-10-07]]
@@ -599,7 +599,7 @@ Scope:: Response
 Category:: Specific
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/05-ESPD-resp-eo-br.sch[ESPDResponse/sch/05-ESPD-resp-eo-br.sch]
 
-The country of the company ('/cac:EconomicOperatorParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') is mandatory.
+The country of the economic operator ('/cac:EconomicOperatorParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') is mandatory.
 ====
 
 [[BR-RESP-10-09]]
@@ -1054,7 +1054,7 @@ Scope:: Common
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/common/sch/03-ESPD-common-criterion-br.sch[common/sch/03-ESPD-common-criterion-br.sch]
 
-The type of answer expected by the contracting authority ('/cbc:ValueDataTypeCode') is mandatory.
+The expected answer type for this criterion property ('/cbc:ValueDataTypeCode') is mandatory.
 ====
 
 [[BR-TC-21-03]]
@@ -1184,7 +1184,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-02]]
@@ -1197,7 +1197,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-03]]
@@ -1210,7 +1210,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'CODE_COUNTRY' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'CODE_COUNTRY' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-04]]
@@ -1223,7 +1223,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'DATE' ('cac:ResponseValue/cbc:ResponseDate' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'DATE' ('cac:ResponseValue/cbc:ResponseDate' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-05]]
@@ -1236,7 +1236,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-06]]
@@ -1249,7 +1249,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'EVIDENCE_IDENTIFIER' ('cac:EvidenceSupplied/cbc:ID' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'EVIDENCE_IDENTIFIER' ('cac:EvidenceSupplied/cbc:ID' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-07]]
@@ -1262,7 +1262,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'INDICATOR' ('cac:ResponseValue/cbc:ResponseIndicator' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'INDICATOR' ('cac:ResponseValue/cbc:ResponseIndicator' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-08]]
@@ -1275,7 +1275,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'PERCENTAGE' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'PERCENTAGE' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-09]]
@@ -1288,7 +1288,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'PERIOD' ('cac:ApplicablePeriod' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'PERIOD' ('cac:ApplicablePeriod' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-10]]
@@ -1301,7 +1301,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'QUANTITY_INTEGER' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'QUANTITY_INTEGER' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-11]]
@@ -1314,7 +1314,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'QUANTITY_YEAR' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'QUANTITY_YEAR' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-12]]
@@ -1327,7 +1327,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'QUANTITY' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'QUANTITY' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-13]]
@@ -1340,7 +1340,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-14]]
@@ -1353,7 +1353,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'URL' ('cac:ResponseValue/cbc:ResponseURI' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'URL' ('cac:ResponseValue/cbc:ResponseURI' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-15]]
@@ -1366,7 +1366,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'MAXIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'MAXIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-16]]
@@ -1379,7 +1379,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'MINIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'MINIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-17]]
@@ -1392,7 +1392,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'MAXIMUM_VALUE_NUMERIC' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'MAXIMUM_VALUE_NUMERIC' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-18]]
@@ -1405,7 +1405,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'TRANSLATION_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'TRANSLATION_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-19]]
@@ -1418,7 +1418,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'CERTIFICATION_LEVEL_DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'CERTIFICATION_LEVEL_DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-20]]
@@ -1431,7 +1431,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'COPY_QUALITY_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'COPY_QUALITY_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-21]]
@@ -1444,7 +1444,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'TIME' ('cac:ResponseValue/cbc:ResponseTime' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'TIME' ('cac:ResponseValue/cbc:ResponseTime' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-22]]
@@ -1457,7 +1457,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'ECONOMIC_OPERATOR_IDENTIFIER' ('cac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'ECONOMIC_OPERATOR_IDENTIFIER' ('cac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-25]]
@@ -1470,7 +1470,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'QUAL_IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'QUAL_IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-08-26]]
@@ -1483,7 +1483,7 @@ Scope:: Response
 Category:: Criterion
 Source:: link:https://github.com/OP-TED/espd-validation-schematron/blob/feature/testing_and_doc/ESPDResponse/sch/03-ESPD-resp-criterion-br.sch[ESPDResponse/sch/03-ESPD-resp-criterion-br.sch]
 
-The type of answer expected by the contracting authority is 'CODE_BOOLEAN' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
+The expected answer type for this criterion property is 'CODE_BOOLEAN' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is).
 ====
 
 [[BR-TCR-09]]

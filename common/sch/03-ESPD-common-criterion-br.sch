@@ -28,7 +28,7 @@
 -->
 	
 	<pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="BR-COM-CR">
-		<!-- A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the 
+		<!-- A tendering criterion describes a fact or a condition that is used by the buyer to evaluate and compare tenders by economic operators and which will be used for the 
 		exclusion and the selection of candidate tenderers to the award decision. -->
 		<rule context="cac:TenderingCriterion">
 			<!-- Common variables -->
@@ -72,7 +72,7 @@
 		</rule>
 		
 		<!-- N-level group of sub-groups of properties in the structure of a criterion. -->
-		<!-- A tendering criterion describes a fact or a condition that is used by the contracting body to evaluate and compare tenders by economic operators and which will be used for the 
+		<!-- A tendering criterion describes a fact or a condition that is used by the buyer to evaluate and compare tenders by economic operators and which will be used for the 
 		exclusion and the selection of candidate tenderers to the award decision. -->
 		<rule context="cac:TenderingCriterionPropertyGroup | cac:SubsidiaryTenderingCriterionPropertyGroup">	
 			<!-- Common variables -->
@@ -119,7 +119,7 @@
 			<assert test="not($currentIDExist) or (($currentIDExist) and not($ElementUUID_SUBExists)) or ($ParentUUID_SUB/cbc:PropertyGroupTypeCode = $currentCode and ($currentIDExist) and ($ElementUUID_SUBExists))" flag="fatal" id="BR-TC-15-02">The property group type code should match the one from e-Certis. The subtendering criterion property group ('<value-of select="$currentCode"/>') does not exisit in the e-Certis for the following element '<value-of select="name(ancestor::*[1])"/>[cbc:ID = '<value-of select="$parentID"/>']/<value-of select="name()"/>[cbc:ID = '<value-of select="$currentID"/>'].</assert>
 		</rule>	
 		
-		<!-- Caption, specific MS or contracting authority requirement -->
+		<!-- Caption, specific MS or buyer requirement -->
 		<rule context="cac:TenderingCriterionProperty">
 			<!-- Common variables -->			
 			<let name="currentID" value="cbc:ID"/>
@@ -149,7 +149,7 @@
 			<!-- BR-TC-20-01: The type of property is mandatory -->
 			<assert test="(cbc:TypeCode)" flag="fatal" id="BR-TC-20">The type of property ('<value-of select="name()"/>/cbc:TypeCode') is mandatory.</assert>
 			<!-- BR-TC-21-01: ../cbc:ValueDataTypeCode is mandatory -->
-			<assert test="(cbc:ValueDataTypeCode)" flag="fatal" id="BR-TC-21-01">The type of answer expected by the contracting authority ('<value-of select="name()"/>/cbc:ValueDataTypeCode') is mandatory.</assert>
+			<assert test="(cbc:ValueDataTypeCode)" flag="fatal" id="BR-TC-21-01">The expected answer type for this criterion property ('<value-of select="name()"/>/cbc:ValueDataTypeCode') is mandatory.</assert>
 						
 			<!-- Other rules -->
 			<!-- BR-TC-20-02 / BR-TC-21-03: /cac:TenderingCriterionProperty/cbc:TypeCode, cbc:ValueDataTypeCode must match the document [RD03] -->

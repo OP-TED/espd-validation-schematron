@@ -44,11 +44,11 @@
 			<!-- BR-RESP-10-05: The name of the economic operator is mandatory. -->
 			<assert test="(cac:PartyName/cbc:Name)" flag="error" id="BR-RESP-10-05">The name of the economic operator ('/cac:EconomicOperatorParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.</assert>
 			
-			<!-- BR-RESP-10-06: Used to indicate the size of the company. -->
-			<assert test="(cbc:IndustryClassificationCode)" flag="error" id="BR-RESP-10-06">The size of the company ('/cac:EconomicOperatorParty/cac:Party/cbc:IndustryClassificationCode') is mandatory.</assert>
+			<!-- BR-RESP-10-06: Used to indicate the size of the economic operator. -->
+			<assert test="(cbc:IndustryClassificationCode)" flag="error" id="BR-RESP-10-06">The size of the economic operator ('/cac:EconomicOperatorParty/cac:Party/cbc:IndustryClassificationCode') is mandatory.</assert>
 			
-			<!-- BR-RESP-10-07: The country of the contracting body must always be specified. -->
-			<assert test="(cac:PostalAddress/cac:Country/cbc:IdentificationCode)" flag="error" id="BR-RESP-10-07">The country of the company ('/cac:EconomicOperatorParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') is mandatory.</assert>
+			<!-- BR-RESP-10-07: The country of the economic operator must always be specified. -->
+			<assert test="(cac:PostalAddress/cac:Country/cbc:IdentificationCode)" flag="error" id="BR-RESP-10-07">The country of the economic operator ('/cac:EconomicOperatorParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') is mandatory.</assert>
 		</rule>
 		
 		<!-- Main information about the service provider. -->
