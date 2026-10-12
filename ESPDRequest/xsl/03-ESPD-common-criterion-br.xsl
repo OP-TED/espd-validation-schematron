@@ -659,7 +659,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority ('<xsl:text/>
+               <svrl:text>The expected answer type for this criterion property ('<xsl:text/>
                   <xsl:value-of select="name()"/>
                   <xsl:text/>/cbc:ValueDataTypeCode') is mandatory.</svrl:text>
             </svrl:failed-assert>

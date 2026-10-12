@@ -294,7 +294,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -311,7 +311,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -328,7 +328,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'CODE_COUNTRY' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'CODE_COUNTRY' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -345,7 +345,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'CODE_BOOLEAN' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'CODE_BOOLEAN' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -362,7 +362,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'DATE' ('cac:ResponseValue/cbc:ResponseDate' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'DATE' ('cac:ResponseValue/cbc:ResponseDate' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -379,7 +379,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -396,7 +396,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'EVIDENCE_IDENTIFIER' ('cac:EvidenceSupplied/cbc:ID' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'EVIDENCE_IDENTIFIER' ('cac:EvidenceSupplied/cbc:ID' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -413,7 +413,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'INDICATOR' ('cac:ResponseValue/cbc:ResponseIndicator' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'INDICATOR' ('cac:ResponseValue/cbc:ResponseIndicator' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -430,7 +430,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'PERCENTAGE' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'PERCENTAGE' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -447,7 +447,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'PERIOD' ('cac:ApplicablePeriod' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'PERIOD' ('cac:ApplicablePeriod' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -464,7 +464,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'QUANTITY_INTEGER' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'QUANTITY_INTEGER' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -481,7 +481,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'QUANTITY_YEAR' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'QUANTITY_YEAR' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -498,7 +498,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'QUANTITY' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'QUANTITY' ('cac:ResponseValue/cbc:ResponseQuantity' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -515,7 +515,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -532,7 +532,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'QUAL_IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'QUAL_IDENTIFIER' ('ac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -549,7 +549,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'URL' ('cac:ResponseValue/cbc:ResponseURI' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'URL' ('cac:ResponseValue/cbc:ResponseURI' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -566,7 +566,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'MAXIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'MAXIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -583,7 +583,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'MINIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'MINIMUM_AMOUNT' ('cac:ResponseValue/cbc:ResponseAmount' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -600,7 +600,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'MAXIMUM_VALUE_NUMERIC' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'MAXIMUM_VALUE_NUMERIC' ('cac:ResponseValue/cbc:ResponseNumeric' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -617,7 +617,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'TRANSLATION_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'TRANSLATION_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -634,7 +634,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'CERTIFICATION_LEVEL_DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'CERTIFICATION_LEVEL_DESCRIPTION' ('cac:ResponseValue/cbc:Description' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -651,7 +651,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'COPY_QUALITY_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'COPY_QUALITY_TYPE_CODE' ('cac:ResponseValue/cbc:ResponseCode' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -668,7 +668,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'TIME' ('cac:ResponseValue/cbc:ResponseTime' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'TIME' ('cac:ResponseValue/cbc:ResponseTime' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>
@@ -685,7 +685,7 @@
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>The type of answer expected by the contracting authority is 'ECONOMIC_OPERATOR_IDENTIFIER' ('cac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is <xsl:text/>
+               <svrl:text>The expected answer type for this criterion property is 'ECONOMIC_OPERATOR_IDENTIFIER' ('cac:ResponseValue/cbc:ResponseID' element) - ('cbc:ID' is <xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>).</svrl:text>
             </svrl:failed-assert>

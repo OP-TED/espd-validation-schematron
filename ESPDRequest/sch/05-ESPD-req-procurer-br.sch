@@ -33,11 +33,11 @@
 		</rule>
 		
 		<rule context="cac:ContractingParty/cac:Party">
-			<!-- BR-REQ-20#2: Use the official name of the contracting body. Mandatory. -->
-			<assert test="(cac:PartyName/cbc:Name)" flag="fatal" id="BR-REQ-20-02">The use of the official name of the contracting body ('/cac:ContractingParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.</assert>
+			<!-- BR-REQ-20#2: Use the official name of the buyer. Mandatory. -->
+			<assert test="(cac:PartyName/cbc:Name)" flag="fatal" id="BR-REQ-20-02">The use of the official name of the buyer ('/cac:ContractingParty/cac:Party/cac:PartyName/cbc:Name') is mandatory.</assert>
 			
-			<!-- BR-REQ-20#3: The country of the contracting body must always be specified. -->
-			<assert test="(cac:PostalAddress/cac:Country/cbc:IdentificationCode)" flag="fatal" id="BR-REQ-20-03">The country of the contracting body ('/cac:ContractingParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') must always be specified.</assert>
+			<!-- BR-REQ-20#3: The country of the buyer must always be specified. -->
+			<assert test="(cac:PostalAddress/cac:Country/cbc:IdentificationCode)" flag="fatal" id="BR-REQ-20-03">The country of the buyer ('/cac:ContractingParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode') must always be specified.</assert>
 			
 			<!-- BR-REQ-20#4: More than one identifier can be specified. -->
 			<assert test="(cac:PartyIdentification/cbc:ID)" flag="warning" id="BR-REQ-20-04">At least one identifier ('cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID') should be specified.</assert>
