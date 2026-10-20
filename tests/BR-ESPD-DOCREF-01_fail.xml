@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BR-ESPD-DOCREF-01 fail fixture.
+  An AdditionalDocumentReference whose DocumentTypeCode is ESPD_REQUEST, a code
+  that designates the ESPD Request document itself rather than a published
+  notice. The rule must fire (fatal). epo-acc-espd-request behaves identically.
+-->
+<QualificationApplicationRequest
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>notice-ref-1</cbc:ID>
+    <cbc:DocumentTypeCode>ESPD_REQUEST</cbc:DocumentTypeCode>
+  </cac:AdditionalDocumentReference>
+</QualificationApplicationRequest>
