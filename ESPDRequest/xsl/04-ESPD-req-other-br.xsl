@@ -167,8 +167,46 @@
                                              prefix="ext"/>
          <svrl:ns-prefix-in-attribute-values uri="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
                                              prefix="espd"/>
+         <svrl:active-pattern>
+            <xsl:attribute name="document">
+               <xsl:value-of select="document-uri(/)"/>
+            </xsl:attribute>
+            <xsl:attribute name="id">espd-req-docref-content-type</xsl:attribute>
+            <xsl:attribute name="name">espd-req-docref-content-type</xsl:attribute>
+            <xsl:apply-templates/>
+         </svrl:active-pattern>
+         <xsl:apply-templates select="/" mode="M5"/>
       </svrl:schematron-output>
    </xsl:template>
    <!--SCHEMATRON PATTERNS-->
    <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">ESPD Request Other Business Rules</svrl:text>
+   <!--PATTERN espd-req-docref-content-type-->
+   <!--RULE -->
+   <xsl:template match="cac:AdditionalDocumentReference/cbc:DocumentTypeCode"
+                 priority="1000"
+                 mode="M5">
+
+		<!--ASSERT -->
+      <xsl:choose>
+         <xsl:when test="not(normalize-space(.) = 'ESPD_REQUEST') and not(normalize-space(.) = 'epo-acc-espd-request')"/>
+         <xsl:otherwise>
+            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                                test="not(normalize-space(.) = 'ESPD_REQUEST') and not(normalize-space(.) = 'epo-acc-espd-request')">
+               <xsl:attribute name="id">BR-ESPD-DOCREF-01</xsl:attribute>
+               <xsl:attribute name="flag">fatal</xsl:attribute>
+               <xsl:attribute name="location">
+                  <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+               </xsl:attribute>
+               <svrl:text>[BR-ESPD-DOCREF-01] Invalid publication-reference type: '<xsl:text/>
+                  <xsl:value-of select="."/>
+                  <xsl:text/>'. The codes 'ESPD_REQUEST' and 'epo-acc-espd-request' denote the ESPD Request document itself and must not be used as the content type of a publication reference (cac:AdditionalDocumentReference/cbc:DocumentTypeCode).</svrl:text>
+            </svrl:failed-assert>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M5"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M5">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M5"/>
+   </xsl:template>
 </xsl:stylesheet>

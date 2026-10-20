@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-07T10:26:44.108Z",
-  "totalRules": 115,
+  "generated": "2026-10-20T14:28:17.247Z",
+  "totalRules": 116,
   "rules": [
     {
       "id": "BR-COM-10-01",
@@ -28,6 +28,15 @@
       "context": "cac:AdditionalDocumentReference",
       "description": "The type of document being referenced, expressed as a code ('/cac:AdditionalDocumentReference/cbc:DocumentTypeCode') is mandatory (cbc:ID = '').",
       "sourceFile": "common/sch/04-ESPD-common-other-br.sch"
+    },
+    {
+      "id": "BR-ESPD-DOCREF-01",
+      "severity": "fatal",
+      "scope": "Request",
+      "category": "Other",
+      "context": "cac:AdditionalDocumentReference/cbc:DocumentTypeCode",
+      "description": "[BR-ESPD-DOCREF-01] Invalid publication-reference type: ''. The codes 'ESPD_REQUEST' and 'epo-acc-espd-request' denote the ESPD Request document itself and must not be used as the content type of a publication reference (cac:AdditionalDocumentReference/cbc:DocumentTypeCode).",
+      "sourceFile": "ESPDRequest/sch/04-ESPD-req-other-br.sch"
     },
     {
       "id": "BR-LAED-10",
