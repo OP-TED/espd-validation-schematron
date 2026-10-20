@@ -22,6 +22,17 @@ This release aligns with EDPD-EDM-v5-beta.
 * <cbc:ProfileExecutionID> element
 
 
+### Restricted publication-reference content types in the ESPD Request
+
+* Added business rule BR-ESPD-DOCREF-01 (fatal) in `ESPDRequest/sch/04-ESPD-req-other-br.sch`
+  rejecting the DocRefContentType codes `ESPD_REQUEST` and `epo-acc-espd-request` on
+  `cac:AdditionalDocumentReference/cbc:DocumentTypeCode`. These codes designate the ESPD
+  Request document itself, not a published notice, so they are not valid as a publication
+  reference. The generic code-list-values binding still accepts the full EU vocabulary;
+  this rule narrows it for the ESPD Request context only.
+* Regenerated `ESPDRequest/xsl/04-ESPD-req-other-br.xsl` accordingly.
+
+
 ## Bug fixes
 
 * Manual fix to ESPDRequest/xsl/criterionList.xml and ESPDResponse/xsl/criterionList.xml to remove space for code value "service-perform"
