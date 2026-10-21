@@ -188,16 +188,16 @@
 
 		<!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="(count(cbc:ID)=0) or not(cbc:DocumentTypeCode/text() = 'TED_CN') or ((count(cbc:ID))=1 and fn:matches(normalize-space(cbc:ID/text()), '^[0-9]{4}/S [0-9]{3}\-[0-9]{6}$'))"/>
+         <xsl:when test="(count(cbc:ID)=0) or not(cbc:DocumentTypeCode/text() = 'TED_CN' or cbc:DocumentTypeCode/text() = 'TED_PIN') or ((count(cbc:ID))=1 and (fn:matches(normalize-space(cbc:ID/text()), '^[0-9]{1,8}\-[0-9]{4}$') or fn:matches(normalize-space(cbc:ID/text()), '^[0-9]{4}/S [0-9]{3}\-[0-9]{6}$')))"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="(count(cbc:ID)=0) or not(cbc:DocumentTypeCode/text() = 'TED_CN') or ((count(cbc:ID))=1 and fn:matches(normalize-space(cbc:ID/text()), '^[0-9]{4}/S [0-9]{3}\-[0-9]{6}$'))">
+                                test="(count(cbc:ID)=0) or not(cbc:DocumentTypeCode/text() = 'TED_CN' or cbc:DocumentTypeCode/text() = 'TED_PIN') or ((count(cbc:ID))=1 and (fn:matches(normalize-space(cbc:ID/text()), '^[0-9]{1,8}\-[0-9]{4}$') or fn:matches(normalize-space(cbc:ID/text()), '^[0-9]{4}/S [0-9]{3}\-[0-9]{6}$')))">
                <xsl:attribute name="id">BR-COM-10-01</xsl:attribute>
                <xsl:attribute name="flag">fatal</xsl:attribute>
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
-               <svrl:text>If the document referenced is a Contract Notice published on TED the ID must follow the scheme defined by the Publications Office: [][][][]/S [][][]-[][][][][][] (cbc:ID = '<xsl:text/>
+               <svrl:text>If the document referenced is a Contract Notice or a Prior Information Notice published on TED the ID must follow a scheme defined by the Publications Office: the eForms/TED publication number [][][][][][][][]-[][][][] or the legacy OJ S scheme [][][][]/S [][][]-[][][][][][] (cbc:ID = '<xsl:text/>
                   <xsl:value-of select="cbc:ID"/>
                   <xsl:text/>').</svrl:text>
             </svrl:failed-assert>

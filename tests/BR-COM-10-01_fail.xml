@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BR-COM-10-01 fail fixture.
+  A TED Contract Notice reference whose ID matches neither the new eForms/TED
+  publication number scheme (NNNNNNNN-YYYY) nor the legacy OJ S scheme
+  (YYYY/S NNN-NNNNNN). The rule MUST fire (flag="fatal"). Here the separator is
+  a slash instead of a hyphen, so it is not a valid new-scheme identifier.
+-->
+<QualificationApplicationRequest
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>310364/2026</cbc:ID>
+    <cbc:DocumentTypeCode>TED_CN</cbc:DocumentTypeCode>
+  </cac:AdditionalDocumentReference>
+</QualificationApplicationRequest>

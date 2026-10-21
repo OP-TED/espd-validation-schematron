@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BR-COM-10-01 pass fixture.
+  A TED Contract Notice reference whose ID uses the NEW eForms/TED publication
+  number scheme (NNNNNNNN-YYYY). The rule must NOT fire. The legacy OJ S scheme
+  (YYYY/S NNN-NNNNNN) and the temporary placeholder 0000/S 000-000000 remain
+  accepted as well.
+-->
+<QualificationApplicationRequest
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>310364-2026</cbc:ID>
+    <cbc:DocumentTypeCode>TED_CN</cbc:DocumentTypeCode>
+  </cac:AdditionalDocumentReference>
+</QualificationApplicationRequest>

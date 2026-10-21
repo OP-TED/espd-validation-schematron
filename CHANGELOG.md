@@ -33,6 +33,21 @@ This release aligns with EDPD-EDM-v5-beta.
 * Regenerated `ESPDRequest/xsl/04-ESPD-req-other-br.xsl` accordingly.
 
 
+### Accept the new TED/eForms notice publication number format in BR-COM-10-01
+
+* Extended business rule BR-COM-10-01 in `common/sch/04-ESPD-common-other-br.sch` to accept the
+  new eForms/TED publication number scheme `NNNNNNNN-YYYY` (publication number of 1 to 8 digits,
+  a hyphen, and the 4-digit year; e.g. `310364-2026`) for a TED notice reference
+  (`cac:AdditionalDocumentReference`). The legacy OJ S scheme `YYYY/S NNN-NNNNNN` and the
+  temporary placeholder `0000/S 000-000000` remain accepted.
+* Extended the rule's scope from `TED_CN` only to both `TED_CN` (Contract Notice) and `TED_PIN`
+  (Prior Information Notice) — a PIN uses the same OJ S publication-number scheme.
+* Regenerated `ESPDRequest/xsl/04-ESPD-common-other-br.xsl` and
+  `ESPDResponse/xsl/04-ESPD-common-other-br.xsl` accordingly.
+* Added unit-test fixtures `tests/BR-COM-10-01_{pass,fail}.xml` (TED_CN) and
+  `tests/BR-COM-10-01-PIN_{pass,fail}.xml` (TED_PIN).
+
+
 ## Bug fixes
 
 * Manual fix to ESPDRequest/xsl/criterionList.xml and ESPDResponse/xsl/criterionList.xml to remove space for code value "service-perform"

@@ -35,3 +35,4 @@ Currently covers:
 - `BR-LOT-40` — Exclusion criteria cannot have lot references
 - `BR-LOT-41` — Selection criteria must have lot references
 - `BR-LOT-10` — ESPD Response must specify exactly one lot
+- `BR-COM-10-01` — TED Contract Notice (`TED_CN`) and Prior Information Notice (`TED_PIN`) ID format (new `NNNNNNNN-YYYY` and legacy `YYYY/S NNN-NNNNNN`); validate against `ESPDRequest/xsl/04-ESPD-common-other-br.xsl`. Fixtures: `BR-COM-10-01_{pass,fail}.xml` (CN) and `BR-COM-10-01-PIN_{pass,fail}.xml` (PIN)

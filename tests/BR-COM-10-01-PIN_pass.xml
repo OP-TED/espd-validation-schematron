@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BR-COM-10-01 pass fixture (TED Prior Information Notice).
+  A TED_PIN reference whose ID uses the NEW eForms/TED publication number scheme
+  (NNNNNNNN-YYYY). The rule must NOT fire. A TED_PIN uses the same OJ S
+  publication-number scheme as a TED_CN.
+-->
+<QualificationApplicationRequest
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>19849-2023</cbc:ID>
+    <cbc:DocumentTypeCode>TED_PIN</cbc:DocumentTypeCode>
+  </cac:AdditionalDocumentReference>
+</QualificationApplicationRequest>
